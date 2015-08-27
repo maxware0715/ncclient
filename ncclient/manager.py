@@ -25,6 +25,7 @@ import transport
 import logging
 
 from ncclient.xml_ import *
+from ncclient.operations.third_party.juniper.rpc import ExecuteRpc
 
 logger = logging.getLogger('ncclient.manager')
 
@@ -36,6 +37,7 @@ OPERATIONS = {
     "copy_config": operations.CopyConfig,
     "validate": operations.Validate,
     "commit": operations.Commit,
+    "cancel_commit": operations.CancelCommit,
     "discard_changes": operations.DiscardChanges,
     "delete_config": operations.DeleteConfig,
     "lock": operations.Lock,
@@ -110,15 +112,15 @@ def connect_ssh(*args, **kwds):
     global VENDOR_OPERATIONS
     VENDOR_OPERATIONS.update(device_handler.add_additional_operations())
     session = transport.SSHSession(device_handler)
-    if "hostkey_verify" not in kwds or kwds["hostkey_verify"]:
-        session.load_known_hosts()
+    session.load_known_hosts()
 
     try:
-       session.connect(*args, **kwds)
+	session.connect(*args, **kwds)
+	print "connectok"
     except Exception as ex:
         if session.transport:
             session.close()
-        raise
+        raise ex
     return Manager(session, device_handler, **kwds)
 
 def connect_ioproc(*args, **kwds):
@@ -258,8 +260,12 @@ class Manager(object):
                 for arg in args:
                     sub_ele(root, arg)
             r = self.rpc(root)
+#	    print "asd",r
             return r
         return _missing
+    def rpc(self,rpc):
+#	print"ff"
+	return ExecuteRpc(rpc)
 
     @property
     def client_capabilities(self):
@@ -304,4 +310,4 @@ class Manager(object):
     """Specify which errors are raised as :exc:`~ncclient.operations.RPCError`
     exceptions. Valid values are the constants defined in
     :class:`~ncclient.operations.RaiseMode`.
-    The default value is :attr:`~ncclient.operations.RaiseMode.ALL`."""
+    The default value is :att:r:`~ncclient.operations.RaiseMode.ALL`."""

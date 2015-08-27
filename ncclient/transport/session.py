@@ -26,6 +26,8 @@ from errors import TransportError, SessionError
 
 import logging
 logger = logging.getLogger('ncclient.transport.session')
+logger.setLevel(logging.WARNING)
+logging.basicConfig()
 
 
 class Session(Thread):
@@ -48,6 +50,7 @@ class Session(Thread):
         self._device_handler = None # Should be set by child class
 
     def _dispatch_message(self, raw):
+#	print raw
         try:
             root = parse_root(raw)
         except Exception as e:
@@ -55,10 +58,12 @@ class Session(Thread):
                 raw = self._device_handler.handle_raw_dispatch(raw)
                 root = parse_root(raw)
             else:
+                print"by"
                 logger.error('error parsing dispatch message: %s' % e)
                 return
         with self._lock:
             listeners = list(self._listeners)
+#	    print listeners
         for l in listeners:
             logger.debug('dispatching message to %r: %s' % (l, raw))
             l.callback(root, raw) # no try-except; fail loudly if you must!
@@ -90,18 +95,20 @@ class Session(Thread):
         self.send(HelloHandler.build(self._client_capabilities, self._device_handler))
         logger.debug('starting main loop')
         self.start()
-        # we expect server's hello message, if server doesn't responds in 60 seconds raise exception
-        init_event.wait(60)
-        if not init_event.is_set():
-            raise SessionError("Capability exchange timed out")
+        # we expect server's hello message
+        init_event.wait()
+#	print"waitend"
         # received hello message or an error happened
         self.remove_listener(listener)
         if error[0]:
+	    print"die"
             raise error[0]
         #if ':base:1.0' not in self.server_capabilities:
         #    raise MissingCapabilityError(':base:1.0')
+#	print"snd"
         logger.info('initialized: session-id=%s | server_capabilities=%s' %
                     (self._id, self._server_capabilities))
+#	print"fin"
 
     def add_listener(self, listener):
         """Register a listener that will be notified of incoming messages and
@@ -208,13 +215,18 @@ class HelloHandler(SessionListener):
 
     def callback(self, root, raw):
         tag, attrs = root
-        if (tag == qualify("hello")) or (tag == "hello"):
+#       if (tag == qualify("hello")) or (tag == "hello"):
+	if True:
             try:
                 id, capabilities = HelloHandler.parse(raw)
+#		print id
             except Exception as e:
+#		print "Noooooo"
                 self._error_cb(e)
             else:
+#		print "yaar"
                 self._init_cb(id, capabilities)
+		
 
     def errback(self, err):
         self._error_cb(err)
@@ -228,10 +240,12 @@ class HelloHandler(SessionListener):
             xml_namespace_kwargs = { "nsmap" : device_handler.get_xml_base_namespace_dict() }
         else:
             xml_namespace_kwargs = {}
-        hello = new_ele("hello", **xml_namespace_kwargs)
+        hello = new_ele("hello",**xml_namespace_kwargs)
+#        print to_xml(hello)
         caps = sub_ele(hello, "capabilities")
         def fun(uri): sub_ele(caps, "capability").text = uri
         map(fun, capabilities)
+#	print to_xml(hello)
         return to_xml(hello)
 
     @staticmethod
@@ -240,6 +254,7 @@ class HelloHandler(SessionListener):
         sid, capabilities = 0, []
         root = to_ele(raw)
         for child in root.getchildren():
+#            print child
             if child.tag == qualify("session-id") or child.tag == "session-id":
                 sid = child.text
             elif child.tag == qualify("capabilities") or child.tag == "capabilities" :

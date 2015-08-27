@@ -128,7 +128,7 @@ class Commit(RPC):
 
     DEPENDS = [':candidate']
 
-    def request(self, confirmed=False, timeout=None):
+    def request(self, confirmed=False, timeout=None, persist=None, persist_id=None):
         """Commit the candidate configuration as the device's new current configuration. Depends on the `:candidate` capability.
 
         A confirmed commit (i.e. if *confirmed* is `True`) is reverted if there is no followup commit within the *timeout* interval. If no timeout is specified the confirm timeout defaults to 600 seconds (10 minutes). A confirming commit may have the *confirmed* parameter but this is not required. Depends on the `:confirmed-commit` capability.
@@ -142,6 +142,24 @@ class Commit(RPC):
             sub_ele(node, "confirmed")
             if timeout is not None:
                 sub_ele(node, "confirm-timeout").text = timeout
+            if persist is not None:
+                sub_ele(node, "persist").text = persist
+            if persist_id is not None:
+                sub_ele(node, "persist-id").text = persist_id
+                """By 6241, persist-id MUST equal to <persist> from last session"""
+        return self._request(node)
+
+class CancelCommit(RPC):
+
+    DEPENDS = [':candidate']
+
+    def request(self, persist_id=None):
+        
+        node = new_ele("cancel-commit")
+        if persist_id:
+            self._assert(":confirmed-commit")
+            sub_ele(node, "persist-id").text = persist_id
+            
         return self._request(node)
 
 

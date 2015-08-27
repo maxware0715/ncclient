@@ -21,6 +21,7 @@ import io
 from StringIO import StringIO
 from lxml import etree
 
+
 # In case issues come up with XML generation/parsing
 # make sure you have the ElementTree v1.2.7+ lib as
 # well as lxml v3.0+
@@ -34,6 +35,7 @@ class XMLError(NCClientError):
 
 ### Namespace-related
 
+BASE_NS_1_1 = "urn:ietf:params:xml:ns:netconf:base:1.1"
 #: Base NETCONF namespace
 BASE_NS_1_0 = "urn:ietf:params:xml:ns:netconf:base:1.0"
 # NXOS_1_0
@@ -51,17 +53,11 @@ FLOWMON_1_0 = "http://www.liberouter.org/ns/netopeer/flowmon/1.0"
 #: Namespace for Juniper 9.6R4. Tested with Junos 9.6R4+
 JUNIPER_1_1 = "http://xml.juniper.net/xnm/1.1/xnm"
 #: Namespace for Huawei data model
-HUAWEI_NS = "http://www.huawei.com/netconf/vrp"
-#: Namespace for Huawei private
-HW_PRIVATE_NS = "http://www.huawei.com/netconf/capability/base/1.0"
+HUAWEI_1_1 = "http://www.huawei.com/netconf/vrp"
 #: Namespace for H3C data model
-H3C_DATA_1_0 = "http://www.h3c.com/netconf/data:1.0"
-#: Namespace for H3C config model
-H3C_CONFIG_1_0 = "http://www.h3c.com/netconf/config:1.0"
-#: Namespace for H3C action model
-H3C_ACTION_1_0 = "http://www.h3c.com/netconf/action:1.0"
+H3C_1_0 = "http://www.h3c.com/netconf/config:1.0"
 #
-try:
+"""try:
     register_namespace = etree.register_namespace
 except AttributeError:
     def register_namespace(prefix, uri):
@@ -70,7 +66,7 @@ except AttributeError:
         ElementTree._namespace_map[uri] = prefix
 
 for (ns, pre) in {
-    BASE_NS_1_0: 'nc',
+    BASE_NS_1_0: 'ns',
     NXOS_1_0: 'nxos',
     NXOS_IF: 'if',
     TAILF_AAA_1_1: 'aaa',
@@ -79,9 +75,14 @@ for (ns, pre) in {
     FLOWMON_1_0: 'fm',
     JUNIPER_1_1: 'junos',
 }.items():
-    register_namespace(pre, ns)
+    register_namespace(pre, ns)"""
 
-qualify = lambda tag, ns=BASE_NS_1_0: tag if ns is None else "{%s}%s" % (ns, tag)
+
+
+def qualify(tag, ns=BASE_NS_1_0):
+    return tag if ns is None else "{%s}%s" % (ns, tag)
+
+
 """Qualify a *tag* name with a *namespace*, in :mod:`~xml.etree.ElementTree` fashion i.e. *{namespace}tagname*."""
 
 
@@ -96,8 +97,8 @@ def to_ele(x):
 
 def parse_root(raw):
     "Efficiently parses the root element of a *raw* XML document, returning a tuple of its qualified name and attribute dictionary."
-    fp = StringIO(raw)
-    for event, element in etree.iterparse(fp, events=('start',)):
+#    fp = StringIO(raw)
+    for event, element in etree.iterparse(StringIO(raw), events=('start',)):
         return (element.tag, element.attrib)
 
 def validated_element(x, tags=None, attrs=None):
@@ -182,6 +183,7 @@ class NCElement(object):
         return self.__root
 
 
+#new_ele = lambda tag, attrs={}, **extra: etree.Element(qualify(tag), nsmap={None: BASE_NS_1_0})
+#new_ele_rpc = lambda tag, attrs: etree.Element(qualify(tag), attrs, nsmap={None: BASE_NS_1_0})
 new_ele = lambda tag, attrs={}, **extra: etree.Element(qualify(tag), attrs, **extra)
-
 sub_ele = lambda parent, tag, attrs={}, **extra: etree.SubElement(parent, qualify(tag), attrs, **extra)

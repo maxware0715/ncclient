@@ -78,6 +78,7 @@ class DefaultDeviceHandler(object):
         """
         return [
             "urn:ietf:params:netconf:base:1.0",
+            """base:xx is decided by neconf_ver in ssh.py"""
             "urn:ietf:params:netconf:capability:writable-running:1.0",
             "urn:ietf:params:netconf:capability:candidate:1.0",
             "urn:ietf:params:netconf:capability:confirmed-commit:1.0",
@@ -104,7 +105,7 @@ class DefaultDeviceHandler(object):
         returned.
 
         """
-        return {}
+        return {None: "urn:ietf:params:xml:ns:netconf:base:1.0"}
 
     def get_xml_extra_prefix_kwargs(self):
         """
@@ -122,7 +123,7 @@ class DefaultDeviceHandler(object):
             }
 
         """
-        return {}
+        return { "nsmap" : {None: "urn:ietf:params:xml:ns:netconf:base:1.0"}}
 
     def get_ssh_subsystem_names(self):
         """
@@ -160,10 +161,7 @@ class DefaultDeviceHandler(object):
         Return True/False depending on found match.
 
         """
-        if error_text is not None:
-            error_text = error_text.lower().strip()
-        else:
-            error_text = 'no error given'
+        error_text = error_text.lower().strip()
 
         # Compare the error text against all the exempt errors.
         for ex in self._exempt_errors_exact_match:

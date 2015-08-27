@@ -17,7 +17,7 @@ from rpc import RPC, RPCReply, RPCError, RaiseMode
 
 # rfc4741 ops
 from retrieve import Get, GetConfig, GetReply, Dispatch
-from edit import EditConfig, CopyConfig, DeleteConfig, Validate, Commit, DiscardChanges
+from edit import EditConfig, CopyConfig, DeleteConfig, Validate, Commit, DiscardChanges, CancelCommit
 from session import CloseSession, KillSession
 from lock import Lock, Unlock, LockContext
 # others...
@@ -38,6 +38,7 @@ __all__ = [
     'Commit',
     'DiscardChanges',
     'DeleteConfig',
+    'CancelCommit',
     'Lock',
     'Unlock',
     'PoweroffMachine',

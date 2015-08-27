@@ -11,7 +11,6 @@ All device-specific handlers derive from the DefaultDeviceHandler, which impleme
 generic information needed for interaction with a Netconf server.
 
 """
-from ncclient.operations.third_party.huawei.rpc import *
 
 from ncclient.xml_ import BASE_NS_1_0
 
@@ -33,30 +32,19 @@ class HuaweiDeviceHandler(DefaultDeviceHandler):
     def __init__(self, device_params):
         super(HuaweiDeviceHandler, self).__init__(device_params)
 
-
-    def add_additional_operations(self):
-        dict = {}
-        dict["cli"] = CLI
-        dict["action"] = Action
-        return dict
-
     def get_capabilities(self):
         # Just need to replace a single value in the default capabilities
         c = super(HuaweiDeviceHandler, self).get_capabilities()
-        c.append('http://www.huawei.com/netconf/capability/execute-cli/1.0')
-        c.append('http://www.huawei.com/netconf/capability/action/1.0')
-        c.append('http://www.huawei.com/netconf/capability/active/1.0')
-        c.append('http://www.huawei.com/netconf/capability/discard-commit/1.0')
-        c.append('urn:ietf:params:netconf:capability:notification:1.0')
         return c
 
     def get_xml_base_namespace_dict(self):
-        return {None: BASE_NS_1_0}
+        return { "xmlns":BASE_NS_1_0 }
 
     def get_xml_extra_prefix_kwargs(self):
-        d = {}
+        d = {
+                # "xmlns":"http://www.huawei.com/netconf/vrp"
+            }
         d.update(self.get_xml_base_namespace_dict())
-        return {"nsmap": d}
+        return d
 
-    def perform_qualify_check(self):
-        return False
+

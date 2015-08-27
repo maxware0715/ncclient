@@ -22,6 +22,7 @@ from errors import OperationError, TimeoutExpiredError, MissingCapabilityError
 
 import logging
 logger = logging.getLogger("ncclient.operations.rpc")
+logger.setLevel(logging.WARNING)
 
 
 class RPCError(OperationError):
@@ -37,50 +38,25 @@ class RPCError(OperationError):
         qualify("error-message"): "_message"
     }
 
-    def __init__(self, raw, multiple=False):
-        self._multiple = multiple
+    def __init__(self, raw):
         self._raw = raw
-        if not multiple:
-            # Single RPCError
-            for attr in RPCError.tag_to_attr.values():
-                setattr(self, attr, None)
-            for subele in raw:
-                attr = RPCError.tag_to_attr.get(subele.tag, None)
-                if attr is not None:
-                    setattr(self, attr, subele.text if attr != "_info" else to_xml(subele) )
-            if self.message is not None:
-                OperationError.__init__(self, self.message)
-            else:
-                OperationError.__init__(self, self.to_dict())
-        else:
-            # Multiple errors returned. Errors is a list of RPCError objs
-            errlist = []
-            for err in raw:
-                if err.severity:
-                    errsev = err.severity
-                else:
-                    errsev = 'undefined'
-                if err.message:
-                    errmsg = err.message
-                else:
-                    errmsg = 'not an error message in the reply. Enable debug'
-                errordict = {"severity": errsev, "message":errmsg}
-                errlist.append(errordict)
-            # We are interested in the severity and the message
-            self._severity = 'warning'
-            self._message = "\n".join(["%s: %s" %(err['severity'].strip(), err['message'].strip()) for err in errlist])
-            has_error = filter(lambda higherr: higherr['severity'] == 'error', errlist)
-            if has_error:
-                self._severity = 'error'
+        for attr in RPCError.tag_to_attr.values():
+            setattr(self, attr, None)
+        for subele in raw:
+            attr = RPCError.tag_to_attr.get(subele.tag, None)
+            if attr is not None:
+                setattr(self, attr, subele.text if attr != "_info" else to_xml(subele) )
+        if self.message is not None:
             OperationError.__init__(self, self.message)
+        else:
+            OperationError.__init__(self, self.to_dict())
 
     def to_dict(self):
         return dict([ (attr[1:], getattr(self, attr)) for attr in RPCError.tag_to_attr.values() ])
 
     @property
     def xml(self):
-        "The `rpc-error` element as returned in XML. \
-        Multiple errors are returned as list of RPC errors"
+        "The `rpc-error` element as returned in XML."
         return self._raw
 
     @property
@@ -295,10 +271,10 @@ class RPC(object):
 
     def _wrap(self, subele):
         # internal use
-        ele = new_ele("rpc", {"message-id": self._id},
-                      **self._device_handler.get_xml_extra_prefix_kwargs())
+#        ele = new_ele_rpc("rpc", {"message-id": self._id})
+        ele = new_ele("rpc", {"message-id": self._id}, **self._device_handler.get_xml_extra_prefix_kwargs())
         ele.append(subele)
-        #print to_xml(ele)
+#        print to_xml(ele)
         return to_xml(ele)
 
     def _request(self, op):
@@ -328,14 +304,10 @@ class RPC(object):
                                  not self._device_handler.is_rpc_error_exempt( \
                                                             self._reply.error.message):
                     # <rpc-error>'s [ RPCError ]
-
-                    if self._raise_mode == RaiseMode.ALL or (self._raise_mode == RaiseMode.ERRORS and self._reply.error.severity == "error"):
-                        errlist = []
-                        errors = self._reply.errors
-                        if len(errors) > 1:
-                            raise RPCError(errors, multiple=True)
-                        else:
-                            raise self._reply.error
+                    if self._raise_mode == RaiseMode.ALL:
+                        raise self._reply.error
+                    elif (self._raise_mode == RaiseMode.ERRORS and self._reply.error.type == "error"):
+                        raise self._reply.error
                 if self._device_handler.transform_reply():
                     return NCElement(self._reply, self._device_handler.transform_reply())
                 else:
@@ -400,11 +372,11 @@ class RPC(object):
 
     def __set_async(self, async=True):
         self._async = async
-        if async and not self._session.can_pipeline:
+        if async and not session.can_pipeline:
             raise UserWarning('Asynchronous mode not supported for this device/session')
 
     def __set_raise_mode(self, mode):
-        assert(mode in (RaiseMode.NONE, RaiseMode.ERRORS, RaiseMode.ALL))
+        assert(choice in ("all", "errors", "none"))
         self._raise_mode = mode
 
     def __set_timeout(self, timeout):

@@ -13,7 +13,6 @@
 # limitations under the License.
 
 import os
-import sys
 import socket
 import getpass
 from binascii import hexlify
@@ -27,12 +26,18 @@ import paramiko
 from errors import AuthenticationError, SessionCloseError, SSHError, SSHUnknownHostError
 from session import Session
 
+import io
+from StringIO import StringIO
+
 import logging
 logger = logging.getLogger("ncclient.transport.ssh")
+logger.setLevel(logging.WARNING)
+logging.getLogger("paramiko").setLevel(logging.DEBUG)
 
 BUF_SIZE = 4096
 MSG_DELIM = "]]>]]>"
 TICK = 0.1
+netconf_version = "1.0"
 
 def default_unknown_host_cb(host, fingerprint):
     """An unknown host callback returns `True` if it finds the key acceptable, and `False` if not.
@@ -79,36 +84,73 @@ class SSHSession(Session):
         expect = self._parsing_state
         buf = self._buffer
         buf.seek(self._parsing_pos)
-        while True:
-            x = buf.read(1)
-            if not x: # done reading
-                break
-            elif x == delim[expect]: # what we expected
-                expect += 1 # expect the next delim char
-            else:
-                expect = 0
-                continue
-            # loop till last delim char expected, break if other char encountered
-            for i in range(expect, n):
+        if netconf_version == "1.0" :
+            while True:
                 x = buf.read(1)
                 if not x: # done reading
                     break
-                if x == delim[expect]: # what we expected
+                elif x == delim[expect]: # what we expected
                     expect += 1 # expect the next delim char
                 else:
-                    expect = 0 # reset
+                    expect = 0
+                    continue
+                # loop till last delim char expected, break if other char encountered
+                for i in range(expect, n):
+                    x = buf.read(1)
+                    if not x: # done reading
+                        break
+                    if x == delim[expect]: # what we expected
+                        expect += 1 # expect the next delim char
+                    else:
+                        expect = 0 # reset
+                        break
+                else: # if we didn't break out of the loop, full delim was parsed
+                    msg_till = buf.tell() - n
+#                    print msg_till
+                    buf.seek(0)
+                    logger.debug('parsed new message')
+#                    print"1"
+                    self._dispatch_message(buf.read(msg_till).strip())
+#                print"2"
+                    buf.seek(n+1, os.SEEK_CUR)
+                    rest = buf.read()
+                    buf = StringIO()
+                    buf.write(rest)
+                    buf.seek(0)
+                    expect = 0
+        else:
+            tmpbuf = ""
+            flag = 0
+            while True:
+                x = buf.read(1)
+                if not x: # done reading
                     break
-            else: # if we didn't break out of the loop, full delim was parsed
-                msg_till = buf.tell() - n
-                buf.seek(0)
-                logger.debug('parsed new message')
-                self._dispatch_message(buf.read(msg_till).strip())
-                buf.seek(n+1, os.SEEK_CUR)
-                rest = buf.read()
-                buf = StringIO()
-                buf.write(rest)
-                buf.seek(0)
-                expect = 0
+                elif x == "#":
+                    flag += 1# what we expected
+                    x = buf.read(1)
+                    while x != "#" and x != "\n" :
+                        flag += 1
+                        x = buf.read(1)# expect the next delim char
+                elif x == "]":
+                    x = buf.read(1)
+                    if x == "]":
+                        x = buf.read(4)
+                        flag = 1
+                    else:
+                        tmpbuf += x
+                        continue
+                else:
+                    tmpbuf += x
+                    continue
+                if flag != 1 :
+                    tmpbuf = ""
+                    flag = 0
+                    continue
+                else :
+                    print "asd",tmpbuf
+                    self._dispatch_message(tmpbuf.strip())
+                    tmpbuf = ""
+                    flag = 0
         self._buffer = buf
         self._parsing_state = expect
         self._parsing_pos = self._buffer.tell()
@@ -135,14 +177,12 @@ class SSHSession(Session):
     def close(self):
         if self._transport.is_active():
             self._transport.close()
-        self._channel = None
         self._connected = False
-        
 
     # REMEMBER to update transport.rst if sig. changes, since it is hardcoded there
     def connect(self, host, port=830, timeout=None, unknown_host_cb=default_unknown_host_cb,
-                username=None, password=None, key_filename=None, allow_agent=True,
-                hostkey_verify=True, look_for_keys=True, ssh_config=None):
+                username=None, password="12345", key_filename=None, allow_agent=True,
+                hostkey_verify=False, look_for_keys=True, ssh_config=None, netconf_ver="1.0"):
 
         """Connect via SSH and initialize the NETCONF session. First attempts the publickey authentication method and then password authentication.
 
@@ -155,7 +195,6 @@ class SSHSession(Session):
         *timeout* is an optional timeout for socket connect
 
         *unknown_host_cb* is called when the server host key is not recognized. It takes two arguments, the hostname and the fingerprint (see the signature of :func:`default_unknown_host_cb`)
-
         *username* is the username to use for SSH authentication
 
         *password* is the password used if using password authentication, or the passphrase to use for unlocking keys that require it
@@ -168,12 +207,13 @@ class SSHSession(Session):
 
         *look_for_keys* enables looking in the usual locations for ssh keys (e.g. :file:`~/.ssh/id_*`)
 
-        *ssh_config* enables parsing of an OpenSSH configuration file, if set to its path, e.g. :file:`~/.ssh/config` or to True (in this case, use :file:`~/.ssh/config`).
+        *ssh_config* enables parsing of an OpenSSH configuration file, if set to its path, e.g. ~/.ssh/config
         """
         # Optionaly, parse .ssh/config
+        global netconf_version
+        netconf_version = netconf_ver
+        print netconf_version
         config = {}
-        if ssh_config is True:
-            ssh_config = "~/.ssh/config" if sys.platform != "win32" else "~/ssh/config"
         if ssh_config is not None:
             config = paramiko.SSHConfig()
             config.parse(open(os.path.expanduser(ssh_config)))
@@ -196,11 +236,11 @@ class SSHSession(Session):
                 try:
                     sock = socket.socket(af, socktype, proto)
                     sock.settimeout(timeout)
-                except socket.error:
+                except socket.error: 
                     continue
                 try:
                     sock.connect(sa)
-                except socket.error:
+                except Exception,socket.error:
                     sock.close()
                     continue
                 break
@@ -217,11 +257,12 @@ class SSHSession(Session):
 
         # host key verification
         server_key = t.get_remote_server_key()
+        #self._host_keys.add(host, "ssh-rsa", server_key)
+        known_host = self._host_keys.check(host, server_key)
 
         fingerprint = _colonify(hexlify(server_key.get_fingerprint()))
 
         if hostkey_verify:
-            known_host = self._host_keys.check(host, server_key)
             if not known_host and not unknown_host_cb(host, fingerprint):
                 raise SSHUnknownHostError(host, fingerprint)
 
@@ -231,10 +272,8 @@ class SSHSession(Session):
             key_filenames = [ key_filename ]
         else:
             key_filenames = key_filename
-
         self._auth(username, password, key_filenames, allow_agent, look_for_keys)
-
-        self._connected = True # there was no error authenticating
+        self._connected = True # there was no error authenticatinB
         # TODO: leopoul: Review, test, and if needed rewrite this part
         subsystem_names = self._device_handler.get_ssh_subsystem_names()
         for subname in subsystem_names:
@@ -244,6 +283,7 @@ class SSHSession(Session):
             c.set_name(channel_name)
             try:
                 c.invoke_subsystem(subname)
+#		print"ok"
             except paramiko.SSHException as e:
                 logger.info("%s (subsystem request rejected)", e)
                 handle_exception = self._device_handler.handle_connection_exceptions(self)
@@ -253,7 +293,9 @@ class SSHSession(Session):
                 if not handle_exception:
                     continue
             self._channel_name = c.get_name()
+#	    print"okb"
             self._post_connect()
+#	    print"sok"
             return
         raise SSHError("Could not open connection, possibly due to unacceptable"
                        " SSH subsystem name.")
@@ -261,7 +303,6 @@ class SSHSession(Session):
     def _auth(self, username, password, key_filenames, allow_agent,
               look_for_keys):
         saved_exception = None
-
         for key_filename in key_filenames:
             for cls in (paramiko.RSAKey, paramiko.DSSKey):
                 try:
@@ -272,6 +313,7 @@ class SSHSession(Session):
                     return
                 except Exception as e:
                     saved_exception = e
+#                    print e
                     logger.debug(e)
 
         if allow_agent:
@@ -283,6 +325,7 @@ class SSHSession(Session):
                     return
                 except Exception as e:
                     saved_exception = e
+#                    print e
                     logger.debug(e)
 
         keyfiles = []
@@ -302,6 +345,8 @@ class SSHSession(Session):
                 keyfiles.append((paramiko.DSSKey, dsa_key))
 
         for cls, filename in keyfiles:
+	   # print filename
+	   # print cls
             try:
                 key = cls.from_private_key_file(filename, password)
                 logger.debug("Trying discovered key %s in %s" %
@@ -310,6 +355,7 @@ class SSHSession(Session):
                 return
             except Exception as e:
                 saved_exception = e
+#                print e
                 logger.debug(e)
 
         if password is not None:
@@ -319,7 +365,6 @@ class SSHSession(Session):
             except Exception as e:
                 saved_exception = e
                 logger.debug(e)
-
         if saved_exception is not None:
             # need pep-3134 to do this right
             raise AuthenticationError(repr(saved_exception))
@@ -337,24 +382,39 @@ class SSHSession(Session):
                 if r:
                     data = chan.recv(BUF_SIZE)
                     if data:
+#                        print data
                         self._buffer.write(data)
                         self._parse()
+			print"parseok"
                     else:
                         raise SessionCloseError(self._buffer.getvalue())
                 if not q.empty() and chan.send_ready():
                     logger.debug("Sending message")
-                    data = q.get() + MSG_DELIM
+                    data = q.get()
+                    if data.startswith('<?xml version="1.0" encoding="UTF-8"?><hello') or netconf_version == "1.0" :
+                        data = data + MSG_DELIM
+                    else :
+                        head = "\n#%d\n"%(len(data))
+                        tail = "\n##\n"
+                        data = head + data + tail
+                    print data
                     while data:
                         n = chan.send(data)
                         if n <= 0:
+ #                           print"bb"
                             raise SessionCloseError(self._buffer.getvalue(), data)
                         data = data[n:]
         except Exception as e:
+#            print "gg"
             logger.debug("Broke out of main loop, error=%r", e)
             self._dispatch_error(e)
             self.close()
+	
 
     @property
     def transport(self):
         "Underlying `paramiko.Transport <http://www.lag.net/paramiko/docs/paramiko.Transport-class.html>`_ object. This makes it possible to call methods like :meth:`~paramiko.Transport.set_keepalive` on it."
         return self._transport
+
+
+        
