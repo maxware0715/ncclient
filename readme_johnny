@@ -1,0 +1,37 @@
+How to use it:
+first,follow the example of ncclient.
+If you want to get more information about each rpc, please check device.default.py.
+each rpc is considered as a function in python, which included in mananger.py.
+the rpc function in mananger is imported from other files, which first listed in dictionary 
+"OPERATIONS"(for common rpc, usually need not to modify it) or "VENDOR_OPERATIONS"(rpc from 
+server's plug in, such as junos.py, you have to build a file in "device" directory to make it work)
+
+At first, ncclient would check wether your host is local, if not, it would connect through ssh(by paramiko package).
+Then, it would open socket and check public keys.(please see SSHsession.connect params, which can be modified by )
+There might be some problems among hostkey_verify, until now I still can't success.
+The "allow_agent" and "look_for_keys" are for publickey authentication, if you have been changed publickey first, you can chose to set them False.
+
+The following part of ssh is much related to session.py, for SSHSession is inherit from session.
+session is a thread, which is a package of python.
+
+In class Session:
+def _post_connect(self):
+self.start(): this would run the function run(), which is redefinded by session's child(SSHSession).
+init_event.wait(): wait until set() is called. In this case, it might be class Session(Thread): def __init__(self, capabilities): self._listeners = set().
+
+In xml: register_namespace(pre, ns) combine namspace and prefix together.
+if you want to change namespace please modify function qualify and device.default.py.
+
+for version 1.0 and 1.1:
+I set a param "netconf_ver" which can be "1.0" or "1.1",
+and in device.default.py should turn "urn:ietf:params:netconf:base:1.0" into "urn:ietf:params:netconf:base:1.0".
+
+for add new capability and rpc, you can reference other files in devices.
+another way to add them is modify default and mananger "OPERATIONS" directly.
+for rpc, if you add it in default, you should also modify __all__ in __init__.py in devices. 
+
+
+
+ 
+
+
