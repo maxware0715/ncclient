@@ -182,7 +182,7 @@ class SSHSession(Session):
     # REMEMBER to update transport.rst if sig. changes, since it is hardcoded there
     def connect(self, host, port=830, timeout=None, unknown_host_cb=default_unknown_host_cb,
                 username=None, password="12345", key_filename=None, allow_agent=True,
-                hostkey_verify=False, look_for_keys=True, ssh_config=None, netconf_ver="1.0"):
+                hostkey_verify=False, look_for_keys=True, ssh_config=None, netconf_ver="1.1"):
 
         """Connect via SSH and initialize the NETCONF session. First attempts the publickey authentication method and then password authentication.
 

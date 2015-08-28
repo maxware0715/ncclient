@@ -77,7 +77,7 @@ class DefaultDeviceHandler(object):
 
         """
         return [
-            "urn:ietf:params:netconf:base:1.0",
+            "urn:ietf:params:netconf:base:1.1",
             """base:xx is decided by neconf_ver in ssh.py"""
             "urn:ietf:params:netconf:capability:writable-running:1.0",
             "urn:ietf:params:netconf:capability:candidate:1.0",

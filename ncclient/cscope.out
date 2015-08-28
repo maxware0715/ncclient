@@ -1,0 +1,20769 @@
+cscope 15 /usr/local/lib/python2.7/dist-packages/ncclient               0000089950
+	@__init__.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+15 
+	g__v”siÚ__
+ = (0,4,3)
+
+17 
+impÜt
+ 
+sys
+
+
+19 
+	gsys
+.
+	gv”siÚ_šfo
+ < (2, 6):
+
+20 
+¿i£
+ 
+RuÁimeE¼Ü
+('You‚eed Python 2.6+ forhis module.')
+
+22 
+şass
+ 
+	$NCCl›ÁE¼Ü
+(
+Exû±iÚ
+):
+
+24 
+·ss
+
+
+	@capabilities.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+15 
+def
+ 
+	$_abb»vŸ‹
+(
+uri
+):
+
+16 
+uri
+.
+	`¡¬tsw™h
+("uº:›tf:·¿ms"è
+ªd
+ ":ÃtcÚf:" 
+š
+ uri:
+
+17 
+¥l™‹d
+ = 
+uri
+.
+	`¥l™
+(":")
+
+18 ":ÿ·b™y:" 
+š
+ 
+uri
+:
+
+19 
+uri
+.
+	`¡¬tsw™h
+("urn:ietf:params:xml:ns:netconf"):
+
+20 
+Çme
+, 
+v”siÚ
+ = 
+¥l™‹d
+[7], splitted[8]
+
+22 
+Çme
+, 
+v”siÚ
+ = 
+¥l™‹d
+[5], splitted[6]
+
+23  [ ":" + 
+Çme
+, ":" +‚am+ ":" + 
+v”siÚ
+ ]
+
+24 
+–if
+ ":ba£:" 
+š
+ 
+uri
+:
+
+25 
+uri
+.
+	`¡¬tsw™h
+("urn:ietf:params:xml:ns:netconf"):
+
+26  [ ":ba£", ":ba£" + ":" + 
+¥l™‹d
+[7] ]
+
+28  [ ":ba£", ":ba£" + ":" + 
+¥l™‹d
+[5] ]
+
+31 
+def
+ 
+	$schemes
+(
+u¾_uri
+):
+
+33  
+u¾_uri
+.
+	`·¹™iÚ
+("?scheme=")[2].
+	`¥l™
+(",")
+
+35 
+şass
+ 
+	$C­ab™›s
+(
+objeù
+):
+
+39 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+ÿ·b™›s
+):
+
+40 
+£lf
+.
+_diù
+ = {
+	}
+}
+
+41 
+uri
+ 
+š
+ 
+ÿ·b™›s
+:
+
+42 
+£lf
+.
+_diù
+[
+uri
+] = 
+	$_abb»vŸ‹
+(
+uri
+)
+
+44 
+def
+ 
+	$__cÚšs__
+(
+£lf
+, 
+key
+):
+
+45 
+key
+ 
+š
+ 
+£lf
+.
+_diù
+:
+
+46  
+True
+
+
+47 
+abbrs
+ 
+š
+ 
+£lf
+.
+_diù
+.
+	$v®ues
+():
+
+48 
+key
+ 
+š
+ 
+abbrs
+:
+
+49  
+True
+
+
+50  
+F®£
+
+
+52 
+def
+ 
+	$__Ën__
+(
+£lf
+):
+
+53  
+	$Ën
+(
+£lf
+.
+_diù
+)
+
+55 
+def
+ 
+	$__™”__
+(
+£lf
+):
+
+56  
+£lf
+.
+_diù
+.
+	$™”keys
+()
+
+58 
+def
+ 
+	$__»´__
+(
+£lf
+):
+
+59  
+	`»´
+(
+£lf
+.
+_diù
+.
+	$keys
+())
+
+61 
+def
+ 
+	$add
+(
+£lf
+, 
+uri
+):
+
+63 
+£lf
+.
+_diù
+[
+uri
+] = 
+	$_abb»vŸ‹
+(
+uri
+)
+
+65 
+def
+ 
+	$»move
+(
+£lf
+, 
+uri
+):
+
+67 
+uri
+ 
+š
+ 
+£lf
+.
+_diù
+:
+
+68 
+d–
+ 
+£lf
+.
+_diù
+[
+uri
+]
+
+	@debug.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+15 
+äom
+ 
+	gncş›Á
+.
+Œª¥Üt
+ 
+impÜt
+ 
+SessiÚLi¡’”
+
+
+17 
+şass
+ 
+	$PrštLi¡’”
+(
+SessiÚLi¡’”
+):
+
+19 
+def
+ 
+	$ÿÎback
+(
+£lf
+, 
+roÙ
+, 
+¿w
+):
+
+20 
+	`´št
+('\n# RECEIVED MESSAGE with„oot=[tag=%r,‡ttrs=%r] #\n%r\n' %
+
+21 (
+roÙ
+[0],„oÙ[1], 
+¿w
+))
+
+23 
+def
+ 
+	$”rback
+(
+£lf
+, 
+”r
+):
+
+24 
+	`´št
+('\n# RECEIVED ERROR #\n%r\n' % 
+”r
+)
+
+	@devices/__init__.py
+
+	@devices/csr.py
+
+2 
+HªdËr
+ 
+Cisco
+ 
+CSR
+ 
+deviû
+ 
+¥ecific
+ 
+	gšfÜm©iÚ
+.
+
+4 
+NÙe
+ 
+th©
+ 
+´İ”
+ 
+	gimpÜt
+, 
+the
+ 
+şas¢ame
+ 
+has
+ 
+to
+ 
+	gbe
+:
+
+8 ...
+wh”e
+ <
+DeviûÇme
+> 
+is
+ 
+som‘hšg
+ 
+like
+ "DeçuÉ", "Nexus", 
+	g‘c
+.
+
+10 
+AÎ
+ 
+	gdeviû
+-
+¥ecific
+ 
+hªdËrs
+ 
+d”ive
+ 
+äom
+ 
+the
+ 
+	gDeçuÉDeviûHªdËr
+, 
+which
+ 
+im¶em’ts
+he
+
+11 
+g’”ic
+ 
+šfÜm©iÚ
+ 
+Ãeded
+ 
+š‹¿ùiÚ
+ 
+w™h
+ 
+a
+ 
+N‘cÚf
+ 
+	g£rv”
+.
+
+16 
+	gäom
+ . 
+impÜt
+ 
+DeçuÉDeviûHªdËr
+
+
+18 
+def
+ 
+	$c¤_unknown_ho¡_cb
+(
+ho¡
+, 
+fšg”´št
+):
+
+19 #Thi 
+wl
+ 
+ignÜe
+ 
+the
+ 
+unknown
+ 
+ho¡
+ 
+check
+ 
+wh’
+ 
+cÚÃùšg
+ 
+to
+ 
+CSR
+ 
+deviûs
+
+
+20  
+True
+
+
+22 
+şass
+ 
+	$C¤DeviûHªdËr
+(
+DeçuÉDeviûHªdËr
+):
+
+24 
+Cisco
+ 
+CSR
+ 
+hªdËr
+ 
+deviû
+ 
+¥ecific
+ 
+šfÜm©iÚ
+.
+
+27 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_·¿ms
+):
+
+28 
+	`su³r
+(
+C¤DeviûHªdËr
+, 
+£lf
+).
+	$__š™__
+(
+deviû_·¿ms
+)
+
+30 
+def
+ 
+	$add_add™iÚ®_ssh_cÚÃù_·¿ms
+(
+£lf
+, 
+kw¬gs
+):
+
+31 
+kw¬gs
+['®low_ag’t'] = 
+F®£
+
+
+32 
+kw¬gs
+['look_fÜ_keys'] = 
+F®£
+
+
+33 
+kw¬gs
+['unknown_ho¡_cb'] = 
+c¤_unknown_ho¡_cb
+
+
+35 
+def
+ 
+	$³rfÜm_qu®ify_check
+(
+£lf
+):
+
+36  
+F®£
+
+
+	@devices/default.py
+
+2 
+HªdËr
+  
+deviû
+ 
+	gšfÜm©iÚ
+.
+
+4 
+Some
+ 
+deviûs
+ 
+»quœe
+ 
+v”y
+ 
+¥ecific
+ 
+šfÜm©iÚ
+ 
+ªd
+ 
+aùiÚ
+ 
+duršg
+ 
+ş›Á
+ 
+	gš‹¿ùiÚ
+.
+
+6 
+	gThe
+ "deviû hªdËrs" 
+´ovide
+ 
+a
+ 
+numb”
+ 
+of
+ 
+ÿÎbacks
+ 
+th©
+  
+the
+ 
+Ãûs§ry
+
+
+7 
+	gšfÜm©iÚ
+. 
+This
+ 
+®lows
+ 
+the
+ 
+ncş›Á
+ 
+code
+ 
+to
+ 
+m”–y
+ 
+ÿÎ
+ 
+upÚ
+ 
+this
+ 
+deviû
+ 
+	ghªdËr
+ -
+
+8 
+Úû
+ 
+	gcÚfigu»d
+ - 
+š¡—d
+ 
+of
+ 
+şu‰”šg
+ 
+™s
+ 
+code
+ 
+w™h
+ -
+	g¡©em’ts
+.
+
+10 
+	gIn™ŸÎy
+, 
+nÙ
+ 
+much
+ 
+is
+ 
+d—É
+ 
+w™h
+ 
+by
+ 
+the
+ 
+	ghªdËr
+. 
+	gHowev”
+, 
+š
+h
+	gfutu»
+, 
+as
+ 
+mÜe
+
+
+11 
+deviûs
+ 
+w™h
+ 
+¥ecific
+ 
+hªdlšg
+ 
+¬e
+ 
+	gadded
+, 
+mÜe
+ 
+hªdËrs
+ 
+ªd
+ mÜ
+funùiÚs
+ 
+should
+ 
+be
+
+
+12 
+im¶emem‹d
+ 
+	gh”e
+, 
+so
+ 
+th©
+ 
+the
+ 
+ncş›Á
+ 
+code
+ 
+ÿn
+ 
+u£
+ 
+the£
+ 
+ÿÎbacks
+ 
+to
+ 
+fl
+ 
+š
+he
+
+13 
+deviû
+ 
+¥ecific
+ 
+	gšfÜm©iÚ
+.
+
+15 
+NÙe
+ 
+th©
+ 
+´İ”
+ 
+	gimpÜt
+, 
+the
+ 
+şas¢ame
+ 
+has
+ 
+to
+ 
+	gbe
+:
+
+19 ...
+wh”e
+ <
+DeviûÇme
+> 
+is
+ 
+som‘hšg
+ 
+like
+ "DeçuÉ", "Nexus", 
+	g‘c
+.
+
+21 
+AÎ
+ 
+	gdeviû
+-
+¥ecific
+ 
+hªdËrs
+ 
+d”ive
+ 
+äom
+ 
+the
+ 
+	gDeçuÉDeviûHªdËr
+, 
+which
+ 
+im¶em’ts
+he
+
+22 
+g’”ic
+ 
+šfÜm©iÚ
+ 
+Ãeded
+ 
+š‹¿ùiÚ
+ 
+w™h
+ 
+a
+ 
+N‘cÚf
+ 
+	g£rv”
+.
+
+25 
+şass
+ 
+	$DeçuÉDeviûHªdËr
+(
+objeù
+):
+
+27 
+DeçuÉ
+ 
+hªdËr
+ 
+deviû
+ 
+¥ecific
+ 
+šfÜm©iÚ
+.
+
+30 #Defš
+the
+ 
+exem±
+ 
+”rÜ
+ 
+	`mes§ges
+ (
+tho£
+ 
+th©
+ 
+shouldn
+'t cause‡nƒxception).
+
+31 #Wd 
+ÿrds
+ 
+¬e
+ 
+possibË
+: 
+S¹
+ 
+ªd
+/
+Ü
+ 
+’d
+ 
+w™h
+ 
+a
+ '*' 
+to
+ 
+šdiÿ‹
+ 
+th©
+ 
+the
+ 
+‹xt
+
+
+32 #ÿÀ
+­³¬
+ 
+©
+ 
+the
+ 
+¡¬t
+,h
+’d
+ 
+Ü
+h
+middË
+ 
+of
+h
+”rÜ
+ 
+mes§ge
+ 
+to
+ 
+¡l
+
+
+33 #m©ch. 
+AÎ
+ 
+com·risÚs
+ 
+¬e
+ 
+š£ns™ive
+.
+
+34 
+_EXEMPT_ERRORS
+ = []
+
+36 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_·¿ms
+=
+NÚe
+):
+
+37 
+£lf
+.
+deviû_·¿ms
+ = device_params
+
+38 #Tuº 
+®l
+ 
+exem±
+ 
+”rÜs
+ 
+što
+ 
+low”
+ , 
+sšû
+ 
+we
+ 
+dÚ
+'t wanthose comparisons
+
+39 #tØ
+be
+ 
+£ns™ive
+ 
+Ï‹r
+ 
+Ú
+. 
+SÜt
+ 
+them
+ 
+što
+ 
+exaù
+ 
+m©ch
+, 
+wdÿrd
+ 
+¡¬t
+,
+
+40 #wdÿrd 
+’d
+, 
+ªd
+ 
+fuÎ
+ 
+wdÿrd
+ 
+ÿ‹gÜ›s
+, 
+d•’dšg
+ 
+Ú
+ 
+wh‘h”
+ 
+they
+ 
+¡¬t
+
+
+41 #ªd/
+Ü
+ 
+’d
+ 
+w™h
+ 
+a
+ '*'.
+
+42 
+£lf
+.
+_exem±_”rÜs_exaù_m©ch
+ = []
+
+43 
+£lf
+.
+_exem±_”rÜs_¡¬tw™h_wdÿrd_m©ch
+ = []
+
+44 
+£lf
+.
+_exem±_”rÜs_’dw™h_wdÿrd_m©ch
+ = []
+
+45 
+£lf
+.
+_exem±_”rÜs_fuÎ_wdÿrd_m©ch
+ = []
+
+46 
+i
+ 
+š
+ 
+	`x¿nge
+(
+	$Ën
+(
+£lf
+.
+_EXEMPT_ERRORS
+)):
+
+47 
+e
+ = 
+£lf
+.
+_EXEMPT_ERRORS
+[
+i
+].
+	$low”
+()
+
+48 
+e
+.
+	`¡¬tsw™h
+("*"):
+
+49 
+e
+.
+	`’dsw™h
+("*"):
+
+50 
+£lf
+.
+_exem±_”rÜs_fuÎ_wdÿrd_m©ch
+.
+	`­³nd
+(
+e
+[1:-1])
+
+52 
+£lf
+.
+_exem±_”rÜs_¡¬tw™h_wdÿrd_m©ch
+.
+	$­³nd
+(
+e
+[1:])
+
+53 
+–if
+ 
+e
+.
+	`’dsw™h
+("*"):
+
+54 
+£lf
+.
+_exem±_”rÜs_’dw™h_wdÿrd_m©ch
+.
+	`­³nd
+(
+e
+[:-1])
+
+56 
+£lf
+.
+_exem±_”rÜs_exaù_m©ch
+.
+	$­³nd
+(
+e
+)
+
+59 
+def
+ 
+	$add_add™iÚ®_ssh_cÚÃù_·¿ms
+(
+£lf
+, 
+kw¬gs
+):
+
+61 
+Add
+ 
+deviû
+ 
+¥ecific
+ 
+·¿m‘”s
+ 
+the
+ 
+SSH
+ 
+cÚÃù
+.
+
+63 
+Pass
+ 
+š
+ 
+the
+ 
+keywÜd
+-
+¬gum’t
+ 
+diùiÚ¬y
+ th
+SSH
+ 
+cÚÃù
+ 
+ÿÎ
+. 
+The
+
+
+64 
+diùiÚ¬y
+ 
+wl
+ 
+be
+ 
+	`modif›d
+ (!è
+w™h
+ 
+the
+ 
+add™iÚ®
+ 
+deviû
+-
+¥ecific
+ 
+·¿m‘”s
+.
+
+67 
+·ss
+
+
+70 
+def
+ 
+	$g‘_ÿ·b™›s
+(
+£lf
+):
+
+72 
+R‘uº
+ 
+the
+ 
+ÿ·b™y
+ 
+li¡
+.
+
+74 
+A
+ 
+li¡
+ 
+of
+ 
+URI
+' »´e£Ášghş›Á'
+s
+ 
+ÿ·b™›s
+. 
+This
+ 
+is
+ 
+u£d
+ 
+duršg
+
+
+75 
+the
+ 
+š™Ÿl
+ 
+ÿ·b™y
+ 
+exchªge
+. 
+	`Modify
+ (
+š
+ 
+a
+ 
+Ãw
+ 
+deviû
+-
+hªdËr
+ 
+subşass
+)
+
+76 
+as
+ 
+Ãeded
+.
+
+93 
+def
+ 
+	$g‘_xml_ba£_Çme¥aû_diù
+(
+£lf
+):
+
+95 
+A
+ 
+diùiÚ¬y
+ 
+cÚššg
+ 
+the
+ 
+ba£
+ 
+Çme¥aû
+.
+
+97 
+FÜ
+ 
+lxml
+' nsm­,hba£‚ame¥aû should hav¨'
+NÚe
+' key.
+
+100 
+NÚe
+: "... base‚amespace... "
+
+101 
+	}
+}
+
+103 
+If
+ 
+no
+ 
+ba£
+ 
+Çme¥aû
+ 
+is
+ 
+Ãeded
+, 
+ª
+ 
+em±y
+ 
+diùiÚ¬y
+ 
+should
+ 
+be
+
+
+104 
+	g»tuºed
+.
+
+109 
+def
+ 
+	$g‘_xml_exŒa_´efix_kw¬gs
+(
+£lf
+):
+
+111 
+R‘uº
+ 
+ªy
+ 
+exŒa
+ 
+´efix
+ 
+th©
+ 
+should
+ 
+be
+ 
+£Á
+ 
+w™h
+ 
+—ch
+ 
+RPC
+ 
+»que¡
+.
+
+113 
+Sšû
+ 
+the£
+ 
+¬e
+ 
+u£d
+ 
+as
+ 
+kw¬gs
+, 
+the
+ 
+funùiÚ
+ 
+should
+ 
+
+114 
+e™h”
+ 
+ª
+ 
+em±y
+ 
+diùiÚ¬y
+ 
+th”e
+ 
+¬e
+ 
+no
+ 
+add™iÚ®
+ 
+¬gum’ts
+,
+
+115 
+Ü
+ 
+a
+ 
+diùiÚ¬y
+ 
+w™h
+ 
+keywÜd
+ 
+·¿m‘”s
+ 
+su™abË
+ 
+fo
+ 
+the
+ 
+	$EËm’t
+()
+
+116 
+funùiÚ
+. 
+Mo¡ly
+, 
+this
+ 
+is
+ 
+the
+ "nsm­" 
+¬gum’t
+.
+
+120 ... 
+Çme¥aû
+ 
+defš™iÚs
+ ...
+
+122 
+	}
+}
+
+127 
+def
+ 
+	$g‘_ssh_subsy¡em_Çmes
+(
+£lf
+):
+
+129 
+R‘uº
+ 
+a
+ 
+li¡
+ 
+of
+ 
+Çmes
+ 
+to
+ 
+Œy
+ 
+the
+ 
+SSH
+ 
+subsy¡ems
+.
+
+131 
+This
+ 
+®ways
+ 
+»tuºs
+ 
+a
+ 
+li¡
+, 
+ev’
+ 
+Úly
+‡ 
+sšgË
+ 
+subsy¡em
+ 
+Çme
+ 
+is
+ 
+u£d
+.
+
+133 
+If
+ 
+the
+ 
+»tuºed
+ 
+li¡
+ 
+cÚšs
+ 
+muÉË
+ 
+Çmes
+ 
+th’
+h
+v¬ious
+ 
+subsy¡ems
+ 
+¬e
+
+
+134 
+Œ›d
+ 
+š
+ 
+Üd”
+, 
+uÁ
+ 
+Úe
+ 
+of
+ 
+them
+ 
+ÿn
+ 
+sucûssfuÎy
+ 
+cÚÃù
+.
+
+139 
+def
+ 
+	$is_½c_”rÜ_exem±
+(
+£lf
+, 
+”rÜ_‹xt
+):
+
+141 
+Check
+ 
+wh‘h”
+ 
+ª
+ 
+RPC
+ 
+”rÜ
+ 
+mes§ge
+ 
+is
+ 
+exûm±
+, 
+thus
+ 
+NOT
+ 
+ÿusšg
+‡À
+exû±iÚ
+.
+
+143 
+On
+ 
+some
+ 
+deviûs
+ 
+the
+ 
+RPC
+ 
+İ”©iÚs
+ 
+may
+ 
+šdiÿ‹
+ 
+ª
+ 
+”rÜ
+ 
+»¥Ú£
+, 
+ev’
+ 
+though
+
+
+144 
+the
+ 
+İ”©iÚ
+ 
+aùu®ly
+ 
+sucûeded
+. 
+This
+ 
+may
+ 
+be
+ 
+š
+ 
+ÿ£s
+ 
+wh”e
+ 
+a
+ 
+w¬nšg
+ 
+would
+ be
+
+145 
+mÜe
+ 
+­´İrŸ‹
+. 
+In
+ 
+th©
+ , 
+the
+ 
+ş›Á
+ 
+may
+ 
+be
+ 
+b‘‹r
+ 
+advi£d
+ 
+to
+ 
+sim¶y
+
+
+146 
+ignÜe
+ 
+th©
+ 
+”rÜ
+ 
+ªd
+ 
+nÙ
+ 
+¿i£
+ 
+ª
+ 
+exû±iÚ
+.
+
+148 
+NÙe
+ 
+th©
+ 
+th”e
+ 
+is
+ 
+®so
+ 
+the
+ "¿i£_mode", 
+£t
+ 
+Ú
+ 
+£ssiÚ
+ 
+ªd
+ 
+mªag”
+, 
+which
+
+
+149 
+cÚŒŞs
+ 
+the
+ 
+exû±iÚ
+-
+¿isšg
+ 
+behaviour
+ 
+š
+ 
+of
+ 
+»tuºed
+ 
+”rÜs
+. 
+This
+ 
+”rÜ
+
+
+150 
+f‹r
+ 
+h”e
+ 
+is
+ 
+šd•’d’t
+ 
+of
+ 
+th©
+: 
+No
+ 
+m©‹r
+ 
+wh©
+ 
+the
+ 
+¿i£_mode
+ 
+§ys
+, the
+
+151 
+”rÜ
+ 
+mes§ge
+ 
+m©ches
+ 
+Úe
+ 
+of
+ 
+the
+ 
+exem±
+ 
+”rÜs
+ 
+»tuºed
+ 
+h”e
+, 
+ª
+ 
+exû±iÚ
+
+
+152 
+wl
+ 
+nÙ
+ 
+be
+ 
+¿i£d
+.
+
+154 
+The
+ 
+exem±
+ 
+”rÜ
+ 
+mes§ges
+ 
+¬e
+ 
+defšed
+ 
+š
+ 
+the
+ 
+_EXEMPT_ERRORS
+ 
+f›ld
+ 
+of
+h
+deviû
+
+
+155 
+hªdËr
+ 
+objeù
+ 
+ªd
+ 
+ÿn
+ 
+be
+ 
+ov”wr™‹n
+ 
+by
+ 
+chd
+ 
+şas£s
+. 
+Wd
+ 
+ÿrds
+ 
+¬e
+
+
+156 
+possibË
+: 
+S¹
+ 
+ªd
+/
+Ü
+ 
+’d
+ 
+w™h
+ 
+a
+ '*' 
+to
+ 
+šdiÿ‹
+ 
+th©
+ 
+the
+ 
+‹xt
+ 
+ÿn
+ 
+­³¬
+ 
+©
+
+
+157 
+the
+ 
+¡¬t
+,h
+’d
+ 
+Ü
+h
+middË
+ 
+of
+h
+”rÜ
+ 
+mes§ge
+ 
+to
+ 
+¡l
+ 
+m©ch
+. 
+AÎ
+
+
+158 
+com·risÚs
+ 
+¬e
+ 
+š£ns™ive
+.
+
+160 
+R‘uº
+ 
+True
+/
+F®£
+ 
+d•’dšg
+ 
+Ú
+ 
+found
+ 
+m©ch
+.
+
+163 
+”rÜ_‹xt
+ =ƒ¼Ü_‹xt.
+	`low”
+().
+	$¡r
+()
+
+165 #Com·» 
+the
+ 
+”rÜ
+ 
+‹xt
+ 
+agaš¡
+ 
+®l
+h
+exem±
+ 
+”rÜs
+.
+
+166 
+ex
+ 
+š
+ 
+£lf
+.
+_exem±_”rÜs_exaù_m©ch
+:
+
+167 
+”rÜ_‹xt
+ =ğ
+ex
+:
+
+168  
+True
+
+
+170 
+ex
+ 
+š
+ 
+£lf
+.
+_exem±_”rÜs_¡¬tw™h_wdÿrd_m©ch
+:
+
+171 
+”rÜ_‹xt
+.
+	$’dsw™h
+(
+ex
+):
+
+172  
+True
+
+
+174 
+ex
+ 
+š
+ 
+£lf
+.
+_exem±_”rÜs_’dw™h_wdÿrd_m©ch
+:
+
+175 
+”rÜ_‹xt
+.
+	$¡¬tsw™h
+(
+ex
+):
+
+176  
+True
+
+
+178 
+ex
+ 
+š
+ 
+£lf
+.
+_exem±_”rÜs_fuÎ_wdÿrd_m©ch
+:
+
+179 
+ex
+ 
+š
+ 
+”rÜ_‹xt
+:
+
+180  
+True
+
+
+182  
+F®£
+
+
+185 
+def
+ 
+	$³rfÜm_qu®ify_check
+(
+£lf
+):
+
+187 
+Duršg
+ 
+RPC
+ 
+İ”©iÚs
+, 
+we
+ 
+³rfÜm
+ 
+some
+ 
+š™Ÿl
+ 
+§n™y
+ 
+checks
+ 
+Ú
+ 
+the
+ 
+»¥Ú£s
+.
+
+189 
+This
+ 
+check
+ 
+wl
+ 
+ç
+ 
+some
+ 
+deviûs
+, 
+š
+ 
+which
+ 
+this
+ 
+funùiÚ
+ 
+h”e
+ 
+should
+
+
+190  
+F®£
+ 
+š
+ 
+Üd”
+ 
+to
+ 
+sk
+ 
+the
+ 
+‹¡
+.
+
+193  
+True
+
+
+196 
+def
+ 
+	$add_add™iÚ®_İ”©iÚs
+(
+£lf
+):
+
+198 
+Add
+ 
+deviû
+/
+v’dÜ
+ 
+¥ecific
+ 
+İ”©iÚs
+.
+
+201  {
+	}
+}
+
+204 
+def
+ 
+	$hªdË_¿w_di¥©ch
+(
+£lf
+, 
+¿w
+):
+
+205  
+F®£
+
+
+208 
+def
+ 
+	$hªdË_cÚÃùiÚ_exû±iÚs
+(
+£lf
+, 
+ssh£ssiÚ
+):
+
+209  
+F®£
+
+
+212 
+def
+ 
+	$ŒªsfÜm_»¶y
+(
+£lf
+):
+
+213  
+F®£
+
+
+	@devices/huawei.py
+
+2 
+HªdËr
+ 
+Huawei
+ 
+deviû
+ 
+¥ecific
+ 
+	gšfÜm©iÚ
+.
+
+4 
+NÙe
+ 
+th©
+ 
+´İ”
+ 
+	gimpÜt
+, 
+the
+ 
+şas¢ame
+ 
+has
+ 
+to
+ 
+	gbe
+:
+
+8 ...
+wh”e
+ <
+DeviûÇme
+> 
+is
+ 
+som‘hšg
+ 
+like
+ "DeçuÉ", "Huawei", 
+	g‘c
+.
+
+10 
+AÎ
+ 
+	gdeviû
+-
+¥ecific
+ 
+hªdËrs
+ 
+d”ive
+ 
+äom
+ 
+the
+ 
+	gDeçuÉDeviûHªdËr
+, 
+which
+ 
+im¶em’ts
+he
+
+11 
+g’”ic
+ 
+šfÜm©iÚ
+ 
+Ãeded
+ 
+š‹¿ùiÚ
+ 
+w™h
+ 
+a
+ 
+N‘cÚf
+ 
+	g£rv”
+.
+
+15 
+äom
+ 
+	gncş›Á
+.
+xml_
+ 
+impÜt
+ 
+BASE_NS_1_0
+
+
+17 
+	gäom
+ . 
+impÜt
+ 
+DeçuÉDeviûHªdËr
+
+
+19 
+şass
+ 
+	$HuaweiDeviûHªdËr
+(
+DeçuÉDeviûHªdËr
+):
+
+21 
+Huawei
+ 
+hªdËr
+ 
+deviû
+ 
+¥ecific
+ 
+šfÜm©iÚ
+.
+
+23 
+In
+ 
+the
+ 
+deviû_·¿ms
+ 
+diùiÚ¬y
+, 
+which
+ 
+is
+ 
+·s£d
+ 
+to
+ 
+__š™__
+, 
+you
+ 
+ÿn
+ 
+¥ecify
+
+
+24 
+the
+ 
+·¿m‘”
+ "ssh_subsy¡em_Çme". 
+Th©
+ 
+®lows
+ 
+you
+ 
+to
+ 
+cÚfigu»
+h
+´eã¼ed
+
+
+25 
+SSH
+ 
+subsy¡em
+ 
+Çme
+ 
+th©
+ 
+should
+ 
+be
+ 
+Œ›d
+ 
+Ú
+ 
+your
+ 
+Huawei
+ . 
+If
+ 
+cÚÃùšg
+ 
+w™h
+
+
+26 
+th©
+ 
+Çme
+ 
+çs
+, 
+Ü
+ 
+you
+ 
+didn
+'t specifyhat‚ame,he other known subsystem‚ames
+
+27 
+wl
+ 
+be
+ 
+Œ›d
+. 
+Howev”
+, 
+you
+ 
+¥ecify
+ 
+™
+ 
+th’
+ 
+this
+ 
+Çme
+ wÈbŒ›d 
+fœ¡
+.
+
+30 
+_EXEMPT_ERRORS
+ = []
+
+32 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_·¿ms
+):
+
+33 
+	`su³r
+(
+HuaweiDeviûHªdËr
+, 
+£lf
+).
+	$__š™__
+(
+deviû_·¿ms
+)
+
+35 
+def
+ 
+	$g‘_ÿ·b™›s
+(
+£lf
+):
+
+36 #Ju¡ 
+Ãed
+ 
+to
+ 
+»¶aû
+ 
+a
+ 
+sšgË
+ 
+v®ue
+ 
+š
+ 
+the
+  
+ÿ·b™›s
+
+
+37 
+c
+ = 
+	`su³r
+(
+HuaweiDeviûHªdËr
+, 
+£lf
+).
+	$g‘_ÿ·b™›s
+()
+
+38  
+c
+
+
+40 
+def
+ 
+	$g‘_xml_ba£_Çme¥aû_diù
+(
+£lf
+):
+
+41  { "xmÊs":
+BASE_NS_1_0
+ 
+	}
+}
+
+43 
+def
+ 
+	$g‘_xml_exŒa_´efix_kw¬gs
+(
+£lf
+):
+
+44 
+d
+ = {
+
+45 #"
+xmÊs
+":"
+h‰p
+:
+
+46 
+	}
+}
+
+47 
+d
+.
+upd©e
+(
+£lf
+.
+	$g‘_xml_ba£_Çme¥aû_diù
+())
+
+48  
+d
+
+
+	@devices/junos.py
+
+2 
+HªdËr
+ 
+Jun”
+ 
+deviû
+ 
+¥ecific
+ 
+	gšfÜm©iÚ
+.
+
+4 
+NÙe
+ 
+th©
+ 
+´İ”
+ 
+	gimpÜt
+, 
+the
+ 
+şas¢ame
+ 
+has
+ 
+to
+ 
+	gbe
+:
+
+8 ...
+wh”e
+ <
+DeviûÇme
+> 
+is
+ 
+som‘hšg
+ 
+like
+ "DeçuÉ", "Junos", 
+	g‘c
+.
+
+10 
+AÎ
+ 
+	gdeviû
+-
+¥ecific
+ 
+hªdËrs
+ 
+d”ive
+ 
+äom
+ 
+the
+ 
+	gDeçuÉDeviûHªdËr
+, 
+which
+ 
+im¶em’ts
+he
+
+11 
+g’”ic
+ 
+šfÜm©iÚ
+ 
+Ãeded
+ 
+š‹¿ùiÚ
+ 
+w™h
+ 
+a
+ 
+N‘cÚf
+ 
+	g£rv”
+.
+
+15 
+	gäom
+ . 
+impÜt
+ 
+DeçuÉDeviûHªdËr
+
+
+16 
+äom
+ 
+	gncş›Á
+.
+	gİ”©iÚs
+.
+	gthœd_·¹y
+.
+	gjun”
+.
+½c
+ 
+impÜt
+ 
+	gG‘CÚfigu¿tiÚ
+, 
+	gLßdCÚfigu¿tiÚ
+, 
+Com·»CÚfigu¿tiÚ
+
+
+17 
+äom
+ 
+	gncş›Á
+.
+	gİ”©iÚs
+.
+	gthœd_·¹y
+.
+	gjun”
+.
+½c
+ 
+impÜt
+ 
+	gExecu‹Rpc
+, 
+	gCommªd
+, 
+	gReboÙ
+, 
+	gH®t
+, 
+Comm™
+
+
+19 
+şass
+ 
+	$JunosDeviûHªdËr
+(
+DeçuÉDeviûHªdËr
+):
+
+21 
+Jun”
+ 
+hªdËr
+ 
+deviû
+ 
+¥ecific
+ 
+šfÜm©iÚ
+.
+
+24 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_·¿ms
+):
+
+25 
+	`su³r
+(
+JunosDeviûHªdËr
+, 
+£lf
+).
+	$__š™__
+(
+deviû_·¿ms
+)
+
+27 
+def
+ 
+	$add_add™iÚ®_İ”©iÚs
+(
+£lf
+):
+
+28 
+diù
+ = {
+	}
+}
+
+29 
+diù
+["½c"] = 
+Execu‹Rpc
+
+
+30 
+diù
+["g‘_cÚfigu¿tiÚ"] = 
+G‘CÚfigu¿tiÚ
+
+
+31 
+diù
+["lßd_cÚfigu¿tiÚ"] = 
+LßdCÚfigu¿tiÚ
+
+
+32 
+diù
+["com·»_cÚfigu¿tiÚ"] = 
+Com·»CÚfigu¿tiÚ
+
+
+33 
+diù
+["commªd"] = 
+Commªd
+
+
+34 
+diù
+["»boÙ"] = 
+ReboÙ
+
+
+35 
+diù
+["h®t"] = 
+H®t
+
+
+36 
+diù
+["comm™"] = 
+Comm™
+
+
+37  
+diù
+
+
+39 
+def
+ 
+	$³rfÜm_qu®ify_check
+(
+£lf
+):
+
+40  
+F®£
+
+
+42 
+def
+ 
+	$hªdË_¿w_di¥©ch
+(
+£lf
+, 
+¿w
+):
+
+43 'routšg-’gše' 
+š
+ 
+¿w
+:
+
+44 
+¿w
+ = 
+»
+.
+	`sub
+(
+r
+'<ok/>', '</routing-engine>\n<ok/>',„aw)
+
+45  
+¿w
+
+
+47  
+F®£
+
+
+49 
+def
+ 
+	$hªdË_cÚÃùiÚ_exû±iÚs
+(
+£lf
+, 
+ssh£ssiÚ
+):
+
+50 
+c
+ = 
+ssh£ssiÚ
+.
+_chªÃl
+ = ssh£ssiÚ.
+_Œª¥Üt
+.
+	`İ’_chªÃl
+(
+kšd
+="session")
+
+51 
+c
+.
+	`£t_Çme
+("ÃtcÚf-commªd-" + 
+	$¡r
+(
+ssh£ssiÚ
+.
+_chªÃl_id
+))
+
+52 
+c
+.
+	`exec_commªd
+("xml-mode‚etconf‚eed-trailer")
+
+53  
+True
+
+
+55 
+def
+ 
+	$ŒªsfÜm_»¶y
+(
+£lf
+):
+
+57 <
+x¦
+:
+ouut
+ 
+m‘hod
+="xml" 
+šd’t
+="no"/>
+
+59 <
+x¦
+:
+‹m¶©e
+ 
+m©ch
+="/|comment()|processing-instruction()">
+
+60 <
+x¦
+:
+cİy
+>
+
+61 <
+x¦
+:
+­¶y
+-
+‹m¶©es
+/>
+
+62 </
+x¦
+:
+cİy
+>
+
+63 </
+x¦
+:
+‹m¶©e
+>
+
+65 <
+x¦
+:
+‹m¶©e
+ 
+m©ch
+="*">
+
+66 <
+x¦
+:
+–em’t
+ 
+Çme
+="{local-name()}">
+
+67 <
+x¦
+:
+­¶y
+-
+‹m¶©es
+ 
+£Ëù
+="@*|node()"/>
+
+68 </
+x¦
+:
+–em’t
+>
+
+69 </
+x¦
+:
+‹m¶©e
+>
+
+71 <
+x¦
+:
+‹m¶©e
+ 
+m©ch
+="@*">
+
+72 <
+x¦
+:
+©Œibu‹
+ 
+Çme
+="{local-name()}">
+
+73 <
+x¦
+:
+v®ue
+-
+of
+ 
+£Ëù
+="."/>
+
+74 </
+x¦
+:
+©Œibu‹
+>
+
+75 </
+x¦
+:
+‹m¶©e
+>
+
+76 </
+x¦
+:
+¡yËsh“t
+>
+
+	@devices/nexus.py
+
+2 
+HªdËr
+ 
+Cisco
+ 
+Nexus
+ 
+deviû
+ 
+¥ecific
+ 
+	gšfÜm©iÚ
+.
+
+4 
+NÙe
+ 
+th©
+ 
+´İ”
+ 
+	gimpÜt
+, 
+the
+ 
+şas¢ame
+ 
+has
+ 
+to
+ 
+	gbe
+:
+
+8 ...
+wh”e
+ <
+DeviûÇme
+> 
+is
+ 
+som‘hšg
+ 
+like
+ "DeçuÉ", "Nexus", 
+	g‘c
+.
+
+10 
+AÎ
+ 
+	gdeviû
+-
+¥ecific
+ 
+hªdËrs
+ 
+d”ive
+ 
+äom
+ 
+the
+ 
+	gDeçuÉDeviûHªdËr
+, 
+which
+ 
+im¶em’ts
+he
+
+11 
+g’”ic
+ 
+šfÜm©iÚ
+ 
+Ãeded
+ 
+š‹¿ùiÚ
+ 
+w™h
+ 
+a
+ 
+N‘cÚf
+ 
+	g£rv”
+.
+
+15 
+äom
+ 
+	gncş›Á
+.
+xml_
+ 
+impÜt
+ 
+BASE_NS_1_0
+
+
+16 
+äom
+ 
+	gncş›Á
+.
+	gİ”©iÚs
+.
+	gthœd_·¹y
+.
+	gÃxus
+.
+½c
+ 
+impÜt
+ 
+ExecCommªd
+
+
+18 
+	gäom
+ . 
+impÜt
+ 
+DeçuÉDeviûHªdËr
+
+
+20 
+şass
+ 
+	$NexusDeviûHªdËr
+(
+DeçuÉDeviûHªdËr
+):
+
+22 
+Cisco
+ 
+Nexus
+ 
+hªdËr
+ 
+deviû
+ 
+¥ecific
+ 
+šfÜm©iÚ
+.
+
+24 
+In
+ 
+the
+ 
+deviû_·¿ms
+ 
+diùiÚ¬y
+, 
+which
+ 
+is
+ 
+·s£d
+ 
+to
+ 
+__š™__
+, 
+you
+ 
+ÿn
+ 
+¥ecify
+
+
+25 
+the
+ 
+·¿m‘”
+ "ssh_subsy¡em_Çme". 
+Th©
+ 
+®lows
+ 
+you
+ 
+to
+ 
+cÚfigu»
+h
+´eã¼ed
+
+
+26 
+SSH
+ 
+subsy¡em
+ 
+Çme
+ 
+th©
+ 
+should
+ 
+be
+ 
+Œ›d
+ 
+Ú
+ 
+your
+ 
+Nexus
+ . 
+If
+ 
+cÚÃùšg
+ 
+w™h
+
+
+27 
+th©
+ 
+Çme
+ 
+çs
+, 
+Ü
+ 
+you
+ 
+didn
+'t specifyhat‚ame,he other known subsystem‚ames
+
+28 
+wl
+ 
+be
+ 
+Œ›d
+. 
+Howev”
+, 
+you
+ 
+¥ecify
+ 
+™
+ 
+th’
+ 
+this
+ 
+Çme
+ wÈbŒ›d 
+fœ¡
+.
+
+31 
+_EXEMPT_ERRORS
+ = [
+
+32 "*VLAN w™hh§mÇmexi¡s*", #»tuºed 
+ev’
+ 
+VLAN
+ 
+was
+ 
+ü—‹d
+, 
+but
+
+
+33 #Çm
+was
+ 
+®»ady
+ 
+š
+ 
+	`u£
+ (
+wl
+
+
+34 #autom©iÿÎy 
+choo£
+ 
+difã»Á
+, 
+unique
+
+
+35 #Çm
+VLAN
+)
+
+38 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_·¿ms
+):
+
+39 
+	`su³r
+(
+NexusDeviûHªdËr
+, 
+£lf
+).
+	$__š™__
+(
+deviû_·¿ms
+)
+
+41 
+def
+ 
+	$add_add™iÚ®_İ”©iÚs
+(
+£lf
+):
+
+42 
+diù
+ = {
+	}
+}
+
+43 
+diù
+['exec_commªd'] = 
+ExecCommªd
+
+
+44  
+diù
+
+
+46 
+def
+ 
+	$g‘_ÿ·b™›s
+(
+£lf
+):
+
+47 #Ju¡ 
+Ãed
+ 
+to
+ 
+»¶aû
+ 
+a
+ 
+sšgË
+ 
+v®ue
+ 
+š
+ 
+the
+  
+ÿ·b™›s
+
+
+48 
+c
+ = 
+	`su³r
+(
+NexusDeviûHªdËr
+, 
+£lf
+).
+	$g‘_ÿ·b™›s
+()
+
+49 
+c
+[0] = "urn:ietf:params:xml:ns:netconf:base:1.0"
+
+50  
+c
+
+
+52 
+def
+ 
+	$g‘_xml_ba£_Çme¥aû_diù
+(
+£lf
+):
+
+54 
+Ba£
+ 
+Çme¥aû
+ 
+Ãeds
+ 
+a
+ 
+NÚe
+ 
+key
+.
+
+56 
+S“
+ 'nsm­' 
+¬gum’t
+ 
+lxml
+'s Element().
+
+59  { 
+NÚe
+ : 
+BASE_NS_1_0
+ 
+	}
+}
+
+61 
+def
+ 
+	$g‘_xml_exŒa_´efix_kw¬gs
+(
+£lf
+):
+
+63 
+R‘uº
+ 
+keywÜd
+ 
+¬gum’ts
+ 
+³r
+ 
+»que¡
+, 
+which
+ 
+¬e
+ 
+­¶›d
+ 
+to
+ 
+	`EËm’t
+().
+
+65 
+Mo¡ly
+, 
+this
+ 
+is
+ 
+a
+ 
+diùiÚ¬y
+ 
+cÚššg
+ 
+the
+ "nsm­" 
+key
+.
+
+67 
+S“
+ 'nsm­' 
+¬gum’t
+ 
+lxml
+'s Element().
+
+70 
+d
+ = {
+
+75 
+	}
+}
+
+76 
+d
+.
+upd©e
+(
+£lf
+.
+	$g‘_xml_ba£_Çme¥aû_diù
+())
+
+77  { "nsm­" : 
+d
+ 
+	}
+}
+
+79 
+def
+ 
+	$g‘_ssh_subsy¡em_Çmes
+(
+£lf
+):
+
+81 
+R‘uº
+ 
+a
+ 
+li¡
+ 
+of
+ 
+possibË
+ 
+SSH
+ 
+subsy¡em
+ 
+Çmes
+.
+
+83 
+Difã»Á
+ 
+NXOS
+ 
+v”siÚs
+ 
+u£
+ 
+difã»Á
+ 
+SSH
+ 
+subsy¡em
+ 
+Çmes
+ 
+ÃtcÚf
+.
+
+84 
+Th”efÜe
+, 
+we
+  
+a
+ 
+li¡
+ 
+so
+ 
+th©
+ 
+£v”®
+ 
+ÿn
+ 
+be
+ 
+Œ›d
+, 
+Ãûs§ry
+.
+
+86 
+The
+ 
+Nexus
+ 
+deviû
+ 
+hªdËr
+ 
+®so
+ 
+acû±s
+
+
+89 
+´eã¼ed_ssh_subsy¡em
+ = 
+£lf
+.
+deviû_·¿ms
+.
+	`g‘
+("ssh_subsystem_name")
+
+90 
+Çme_li¡
+ = [ "netconf", "xmlagent" ]
+
+91 
+´eã¼ed_ssh_subsy¡em
+:
+
+92  [ 
+´eã¼ed_ssh_subsy¡em
+ ] + \
+
+93 [ 
+n
+ À
+š
+ 
+Çme_li¡
+ À!ğ
+´eã¼ed_ssh_subsy¡em
+ ]
+
+95  
+Çme_li¡
+
+
+	@manager.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #Cİyrighˆ2011 
+LeÚidas
+ 
+Poulİoulos
+
+
+3 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+5 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+6 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+9 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+11 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+12 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+13 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+14 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+17 
+This
+ 
+moduË
+ 
+is
+ 
+a
+ 
+thš
+ 
+Ïy”
+ 
+of
+ 
+ab¡¿ùiÚ
+ 
+¬ound
+ 
+the
+ 
+	glib¿ry
+.
+
+18 
+It
+ 
+expo£s
+ 
+®l
+ 
+cÜe
+ 
+	gfunùiÚ®™y
+.
+
+21 
+impÜt
+ 
+ÿ·b™›s
+
+
+22 
+impÜt
+ 
+İ”©iÚs
+
+
+23 
+impÜt
+ 
+Œª¥Üt
+
+
+25 
+impÜt
+ 
+loggšg
+
+
+27 
+äom
+ 
+	gncş›Á
+.
+xml_
+ 
+impÜt
+ *
+
+28 
+äom
+ 
+	gncş›Á
+.
+	gİ”©iÚs
+.
+	gthœd_·¹y
+.
+	gjun”
+.
+½c
+ 
+impÜt
+ 
+Execu‹Rpc
+
+
+30 
+	glogg”
+ = 
+loggšg
+.
+g‘Logg”
+('ncclient.manager')
+
+32 
+OPERATIONS
+ = {
+
+33 "g‘": 
+İ”©iÚs
+.
+G‘
+,
+
+34 "g‘_cÚfig": 
+İ”©iÚs
+.
+G‘CÚfig
+,
+
+35 "di¥©ch": 
+İ”©iÚs
+.
+Di¥©ch
+,
+
+36 "ed™_cÚfig": 
+İ”©iÚs
+.
+Ed™CÚfig
+,
+
+37 "cİy_cÚfig": 
+İ”©iÚs
+.
+CİyCÚfig
+,
+
+38 "v®id©e": 
+İ”©iÚs
+.
+V®id©e
+,
+
+39 "comm™": 
+İ”©iÚs
+.
+Comm™
+,
+
+40 "disÿrd_chªges": 
+İ”©iÚs
+.
+DisÿrdChªges
+,
+
+41 "d–‘e_cÚfig": 
+İ”©iÚs
+.
+D–‘eCÚfig
+,
+
+42 "lock": 
+İ”©iÚs
+.
+Lock
+,
+
+43 "uÆock": 
+İ”©iÚs
+.
+UÆock
+,
+
+44 "şo£_£ssiÚ": 
+İ”©iÚs
+.
+Clo£SessiÚ
+,
+
+45 "kl_£ssiÚ": 
+İ”©iÚs
+.
+KlSessiÚ
+,
+
+46 "pow”off_machše": 
+İ”©iÚs
+.
+Pow”offMachše
+,
+
+47 "»boÙ_machše": 
+İ”©iÚs
+.
+ReboÙMachše
+,
+
+51 
+DiùiÚ¬y
+ 
+of
+ 
+ba£
+ 
+m‘hod
+ 
+Çmes
+ 
+ªd
+ 
+cÜ»¥Údšg
+ :
+şass
+:`~
+ncş›Á
+.
+İ”©iÚs
+.
+RPC
+`
+
+52 
+subşas£s
+. 
+It
+ 
+is
+ 
+u£d
+ 
+to
+ 
+lookup
+ 
+İ”©iÚs
+, 
+	ge
+.
+	gg
+. `
+	gg‘_cÚfig
+` i 
+m­³d
+ 
+	gto
+
+
+53 :
+şass
+:`~
+ncş›Á
+.
+İ”©iÚs
+.
+G‘CÚfig
+`. 
+It
+ 
+is
+ 
+thus
+ 
+possibË
+ 
+to
+ 
+add
+ 
+add™iÚ®
+
+
+54 
+İ”©iÚs
+ 
+to
+ 
+the
+ :
+şass
+:`
+Mªag”
+` 
+API
+.
+
+57 
+VENDOR_OPERATIONS
+ = {}
+
+60 
+def
+ 
+	$make_deviû_hªdËr
+(
+deviû_·¿ms
+):
+
+62 
+C»©e
+ 
+a
+ 
+deviû
+ 
+hªdËr
+ 
+objeù
+ 
+th©
+ 
+´ovides
+ deviû 
+¥ecific
+ 
+·¿m‘”s
+ 
+ªd
+
+
+63 
+funùiÚs
+, 
+which
+ 
+¬e
+ 
+ÿÎed
+ 
+š
+ 
+v¬ious
+ 
+¶aûs
+ 
+throughout
+ 
+our
+ 
+code
+.
+
+65 
+If
+ 
+no
+ 
+deviû_·¿ms
+ 
+¬e
+ 
+defšed
+ 
+Ü
+ 
+the
+ "Çme" 
+š
+h
+·¿m‘”
+ 
+diù
+ 
+is
+ 
+nÙ
+
+
+66 
+known
+ 
+th’
+ 
+a
+  
+hªdËr
+ 
+wl
+ 
+be
+ 
+»tuºed
+.
+
+69 
+deviû_·¿ms
+ 
+is
+ 
+NÚe
+:
+
+70 
+deviû_·¿ms
+ = {
+	}
+}
+
+72 
+deviû_Çme
+ = 
+deviû_·¿ms
+.
+g‘
+("name", "default")
+
+73 #A‰em± 
+to
+ 
+impÜt
+ 
+deviû
+ 
+hªdËr
+ 
+şass
+. 
+AÎ
+ deviû 
+hªdËrs
+ 
+¬e
+
+
+74 #š 
+a
+ 
+moduË
+ 
+ÿÎed
+ "ncş›Á.deviûs.<deviûÇme>" 
+ªd
+ 
+š
+‡ 
+şass
+ 
+Çmed
+
+
+75 #"<
+deviûÇme
+>
+DeviûHªdËr
+", withhe first†etter capitalized.
+
+76 
+	gşass_Çme
+ = "%sDeviûHªdËr" % 
+deviû_Çme
+.
+	$ÿp™®ize
+()
+
+77 
+deviûs_moduË_Çme
+ = "ncş›Á.deviûs.%s" % 
+deviû_Çme
+
+
+78 
+dev_moduË_obj
+ = 
+	$__impÜt__
+(
+deviûs_moduË_Çme
+)
+
+79 
+hªdËr_moduË_obj
+ = 
+	`g‘©Œ
+(g‘©Œ(
+dev_moduË_obj
+, "deviûs"), 
+deviû_Çme
+)
+
+80 
+şass_obj
+ = 
+	$g‘©Œ
+(
+hªdËr_moduË_obj
+, 
+şass_Çme
+)
+
+81 
+hªdËr_obj
+ = 
+	$şass_obj
+(
+deviû_·¿ms
+)
+
+82  
+hªdËr_obj
+
+
+85 
+def
+ 
+	$cÚÃù_ssh
+(*
+¬gs
+, **
+kwds
+):
+
+87 
+In™Ÿlize
+ 
+a
+ :
+şass
+:`
+Mªag”
+` 
+ov”
+ 
+the
+ 
+SSH
+ 
+Œª¥Üt
+.
+
+88 
+FÜ
+ 
+docum’tiÚ
+ 
+of
+ 
+¬gum’ts
+ 
+£e
+ :
+m‘h
+:`
+ncş›Á
+.
+Œª¥Üt
+.
+SSHSessiÚ
+.
+cÚÃù
+`.
+
+90 
+The
+ 
+und”lyšg
+ :
+şass
+:`
+ncş›Á
+.
+Œª¥Üt
+.
+SSHSessiÚ
+` 
+is
+ 
+ü—‹d
+ 
+w™h
+
+
+91 :
+d©a
+:`
+CAPABILITIES
+`. 
+It
+ 
+is
+ 
+fœ¡
+ 
+š¡ruùed
+ 
+to
+
+
+92 :
+m‘h
+:`~
+ncş›Á
+.
+Œª¥Üt
+.
+SSHSessiÚ
+.
+lßd_known_ho¡s
+` 
+ªd
+ 
+th’
+
+
+93 
+®l
+ 
+the
+ 
+´ovided
+ 
+¬gum’ts
+ 
+¬e
+ 
+·s£d
+ 
+dœeùly
+ 
+to
+ 
+™s
+ 
+im¶em’tiÚ
+
+
+94 
+of
+ :
+m‘h
+:`~
+ncş›Á
+.
+Œª¥Üt
+.
+SSHSessiÚ
+.
+cÚÃù
+`.
+
+96 
+To
+ 
+švoke
+ 
+advªûd
+ 
+v’dÜ
+ 
+»Ï‹d
+ 
+İ”©iÚ
+ 
+add
+ 
+deviû_·¿ms
+ =
+
+97 {'Çme':'<v’dÜ_®Ÿs>'
+	}
+} 
+š
+ 
+cÚÃùiÚ
+ 
+·¿m””s
+. 
+FÜ
+ 
+the
+ 
+time
+,
+
+98 'junos' 
+	gªd
+ 'Ãxus' 
+¬e
+ 
+suµÜ‹d
+ 
+Jun”
+ 
+ªd
+ 
+Cisco
+ 
+Nexus
+ 
+	g»¥eùiv–y
+.
+
+100 #ExŒaù 
+deviû
+ 
+·¿m‘”
+ 
+diù
+, 
+™
+ 
+was
+ 
+·s£d
+ 
+što
+ 
+this
+ 
+funùiÚ
+. 
+N“d
+ 
+to
+
+
+101 #»mov
+™
+ 
+äom
+ 
+kwds
+, 
+sšû
+ 
+the
+ 
+£ssiÚ
+.
+cÚÃù
+(è
+dÛ¢
+'t†ikeƒxtra stuff in
+
+103 "deviû_·¿ms" 
+š
+ 
+	gkwds
+:
+
+104 
+deviû_·¿ms
+ = 
+kwds
+["device_params"]
+
+105 
+d–
+ 
+kwds
+["device_params"]
+
+107 
+deviû_·¿ms
+ = 
+NÚe
+
+
+109 
+deviû_hªdËr
+ = 
+	$make_deviû_hªdËr
+(
+deviû_·¿ms
+)
+
+110 
+deviû_hªdËr
+.
+	$add_add™iÚ®_ssh_cÚÃù_·¿ms
+(
+kwds
+)
+
+111 
+glob®
+ 
+VENDOR_OPERATIONS
+
+
+112 
+VENDOR_OPERATIONS
+.
+	`upd©e
+(
+deviû_hªdËr
+.
+	$add_add™iÚ®_İ”©iÚs
+())
+
+113 
+£ssiÚ
+ = 
+Œª¥Üt
+.
+	$SSHSessiÚ
+(
+deviû_hªdËr
+)
+
+114 
+£ssiÚ
+.
+	$lßd_known_ho¡s
+()
+
+116 
+Œy
+:
+
+117 
+£ssiÚ
+.
+	$cÚÃù
+(*
+¬gs
+, **
+kwds
+)
+
+118 
+´št
+ "connectok"
+
+119 
+exû±
+ 
+Exû±iÚ
+ 
+as
+ 
+ex
+:
+
+120 
+£ssiÚ
+.
+Œª¥Üt
+:
+
+121 
+£ssiÚ
+.
+	$şo£
+()
+
+122 
+¿i£
+ 
+ex
+
+
+123  
+	$Mªag”
+(
+£ssiÚ
+, 
+deviû_hªdËr
+, **
+kwds
+)
+
+125 
+def
+ 
+	$cÚÃù_iİroc
+(*
+¬gs
+, **
+kwds
+):
+
+126 "deviû_·¿ms" 
+š
+ 
+kwds
+:
+
+127 
+deviû_·¿ms
+ = 
+kwds
+["device_params"]
+
+128 
+d–
+ 
+kwds
+["device_params"]
+
+129 
+impÜt_¡ršg
+ = 'ncclient.transport.third_party.'
+
+130 
+impÜt_¡ršg
+ +ğ
+deviû_·¿ms
+['name'] + '.ioproc'
+
+131 
+thœd_·¹y_impÜt
+ = 
+	`__impÜt__
+(
+impÜt_¡ršg
+, 
+äomli¡
+=['IOProc'])
+
+133 
+deviû_·¿ms
+ = 
+NÚe
+
+
+135 
+deviû_hªdËr
+ = 
+	$make_deviû_hªdËr
+(
+deviû_·¿ms
+)
+
+137 
+glob®
+ 
+VENDOR_OPERATIONS
+
+
+138 
+VENDOR_OPERATIONS
+.
+	`upd©e
+(
+deviû_hªdËr
+.
+	$add_add™iÚ®_İ”©iÚs
+())
+
+139 
+£ssiÚ
+ = 
+thœd_·¹y_impÜt
+.
+	$IOProc
+(
+deviû_hªdËr
+)
+
+140 
+£ssiÚ
+.
+	$cÚÃù
+()
+
+142  
+	$Mªag”
+(
+£ssiÚ
+, 
+deviû_hªdËr
+, **
+kwds
+)
+
+145 
+def
+ 
+	$cÚÃù
+(*
+¬gs
+, **
+kwds
+):
+
+146 "ho¡" 
+š
+ 
+kwds
+:
+
+147 
+ho¡
+ = 
+kwds
+["host"]
+
+148 
+ho¡
+ != 'localhost':
+
+149  
+	$cÚÃù_ssh
+(*
+¬gs
+, **
+kwds
+)
+
+151  
+	$cÚÃù_iİroc
+(*
+¬gs
+, **
+kwds
+)
+
+153 
+şass
+ 
+	$OpExecutÜ
+(
+ty³
+):
+
+155 
+def
+ 
+	$__Ãw__
+(
+şs
+, 
+Çme
+, 
+ba£s
+, 
+©Œs
+):
+
+156 
+def
+ 
+	$make_w¿µ”
+(
+İ_şs
+):
+
+157 
+def
+ 
+	$w¿µ”
+(
+£lf
+, *
+¬gs
+, **
+kwds
+):
+
+158  
+£lf
+.
+	$execu‹
+(
+İ_şs
+, *
+¬gs
+, **
+kwds
+)
+
+159 
+w¿µ”
+.
+func_doc
+ = 
+İ_şs
+.
+»que¡
+.func_doc
+
+160  
+w¿µ”
+
+
+161 
+İ_Çme
+, 
+İ_şs
+ 
+š
+ 
+OPERATIONS
+.
+	$™”™ems
+():
+
+162 
+©Œs
+[
+İ_Çme
+] = 
+	$make_w¿µ”
+(
+İ_şs
+)
+
+163  
+	`su³r
+(
+OpExecutÜ
+, 
+şs
+).
+	$__Ãw__
+(
+şs
+, 
+Çme
+, 
+ba£s
+, 
+©Œs
+)
+
+165 
+def
+ 
+	$__ÿÎ__
+(
+şs
+, *
+¬gs
+, **
+kw¬gs
+):
+
+166 
+def
+ 
+	$make_w¿µ”
+(
+İ_şs
+):
+
+167 
+def
+ 
+	$w¿µ”
+(
+£lf
+, *
+¬gs
+, **
+kwds
+):
+
+168  
+£lf
+.
+	$execu‹
+(
+İ_şs
+, *
+¬gs
+, **
+kwds
+)
+
+169 
+w¿µ”
+.
+func_doc
+ = 
+İ_şs
+.
+»que¡
+.func_doc
+
+170  
+w¿µ”
+
+
+171 
+VENDOR_OPERATIONS
+:
+
+172 
+İ_Çme
+, 
+İ_şs
+ 
+š
+ 
+VENDOR_OPERATIONS
+.
+	$™”™ems
+():
+
+173 
+	`£‰r
+(
+şs
+, 
+İ_Çme
+, 
+	$make_w¿µ”
+(
+İ_şs
+))
+
+174  
+	`su³r
+(
+OpExecutÜ
+, 
+şs
+).
+	$__ÿÎ__
+(*
+¬gs
+, **
+kw¬gs
+)
+
+177 
+şass
+ 
+	$Mªag”
+(
+objeù
+):
+
+180 
+FÜ
+ 
+d‘as
+ 
+Ú
+ 
+the
+ 
+ex³ùed
+ 
+behaviÜ
+ 
+of
+h
+İ”©iÚs
+ 
+ªd
+ 
+theœ
+
+
+181 
+·¿m‘”s
+ 
+»ãr
+ 
+to
+ :
+rfc
+:`4741`.
+
+183 
+Mªag”
+ 
+š¡ªûs
+ 
+¬e
+ 
+®so
+ 
+cÚ‹xt
+ 
+mªag”s
+ 
+so
+ 
+you
+ 
+ÿn
+ 
+u£
+ 
+™
+ 
+like
+ 
+this
+::
+
+185 
+w™h
+ 
+mªag”
+.
+	`cÚÃù
+("ho¡"è
+as
+ 
+m
+:
+
+186 #dØ
+your
+ 
+¡uff
+
+
+188 ... 
+Ü
+ 
+like
+ 
+this
+::
+
+190 
+m
+ = 
+mªag”
+.
+	`cÚÃù
+("host")
+
+191 
+Œy
+:
+
+192 #dØ
+your
+ 
+¡uff
+
+
+193 
+fš®ly
+:
+
+194 
+m
+.
+	`şo£_£ssiÚ
+()
+
+197 
+__m‘aşass__
+ = 
+OpExecutÜ
+
+
+199 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+£ssiÚ
+, 
+deviû_hªdËr
+, 
+timeout
+=30, *
+¬gs
+, **
+kw¬gs
+):
+
+200 
+£lf
+.
+_£ssiÚ
+ = 
+£ssiÚ
+
+
+201 
+£lf
+.
+_async_mode
+ = 
+F®£
+
+
+202 
+£lf
+.
+_timeout
+ = 
+timeout
+
+
+203 
+£lf
+.
+_¿i£_mode
+ = 
+İ”©iÚs
+.
+Rai£Mode
+.
+ALL
+
+
+204 
+£lf
+.
+_deviû_hªdËr
+ = 
+deviû_hªdËr
+
+
+206 
+def
+ 
+	$__’‹r__
+(
+£lf
+):
+
+207  
+£lf
+
+
+209 
+def
+ 
+	$__ex™__
+(
+£lf
+, *
+¬gs
+):
+
+210 
+£lf
+.
+	$şo£_£ssiÚ
+()
+
+211  
+F®£
+
+
+213 
+def
+ 
+	$__£t_timeout
+(
+£lf
+, 
+timeout
+):
+
+214 
+£lf
+.
+_timeout
+ = 
+timeout
+
+
+216 
+def
+ 
+	$__£t_async_mode
+(
+£lf
+, 
+mode
+):
+
+217 
+£lf
+.
+_async_mode
+ = 
+mode
+
+
+219 
+def
+ 
+	$__£t_¿i£_mode
+(
+£lf
+, 
+mode
+):
+
+220 
+	`as£¹
+(
+mode
+ 
+	$š
+ (
+İ”©iÚs
+.
+Rai£Mode
+.
+NONE
+, o³¿tiÚs.Rai£Mode.
+ERRORS
+, o³¿tiÚs.Rai£Mode.
+ALL
+))
+
+221 
+£lf
+.
+_¿i£_mode
+ = 
+mode
+
+
+223 
+def
+ 
+	$execu‹
+(
+£lf
+, 
+şs
+, *
+¬gs
+, **
+kwds
+):
+
+224  
+	`şs
+(
+£lf
+.
+_£ssiÚ
+,
+
+225 
+deviû_hªdËr
+=
+£lf
+.
+_deviû_hªdËr
+,
+
+226 
+async
+=
+£lf
+.
+_async_mode
+,
+
+227 
+timeout
+=
+£lf
+.
+_timeout
+,
+
+228 
+¿i£_mode
+=
+£lf
+.
+_¿i£_mode
+).
+	$»que¡
+(*
+¬gs
+, **
+kwds
+)
+
+230 
+def
+ 
+	$locked
+(
+£lf
+, 
+rg‘
+):
+
+232 *
+rg‘
+* 
+is
+ 
+the
+ 
+Çme
+ 
+of
+h
+cÚfigu¿tiÚ
+ 
+d©a¡Üe
+ 
+to
+ 
+lock
+, 
+e
+.
+g
+.::
+
+234 
+w™h
+ 
+m
+.
+	`locked
+("running"):
+
+235 #dØ
+your
+ 
+¡uff
+
+
+237 ... 
+š¡—d
+ 
+of
+::
+
+239 
+m
+.
+	`lock
+("running")
+
+240 
+Œy
+:
+
+241 #dØ
+your
+ 
+¡uff
+
+
+242 
+fš®ly
+:
+
+243 
+m
+.
+	`uÆock
+("running")
+
+245  
+İ”©iÚs
+.
+	$LockCÚ‹xt
+(
+£lf
+.
+_£ssiÚ
+, s–f.
+_deviû_hªdËr
+, 
+rg‘
+)
+
+247 
+def
+ 
+	$sı
+(
+£lf
+):
+
+248  
+£lf
+.
+_£ssiÚ
+.
+	$sı
+()
+
+250 
+def
+ 
+	$£ssiÚ
+(
+£lf
+):
+
+251 
+¿i£
+ 
+NÙIm¶em’‹dE¼Ü
+
+
+253 
+def
+ 
+	$__g‘©Œ__
+(
+£lf
+, 
+m‘hod
+):
+
+255 
+def
+ 
+	$_missšg
+(*
+¬gs
+, **
+kw¬gs
+):
+
+256 
+m
+ = 
+m‘hod
+.
+	`»¶aû
+('_', '-')
+
+257 
+roÙ
+ = 
+	$Ãw_–e
+(
+m
+)
+
+258 
+¬gs
+:
+
+259 
+¬g
+ 
+š
+ 
+¬gs
+:
+
+260 
+	$sub_–e
+(
+roÙ
+, 
+¬g
+)
+
+261 
+r
+ = 
+£lf
+.
+	$½c
+(
+roÙ
+)
+
+262 
+´št
+ "asd",
+r
+
+
+263  
+r
+
+
+264  
+_missšg
+
+
+265 
+def
+ 
+	$½c
+(
+£lf
+,
+½c
+):
+
+266 
+´št
+"ff"
+
+267  
+	`Execu‹Rpc
+(
+½c
+)
+
+269 @
+´İ”ty
+
+
+270 
+def
+ 
+	$ş›Á_ÿ·b™›s
+(
+£lf
+):
+
+272 
+the
+ 
+ş›Á
+'s capabilities."""
+
+273  
+£lf
+.
+_£ssiÚ
+.
+_ş›Á_ÿ·b™›s
+
+
+275 @
+´İ”ty
+
+
+276 
+def
+ 
+	$£rv”_ÿ·b™›s
+(
+£lf
+):
+
+278 
+the
+ 
+£rv”
+'s capabilities."""
+
+279  
+£lf
+.
+_£ssiÚ
+.
+_£rv”_ÿ·b™›s
+
+
+281 @
+´İ”ty
+
+
+282 
+def
+ 
+	$chªÃl_id
+(
+£lf
+):
+
+283  
+£lf
+.
+_£ssiÚ
+.
+_chªÃl_id
+
+
+285 @
+´İ”ty
+
+
+286 
+def
+ 
+	$chªÃl_Çme
+(
+£lf
+):
+
+287  
+£lf
+.
+_£ssiÚ
+.
+_chªÃl_Çme
+
+
+289 @
+´İ”ty
+
+
+290 
+def
+ 
+	$£ssiÚ_id
+(
+£lf
+):
+
+292  
+£lf
+.
+_£ssiÚ
+.
+id
+
+
+294 @
+´İ”ty
+
+
+295 
+def
+ 
+	$cÚÃùed
+(
+£lf
+):
+
+297  
+£lf
+.
+_£ssiÚ
+.
+cÚÃùed
+
+
+299 
+async_mode
+ = 
+	`´İ”ty
+(
+fg‘
+=
+Ïmbda
+ 
+£lf
+: s–f.
+_async_mode
+,
+
+300 
+f£t
+=
+__£t_async_mode
+)
+
+302 
+	`synchrÚou¦y
+ (`
+F®£
+`è(
+the
+ )."""
+
+304 
+timeout
+ = 
+	`´İ”ty
+(
+fg‘
+=
+Ïmbda
+ 
+£lf
+: s–f.
+_timeout
+, 
+f£t
+=
+__£t_timeout
+)
+
+307 
+¿i£_mode
+ = 
+	`´İ”ty
+(
+fg‘
+=
+Ïmbda
+ 
+£lf
+: s–f.
+_¿i£_mode
+,
+
+308 
+f£t
+=
+__£t_¿i£_mode
+)
+
+310 
+exû±iÚs
+. 
+V®id
+ 
+v®ues
+ 
+¬e
+ 
+the
+ 
+cÚ¡ªts
+ 
+defšed
+ 
+š
+
+
+311 :
+şass
+:`~
+ncş›Á
+.
+İ”©iÚs
+.
+Rai£Mode
+`.
+
+312 
+The
+  
+v®ue
+ 
+is
+ :
+©t
+:
+r
+:`~
+ncş›Á
+.
+İ”©iÚs
+.
+Rai£Mode
+.
+ALL
+`."""
+
+	@operations/__init__.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+15 
+äom
+ 
+”rÜs
+ 
+impÜt
+ 
+	gO³¿tiÚE¼Ü
+, 
+	gTimeoutExpœedE¼Ü
+, 
+MissšgC­ab™yE¼Ü
+
+
+16 
+äom
+ 
+½c
+ 
+impÜt
+ 
+	gRPC
+, 
+	gRPCR•ly
+, 
+	gRPCE¼Ü
+, 
+	gRai£Mode
+
+
+18 #rfc4741 
+İs
+
+
+19 
+äom
+ 
+»Œ›ve
+ 
+impÜt
+ 
+	gG‘
+, 
+	gG‘CÚfig
+, 
+	gG‘R•ly
+, 
+Di¥©ch
+
+
+20 
+äom
+ 
+ed™
+ 
+impÜt
+ 
+	gEd™CÚfig
+, 
+	gCİyCÚfig
+, 
+	gD–‘eCÚfig
+, 
+	gV®id©e
+, 
+	gComm™
+, 
+DisÿrdChªges
+
+
+21 
+äom
+ 
+£ssiÚ
+ 
+impÜt
+ 
+	gClo£SessiÚ
+, 
+KlSessiÚ
+
+
+22 
+äom
+ 
+lock
+ 
+impÜt
+ 
+	gLock
+, 
+	gUÆock
+, 
+	gLockCÚ‹xt
+
+
+24 
+äom
+ 
+æowmÚ
+ 
+impÜt
+ 
+	gPow”offMachše
+, 
+ReboÙMachše
+
+
+26 
+	g__®l__
+ = [
+
+	@operations/edit.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+15 
+äom
+ 
+	gncş›Á
+.
+xml_
+ 
+impÜt
+ *
+
+17 
+äom
+ 
+½c
+ 
+impÜt
+ 
+RPC
+
+
+19 
+impÜt
+ 
+ut
+
+
+21 
+impÜt
+ 
+loggšg
+
+
+23 
+	glogg”
+ = 
+loggšg
+.
+g‘Logg”
+("ncclient.operations.edit")
+
+27 
+şass
+ 
+	$Ed™CÚfig
+(
+RPC
+):
+
+30 
+def
+ 
+	`»que¡
+(
+£lf
+, 
+cÚfig
+, 
+fÜm©
+='xml', 
+rg‘
+='ÿndid©e', 
+deçuÉ_İ”©iÚ
+=
+NÚe
+,
+
+31 
+‹¡_İtiÚ
+=
+NÚe
+, 
+”rÜ_İtiÚ
+=None):
+
+34 *
+rg‘
+* 
+is
+ 
+the
+ 
+Çme
+ 
+of
+h
+cÚfigu¿tiÚ
+ 
+d©a¡Üe
+ 
+bešg
+ 
+ed™ed
+
+
+36 *
+cÚfig
+* 
+is
+ 
+the
+ 
+cÚfigu¿tiÚ
+, 
+which
+ 
+mu¡
+ 
+be
+ 
+roÙed
+ 
+š
+h`cÚfig` 
+–em’t
+. 
+It
+ 
+ÿn
+ b
+¥ecif›d
+ 
+e™h”
+ 
+as
+ 
+a
+ 
+¡ršg
+ 
+Ü
+ 
+ª
+ :
+şass
+:`~
+xml
+.
+‘»e
+.
+EËm’tT»e
+.
+EËm’t
+`.
+
+38 *
+deçuÉ_İ”©iÚ
+* 
+¥ecif›d
+ 
+mu¡
+ 
+be
+ 
+Úe
+ 
+of
+ { `"m”ge"`, `"»¶aû"`, 
+Ü
+ `"nÚe"` 
+	}
+}
+
+40 *
+‹¡_İtiÚ
+* 
+¥ecif›d
+ 
+mu¡
+ 
+be
+ 
+Úe
+ 
+	gof
+ { `"test_then_set"`, `"set"` }
+
+42 *
+”rÜ_İtiÚ
+* 
+¥ecif›d
+ 
+mu¡
+ 
+be
+ 
+Úe
+ 
+	gof
+ { `"stop-on-error"`, `"continue-on-error"`, `"rollback-on-error"` }
+
+44 
+	gThe
+ `"rŞlback-Ú-”rÜ"` *
+”rÜ_İtiÚ
+* 
+d•’ds
+ 
+Ú
+ 
+	gthe
+ `:
+rŞlback
+-Ú-
+”rÜ
+` 
+ÿ·b™y
+.
+
+46 
+node
+ = 
+Ãw_–e
+("edit-config")
+
+47 
+node
+.
+­³nd
+(
+ut
+.
+d©a¡Üe_Ü_u¾
+("rg‘", 
+rg‘
+, 
+£lf
+.
+_as£¹
+))
+
+48 
+”rÜ_İtiÚ
+ 
+is
+ 
+nÙ
+ 
+	gNÚe
+:
+
+49 
+”rÜ_İtiÚ
+ == "rollback-on-error":
+
+50 
+£lf
+.
+_as£¹
+(":rollback-on-error")
+
+51 
+sub_–e
+(
+node
+, "”rÜ-İtiÚ").
+	g‹xt
+ = 
+”rÜ_İtiÚ
+
+
+52 
+‹¡_İtiÚ
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+53 
+£lf
+.
+_as£¹
+(':validate')
+
+54 
+sub_–e
+(
+node
+, "‹¡-İtiÚ").
+	g‹xt
+ = 
+‹¡_İtiÚ
+
+
+55 
+deçuÉ_İ”©iÚ
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+56 #TODO: 
+check
+ 
+™
+ 
+is
+ 
+a
+ 
+v®id
+ -
+İ”©iÚ
+
+
+57 
+sub_–e
+(
+node
+, "deçuÉ-İ”©iÚ").
+	g‹xt
+ = 
+deçuÉ_İ”©iÚ
+
+
+58 #<<<<<<< 
+HEAD
+
+
+59 #node.
+­³nd
+(
+v®id©ed_–em’t
+(
+cÚfig
+, ("cÚfig", 
+qu®ify
+("config"))))
+
+61 
+	gfÜm©
+ == 'xml':
+
+62 
+node
+.
+­³nd
+(
+v®id©ed_–em’t
+(
+cÚfig
+, ("cÚfig", 
+qu®ify
+("config"))))
+
+63 
+	gfÜm©
+ == 'text':
+
+64 
+cÚfig_‹xt
+ = 
+sub_–e
+(
+node
+, "config-text")
+
+65 
+sub_–e
+(
+cÚfig_‹xt
+, "cÚfigu¿tiÚ-‹xt").
+	g‹xt
+ = 
+cÚfig
+
+
+66 #>>>>>>> 
+jun”
+
+
+67  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+70 
+şass
+ 
+	$D–‘eCÚfig
+(
+RPC
+):
+
+73 
+def
+ 
+	$»que¡
+(
+£lf
+, 
+rg‘
+):
+
+76 *
+rg‘
+* 
+¥ecif›s
+ 
+the
+ 
+Çme
+ 
+Ü
+ 
+URL
+ 
+of
+ 
+cÚfigu¿tiÚ
+ 
+d©a¡Üe
+ 
+to
+ 
+d–‘e
+
+
+78 :
+£—lso
+: :
+»f
+:`
+¤ù¬g‘_·¿ms
+`"""
+
+79 
+node
+ = 
+	`Ãw_–e
+("delete-config")
+
+80 
+node
+.
+	`­³nd
+(
+ut
+.
+	`d©a¡Üe_Ü_u¾
+("rg‘", 
+rg‘
+, 
+£lf
+.
+_as£¹
+))
+
+81  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+84 
+şass
+ 
+	$CİyCÚfig
+(
+RPC
+):
+
+87 
+def
+ 
+	$»que¡
+(
+£lf
+, 
+sourû
+, 
+rg‘
+):
+
+89 
+cÚfigu¿tiÚ
+ 
+d©a¡Üe
+.
+
+91 *
+sourû
+* 
+is
+ 
+the
+ 
+Çme
+ 
+of
+h
+cÚfigu¿tiÚ
+ 
+d©a¡Üe
+ 
+to
+ 
+u£
+ 
+as
+hsourû oàth
+cİy
+ 
+İ”©iÚ
+ 
+Ü
+ `
+cÚfig
+` 
+–em’t
+ 
+cÚššg
+hcÚfigu¿tiÚ 
+subŒ“
+o copy
+
+93 *
+rg‘
+* 
+is
+ 
+the
+ 
+Çme
+ 
+of
+h
+cÚfigu¿tiÚ
+ 
+d©a¡Üe
+ 
+to
+ 
+u£
+ 
+as
+h
+de¡š©iÚ
+ oàth
+cİy
+ 
+İ”©iÚ
+
+
+95 :
+£—lso
+: :
+»f
+:`
+¤ù¬g‘_·¿ms
+`"""
+
+96 
+node
+ = 
+	`Ãw_–e
+("copy-config")
+
+97 
+node
+.
+	`­³nd
+(
+ut
+.
+	`d©a¡Üe_Ü_u¾
+("rg‘", 
+rg‘
+, 
+£lf
+.
+_as£¹
+))
+
+98 
+node
+.
+	`­³nd
+(
+ut
+.
+	`d©a¡Üe_Ü_u¾
+("sourû", 
+sourû
+, 
+£lf
+.
+_as£¹
+))
+
+99  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+102 
+şass
+ 
+	$V®id©e
+(
+RPC
+):
+
+105 
+DEPENDS
+ = [':validate']
+
+107 
+def
+ 
+	`»que¡
+(
+£lf
+, 
+sourû
+="candidate"):
+
+110 *
+sourû
+* 
+is
+ 
+the
+ 
+Çme
+ 
+of
+h
+cÚfigu¿tiÚ
+ 
+d©a¡Üe
+ 
+bešg
+ 
+v®id©ed
+ 
+Ü
+ `
+cÚfig
+` 
+–em’t
+ 
+cÚššg
+hcÚfigu¿tiÚ 
+subŒ“
+ 
+to
+ 
+be
+ validated
+
+113 ** 
+modif›d
+ 
+to
+ 
+Úly
+ 
+acû±
+ 
+v®id
+ 
+¡ršg
+ 
+as
+ 
+sourû
+ 
+¬gum’t
+. 
+EËm’ts
+ 
+no
+ 
+lÚg”
+ 
+acû±ed
+ - 
+—r›s
+ - 04/22/2013
+
+115 :
+£—lso
+: :
+»f
+:`
+¤ù¬g‘_·¿ms
+`"""
+
+116 
+node
+ = 
+	`Ãw_–e
+("validate")
+
+117 #rfc6241 
+£c
+ 8.6.4 
+¡©es
+ 
+v®id
+ 
+sourû
+ 
+ÿn
+ 
+be
+ <
+ÿndid©e
+> 
+Ü
+ <
+cÚfig
+> 
+–em’ts
+
+
+118 
+gs
+ = ("config", "candidate")
+
+119 
+sourû
+ 
+nÙ
+ 
+š
+ 
+gs
+:
+
+120 
+¿i£
+ 
+	`XMLE¼Ü
+("Inv®id sourûy³: [%s], mu¡ bÚoà%s" % (
+sourû
+, 
+gs
+))
+
+121 
+¤c_–e
+ = 
+	`sub_–e
+(
+node
+, "source")
+
+122 
+	$sub_–e
+(
+¤c_–e
+, 
+sourû
+)
+
+123  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+126 
+şass
+ 
+	$Comm™
+(
+RPC
+):
+
+129 
+DEPENDS
+ = [':candidate']
+
+131 
+def
+ 
+	$»que¡
+(
+£lf
+, 
+cÚfœmed
+=
+F®£
+, 
+timeout
+=
+NÚe
+):
+
+134 
+A
+ 
+cÚfœmed
+ 
+	`comm™
+ (
+i
+.
+e
+. *cÚfœmed* 
+is
+ `
+True
+`èi 
+»v”‹d
+ 
+th”e
+ i 
+no
+ 
+fŞlowup
+ 
+comm™
+ 
+w™hš
+ 
+the
+ *
+timeout
+* 
+š‹rv®
+. 
+If
+‚Øtimeouˆi 
+¥ecif›d
+h
+cÚfœm
+imeouˆ
+deçuÉs
+ 
+to
+ 600 
+	`£cÚds
+ (10 
+mšu‹s
+). A 
+cÚfœmšg
+ comm™ 
+may
+ 
+have
+h*cÚfœmed* 
+·¿m‘”
+ 
+but
+ 
+this
+ i 
+nÙ
+ 
+»quœed
+. 
+D•’ds
+ 
+Ú
+h`:cÚfœmed-comm™` 
+ÿ·b™y
+.
+
+136 *
+cÚfœmed
+* 
+wh‘h”
+ 
+this
+ 
+is
+ 
+a
+ cÚfœmed 
+comm™
+
+
+138 *
+timeout
+* 
+¥ecif›s
+ 
+the
+ 
+cÚfœm
+imeouˆ
+š
+ 
+£cÚds
+"""
+
+139 
+node
+ = 
+	`Ãw_–e
+("commit")
+
+140 
+cÚfœmed
+:
+
+141 
+£lf
+.
+	`_as£¹
+(":confirmed-commit")
+
+142 
+	`sub_–e
+(
+node
+, "confirmed")
+
+143 
+timeout
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+144 
+	`sub_–e
+(
+node
+, "cÚfœm-timeout").
+‹xt
+ = 
+timeout
+
+
+145  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+148 
+şass
+ 
+	$DisÿrdChªges
+(
+RPC
+):
+
+151 
+DEPENDS
+ = [":candidate"]
+
+153 
+def
+ 
+	$»que¡
+(
+£lf
+):
+
+156  
+£lf
+.
+	`_»que¡
+(
+	`Ãw_–e
+("discard-changes"))
+
+	@operations/errors.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+15 
+äom
+ 
+ncş›Á
+ 
+impÜt
+ 
+NCCl›ÁE¼Ü
+
+
+17 
+şass
+ 
+	$O³¿tiÚE¼Ü
+(
+NCCl›ÁE¼Ü
+):
+
+18 
+·ss
+
+
+20 
+şass
+ 
+	$TimeoutExpœedE¼Ü
+(
+NCCl›ÁE¼Ü
+):
+
+21 
+·ss
+
+
+23 
+şass
+ 
+	$MissšgC­ab™yE¼Ü
+(
+NCCl›ÁE¼Ü
+):
+
+24 
+·ss
+
+
+	@operations/flowmon.py
+
+1 #Cİyrighˆ2
+h009
+ 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+17 
+äom
+ 
+	gncş›Á
+.
+xml_
+ 
+impÜt
+ *
+
+19 
+äom
+ 
+½c
+ 
+impÜt
+ 
+RPC
+
+
+21 
+	gPC_URN
+ = "urn:liberouter:params:xml:ns:netconf:power-control:1.0"
+
+23 
+şass
+ 
+	$Pow”offMachše
+(
+RPC
+):
+
+27 
+DEPENDS
+ = ["urn:liberouter:param:netconf:capability:power-control:1.0"]
+
+29 
+def
+ 
+	$»que¡
+(
+£lf
+):
+
+30  
+£lf
+.
+	`_»que¡
+(
+	`Ãw_–e
+(
+	`qu®ify
+("pow”off-machše", 
+PC_URN
+)))
+
+32 
+şass
+ 
+	$ReboÙMachše
+(
+RPC
+):
+
+36 
+DEPENDS
+ = ["urn:liberouter:params:netconf:capability:power-control:1.0"]
+
+38 
+def
+ 
+	$»que¡
+(
+£lf
+):
+
+39  
+£lf
+.
+	`_»que¡
+(
+	`Ãw_–e
+(
+	`qu®ify
+("»boÙ-machše", 
+PC_URN
+)))
+
+	@operations/lock.py
+
+1 #Cİyrighˆ2
+h009
+ 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+17 
+äom
+ 
+	gncş›Á
+.
+xml_
+ 
+impÜt
+ *
+
+19 
+äom
+ 
+½c
+ 
+impÜt
+ 
+	gRai£Mode
+, 
+	gRPC
+
+
+21 #TODO: 
+·r£
+ 
+£ssiÚ
+-
+id
+ 
+äom
+ 
+a
+ 
+lock
+-
+d’›d
+ 
+”rÜ
+, 
+ªd
+ 
+¿i£
+‡ 
+Üed
+ 
+exû±iÚ
+?
+
+23 
+şass
+ 
+	$Lock
+(
+RPC
+):
+
+28 
+def
+ 
+	`»que¡
+(
+£lf
+, 
+rg‘
+="candidate"):
+
+31 *
+rg‘
+* 
+is
+ 
+the
+ 
+Çme
+ 
+of
+h
+cÚfigu¿tiÚ
+ 
+d©a¡Üe
+ 
+to
+ 
+lock
+
+
+33 
+node
+ = 
+	`Ãw_–e
+("lock")
+
+34 
+	`sub_–e
+(sub_–e(
+node
+, "rg‘"), 
+rg‘
+)
+
+35  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+38 
+şass
+ 
+	$UÆock
+(
+RPC
+):
+
+42 
+def
+ 
+	`»que¡
+(
+£lf
+, 
+rg‘
+="candidate"):
+
+45 *
+rg‘
+* 
+is
+ 
+the
+ 
+Çme
+ 
+of
+h
+cÚfigu¿tiÚ
+ 
+d©a¡Üe
+ 
+to
+ 
+uÆock
+
+
+47 
+node
+ = 
+	`Ãw_–e
+("unlock")
+
+48 
+	`sub_–e
+(sub_–e(
+node
+, "rg‘"), 
+rg‘
+)
+
+49  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+52 
+şass
+ 
+	$LockCÚ‹xt
+(
+objeù
+):
+
+56 
+Any
+ `
+½c
+-
+”rÜ
+` 
+wl
+ 
+be
+ 
+¿i£d
+ 
+as
+ 
+ª
+ 
+exû±iÚ
+.
+
+58 
+In™Ÿli£
+ 
+	`w™h
+ (:
+şass
+:`
+SessiÚ
+ <
+ncş›Á
+.
+Œª¥Üt
+.SessiÚ>`è
+š¡ªû
+ 
+ªd
+ 
+lock
+ 
+rg‘
+.
+
+61 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+£ssiÚ
+, 
+deviû_hªdËr
+, 
+rg‘
+):
+
+62 
+£lf
+.
+£ssiÚ
+ = session
+
+63 
+£lf
+.
+rg‘
+ =arget
+
+64 
+£lf
+.
+deviû_hªdËr
+ = device_handler
+
+66 
+def
+ 
+	$__’‹r__
+(
+£lf
+):
+
+67 
+	`Lock
+(
+£lf
+.
+£ssiÚ
+, s–f.
+deviû_hªdËr
+, 
+¿i£_mode
+=
+Rai£Mode
+.
+ERRORS
+).
+	$»que¡
+(
+£lf
+.
+rg‘
+)
+
+68  
+£lf
+
+
+70 
+def
+ 
+	$__ex™__
+(
+£lf
+, *
+¬gs
+):
+
+71 
+	`UÆock
+(
+£lf
+.
+£ssiÚ
+, s–f.
+deviû_hªdËr
+, 
+¿i£_mode
+=
+Rai£Mode
+.
+ERRORS
+).
+	$»que¡
+(
+£lf
+.
+rg‘
+)
+
+72  
+F®£
+
+
+	@operations/retrieve.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+15 
+äom
+ 
+½c
+ 
+impÜt
+ 
+	gRPC
+, 
+RPCR•ly
+
+
+17 
+äom
+ 
+	gncş›Á
+.
+xml_
+ 
+impÜt
+ *
+
+19 
+impÜt
+ 
+ut
+
+
+21 
+şass
+ 
+	$G‘R•ly
+(
+RPCR•ly
+):
+
+25 
+def
+ 
+	$_·rsšg_hook
+(
+£lf
+, 
+roÙ
+):
+
+26 
+£lf
+.
+_d©a
+ = 
+NÚe
+
+
+27 
+nÙ
+ 
+£lf
+.
+_”rÜs
+:
+
+28 
+£lf
+.
+_d©a
+ = 
+roÙ
+.
+	`fšd
+(
+	`qu®ify
+("data"))
+
+30 @
+´İ”ty
+
+
+31 
+def
+ 
+	$d©a_–e
+(
+£lf
+):
+
+33 
+nÙ
+ 
+£lf
+.
+_·r£d
+:
+
+34 
+£lf
+.
+	$·r£
+()
+
+35  
+£lf
+.
+_d©a
+
+
+37 @
+´İ”ty
+
+
+38 
+def
+ 
+	$d©a_xml
+(
+£lf
+):
+
+40 
+nÙ
+ 
+£lf
+.
+_·r£d
+:
+
+41 
+£lf
+.
+	$·r£
+()
+
+42  
+	$to_xml
+(
+£lf
+.
+_d©a
+)
+
+44 
+d©a
+ = 
+d©a_–e
+
+
+48 
+şass
+ 
+	$G‘
+(
+RPC
+):
+
+52 
+REPLY_CLS
+ = 
+G‘R•ly
+
+
+55 
+def
+ 
+	$»que¡
+(
+£lf
+, 
+f‹r
+=
+NÚe
+):
+
+58 *
+f‹r
+* 
+¥ecif›s
+ 
+the
+ 
+pÜtiÚ
+ 
+of
+h
+cÚfigu¿tiÚ
+ 
+to
+ 
+	$»Œ›ve
+ (
+by
+  
+’tœe
+ 
+cÚfigu¿tiÚ
+ 
+is
+ 
+»Œ›ved
+)
+
+60 :
+£—lso
+: :
+»f
+:`
+f‹r_·¿ms
+`
+
+62 
+node
+ = 
+	`Ãw_–e
+("get")
+
+63 
+f‹r
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+64 
+node
+.
+	`­³nd
+(
+ut
+.
+	$bud_f‹r
+(
+f‹r
+))
+
+65  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+68 
+şass
+ 
+	$G‘CÚfig
+(
+RPC
+):
+
+72 
+REPLY_CLS
+ = 
+G‘R•ly
+
+
+75 
+def
+ 
+	$»que¡
+(
+£lf
+, 
+sourû
+, 
+f‹r
+=
+NÚe
+):
+
+78 *
+sourû
+* 
+Çme
+ 
+of
+ 
+the
+ 
+cÚfigu¿tiÚ
+ 
+d©a¡Üe
+ 
+bešg
+ 
+qu”›d
+
+
+80 *
+f‹r
+* 
+¥ecif›s
+ 
+the
+ 
+pÜtiÚ
+ 
+of
+h
+cÚfigu¿tiÚ
+ 
+to
+ 
+	$»Œ›ve
+ (
+by
+  
+’tœe
+ 
+cÚfigu¿tiÚ
+ 
+is
+ 
+»Œ›ved
+)
+
+82 :
+£—lso
+: :
+»f
+:`
+f‹r_·¿ms
+`"""
+
+83 
+node
+ = 
+	`Ãw_–e
+("get-config")
+
+84 
+node
+.
+	`­³nd
+(
+ut
+.
+	`d©a¡Üe_Ü_u¾
+("sourû", 
+sourû
+, 
+£lf
+.
+_as£¹
+))
+
+85 
+f‹r
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+86 
+node
+.
+	`­³nd
+(
+ut
+.
+	$bud_f‹r
+(
+f‹r
+))
+
+87  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+89 
+şass
+ 
+	$Di¥©ch
+(
+RPC
+):
+
+93 
+REPLY_CLS
+ = 
+G‘R•ly
+
+
+96 
+def
+ 
+	$»que¡
+(
+£lf
+, 
+½c_commªd
+, 
+sourû
+=
+NÚe
+, 
+f‹r
+=None):
+
+98 *
+½c_commªd
+* 
+¥ecif›s
+ 
+½c
+ 
+commªd
+ 
+to
+ 
+be
+ 
+di¥©ched
+ 
+e™h”
+ 
+š
+ 
+¶aš
+ 
+‹xt
+ 
+Ü
+ iÀ
+xml
+ 
+–em’t
+ 
+	`fÜm©
+ (
+d•’dšg
+ 
+Ú
+ command)
+
+100 *
+sourû
+* 
+Çme
+ 
+of
+ 
+the
+ 
+cÚfigu¿tiÚ
+ 
+d©a¡Üe
+ 
+bešg
+ 
+qu”›d
+
+
+102 *
+f‹r
+* 
+¥ecif›s
+ 
+the
+ 
+pÜtiÚ
+ 
+of
+h
+cÚfigu¿tiÚ
+ 
+to
+ 
+	$»Œ›ve
+ (
+by
+  
+’tœe
+ 
+cÚfigu¿tiÚ
+ 
+is
+ 
+»Œ›ved
+)
+
+104 :
+£—lso
+: :
+»f
+:`
+f‹r_·¿ms
+`
+
+106 
+Exam¶es
+ 
+of
+ 
+u§ge
+::
+
+108 
+	`di¥©ch
+('clear-arp-table')
+
+110 
+Ü
+ 
+di¥©ch
+ 
+–em’t
+ 
+like
+ ::
+
+112 
+xsd_ãtch
+ = 
+	`Ãw_–e
+('get-xnm-information')
+
+113 
+	`sub_–e
+(
+xsd_ãtch
+, 'ty³').
+‹xt
+="xml-schema"
+
+114 
+	`sub_–e
+(
+xsd_ãtch
+, 'Çme¥aû').
+‹xt
+="junos-configuration"
+
+115 
+	`di¥©ch
+(
+xsd_ãtch
+)
+
+119 
+‘»e
+.
+	$i£Ëm’t
+(
+½c_commªd
+):
+
+120 
+node
+ = 
+½c_commªd
+
+
+122 
+node
+ = 
+	$Ãw_–e
+(
+½c_commªd
+)
+
+123 
+sourû
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+124 
+node
+.
+	`­³nd
+(
+ut
+.
+	`d©a¡Üe_Ü_u¾
+("sourû", 
+sourû
+, 
+£lf
+.
+_as£¹
+))
+
+125 
+f‹r
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+126 
+node
+.
+	`­³nd
+(
+ut
+.
+	$bud_f‹r
+(
+f‹r
+))
+
+127  
+£lf
+.
+	`_»que¡
+(
+node
+)
+
+	@operations/rpc.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+15 
+äom
+ 
+th»adšg
+ 
+impÜt
+ 
+	gEv’t
+, 
+Lock
+
+
+16 
+äom
+ 
+uuid
+ 
+impÜt
+ 
+uuid1
+
+
+18 
+äom
+ 
+	gncş›Á
+.
+xml_
+ 
+impÜt
+ *
+
+19 
+äom
+ 
+	gncş›Á
+.
+Œª¥Üt
+ 
+impÜt
+ 
+SessiÚLi¡’”
+
+
+21 
+äom
+ 
+”rÜs
+ 
+impÜt
+ 
+	gO³¿tiÚE¼Ü
+, 
+	gTimeoutExpœedE¼Ü
+, 
+MissšgC­ab™yE¼Ü
+
+
+23 
+impÜt
+ 
+loggšg
+
+
+24 
+	glogg”
+ = 
+loggšg
+.
+g‘Logg”
+("ncclient.operations.rpc")
+
+25 
+logg”
+.
+	$£tLev–
+(
+loggšg
+.
+WARNING
+)
+
+28 
+şass
+ 
+	$RPCE¼Ü
+(
+O³¿tiÚE¼Ü
+):
+
+32 
+g_to_©Œ
+ = {
+
+33 
+	`qu®ify
+("error-type"): "_type",
+
+34 
+	`qu®ify
+("error-tag"): "_tag",
+
+35 
+	`qu®ify
+("error-severity"): "_severity",
+
+36 
+	`qu®ify
+("error-info"): "_info",
+
+37 
+	`qu®ify
+("error-path"): "_path",
+
+38 
+	`qu®ify
+("error-message"): "_message"
+
+39 
+	}
+}
+
+41 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+¿w
+):
+
+42 
+£lf
+.
+_¿w
+ = 
+¿w
+
+
+43 
+©Œ
+ 
+š
+ 
+RPCE¼Ü
+.
+g_to_©Œ
+.
+	$v®ues
+():
+
+44 
+	$£‰r
+(
+£lf
+, 
+©Œ
+, 
+NÚe
+)
+
+45 
+sub–e
+ 
+š
+ 
+¿w
+:
+
+46 
+©Œ
+ = 
+RPCE¼Ü
+.
+g_to_©Œ
+.
+	$g‘
+(
+sub–e
+.
+g
+, 
+NÚe
+)
+
+47 
+©Œ
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+48 
+	`£‰r
+(
+£lf
+, 
+©Œ
+, 
+sub–e
+.
+‹xt
+ ©Œ !ğ"_šfo" 
+	$to_xml
+(
+sub–e
+) )
+
+49 
+£lf
+.
+mes§ge
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+50 
+O³¿tiÚE¼Ü
+.
+	$__š™__
+(
+£lf
+, s–f.
+mes§ge
+)
+
+52 
+O³¿tiÚE¼Ü
+.
+	`__š™__
+(
+£lf
+, s–f.
+	$to_diù
+())
+
+54 
+def
+ 
+	$to_diù
+(
+£lf
+):
+
+55  
+	`diù
+([ (
+©Œ
+[1:], 
+	$g‘©Œ
+(
+£lf
+, 
+©Œ
+)è©Œ 
+š
+ 
+RPCE¼Ü
+.
+g_to_©Œ
+.
+	`v®ues
+() ])
+
+57 @
+´İ”ty
+
+
+58 
+def
+ 
+	$xml
+(
+£lf
+):
+
+60  
+£lf
+.
+_¿w
+
+
+62 @
+´İ”ty
+
+
+63 
+def
+ 
+	$ty³
+(
+£lf
+):
+
+65  
+£lf
+.
+_ty³
+
+
+67 @
+´İ”ty
+
+
+68 
+def
+ 
+	$g
+(
+£lf
+):
+
+70  
+£lf
+.
+_g
+
+
+72 @
+´İ”ty
+
+
+73 
+def
+ 
+	$£v”™y
+(
+£lf
+):
+
+75  
+£lf
+.
+_£v”™y
+
+
+77 @
+´İ”ty
+
+
+78 
+def
+ 
+	$·th
+(
+£lf
+):
+
+80  
+£lf
+.
+_·th
+
+
+82 @
+´İ”ty
+
+
+83 
+def
+ 
+	$mes§ge
+(
+£lf
+):
+
+85  
+£lf
+.
+_mes§ge
+
+
+87 @
+´İ”ty
+
+
+88 
+def
+ 
+	$šfo
+(
+£lf
+):
+
+90  
+£lf
+.
+_šfo
+
+
+93 
+şass
+ 
+	$RPCR•ly
+(
+objeù
+):
+
+97 .. 
+nÙe
+::
+
+98 
+If
+ 
+the
+ 
+»¶y
+ 
+has
+ 
+nÙ
+ 
+y‘
+ 
+b“n
+ 
+·r£d
+ 
+th”e
+ 
+is
+ 
+ª
+ 
+im¶ic™
+, 
+Úe
+-
+time
+ 
+·rsšg
+ 
+ov”h—d
+ 
+to
+
+
+99 
+acûssšg
+ 
+some
+ 
+of
+ 
+the
+ 
+©Œibu‹s
+ 
+defšed
+ 
+by
+ 
+this
+ 
+şass
+.
+
+102 
+ERROR_CLS
+ = 
+RPCE¼Ü
+
+
+105 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+¿w
+):
+
+106 
+£lf
+.
+_¿w
+ = 
+¿w
+
+
+107 
+£lf
+.
+_·r£d
+ = 
+F®£
+
+
+108 
+£lf
+.
+_roÙ
+ = 
+NÚe
+
+
+109 
+£lf
+.
+_”rÜs
+ = []
+
+111 
+def
+ 
+	$__»´__
+(
+£lf
+):
+
+112  
+£lf
+.
+_¿w
+
+
+114 
+def
+ 
+	$·r£
+(
+£lf
+):
+
+116 
+£lf
+.
+_·r£d
+: 
+
+117 
+roÙ
+ = 
+£lf
+.
+_roÙ
+ = 
+	$to_–e
+(
+£lf
+.
+_¿w
+è#Th<
+½c
+-
+»¶y
+> 
+–em’t
+
+
+118 #P” 
+RFC
+ 4741 
+ª
+ <
+ok
+/> 
+g
+ 
+is
+ 
+£Á
+ 
+wh’
+ 
+th”e
+ 
+¬e
+ 
+no
+ 
+”rÜs
+ 
+Ü
+ 
+w¬nšgs
+
+
+119 
+ok
+ = 
+roÙ
+.
+	`fšd
+(
+	`qu®ify
+("ok"))
+
+120 
+ok
+ 
+is
+ 
+NÚe
+:
+
+121 #C»©
+RPCE¼Ü
+ 
+objeùs
+ 
+äom
+ <
+½c
+-
+”rÜ
+> 
+–em’ts
+
+
+122 
+”rÜ
+ = 
+roÙ
+.
+	`fšd
+('.//'+
+	`qu®ify
+('rpc-error'))
+
+123 
+”rÜ
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+124 
+”r
+ 
+š
+ 
+roÙ
+.
+	$g‘™”©Ü
+(
+”rÜ
+.
+g
+):
+
+125 #Proûs 
+a
+ 
+·¹icuÏr
+ <
+½c
+-
+”rÜ
+>
+
+126 
+£lf
+.
+_”rÜs
+.
+	`­³nd
+(£lf.
+	$ERROR_CLS
+(
+”r
+))
+
+127 
+£lf
+.
+	$_·rsšg_hook
+(
+roÙ
+)
+
+128 
+£lf
+.
+_·r£d
+ = 
+True
+
+
+130 
+def
+ 
+	$_·rsšg_hook
+(
+£lf
+, 
+roÙ
+):
+
+132 
+·ss
+
+
+134 @
+´İ”ty
+
+
+135 
+def
+ 
+	$xml
+(
+£lf
+):
+
+137  
+£lf
+.
+_¿w
+
+
+139 @
+´İ”ty
+
+
+140 
+def
+ 
+	$ok
+(
+£lf
+):
+
+142  
+nÙ
+ 
+£lf
+.
+”rÜs
+ #em±y 
+li¡
+ => 
+çl£
+
+
+144 @
+´İ”ty
+
+
+145 
+def
+ 
+	$”rÜ
+(
+£lf
+):
+
+147 
+£lf
+.
+	$·r£
+()
+
+148 
+£lf
+.
+_”rÜs
+:
+
+149  
+£lf
+.
+_”rÜs
+[0]
+
+151  
+NÚe
+
+
+153 @
+´İ”ty
+
+
+154 
+def
+ 
+	$”rÜs
+(
+£lf
+):
+
+156 
+£lf
+.
+	$·r£
+()
+
+157  
+£lf
+.
+_”rÜs
+
+
+160 
+şass
+ 
+	$RPCR•lyLi¡’”
+(
+SessiÚLi¡’”
+): #š‹º® 
+u£
+
+
+162 
+ü—tiÚ_lock
+ = 
+	$Lock
+()
+
+164 #Ú
+š¡ªû
+ 
+³r
+ 
+£ssiÚ
+ -- 
+maybe
+ 
+th”e
+ 
+is
+ 
+a
+ 
+b‘‹r
+ 
+way
+??
+
+165 
+def
+ 
+	$__Ãw__
+(
+şs
+, 
+£ssiÚ
+, 
+deviû_hªdËr
+):
+
+166 
+w™h
+ 
+RPCR•lyLi¡’”
+.
+ü—tiÚ_lock
+:
+
+167 
+š¡ªû
+ = 
+£ssiÚ
+.
+	$g‘_li¡’”_š¡ªû
+(
+şs
+)
+
+168 
+š¡ªû
+ 
+is
+ 
+NÚe
+:
+
+169 
+š¡ªû
+ = 
+objeù
+.
+	$__Ãw__
+(
+şs
+)
+
+170 
+š¡ªû
+.
+_lock
+ = 
+	$Lock
+()
+
+171 
+š¡ªû
+.
+_id2½c
+ = {
+	}
+}
+
+172 
+š¡ªû
+.
+_deviû_hªdËr
+ = 
+deviû_hªdËr
+
+
+173 #š¡ªû.
+_p–šed
+ = 
+£ssiÚ
+.
+ÿn_p–še
+
+
+174 
+£ssiÚ
+.
+	$add_li¡’”
+(
+š¡ªû
+)
+
+175  
+š¡ªû
+
+
+177 
+def
+ (
+£lf
+, 
+id
+, 
+½c
+):
+
+178 
+w™h
+ 
+£lf
+.
+_lock
+:
+
+179 
+£lf
+.
+_id2½c
+[
+id
+] = 
+½c
+
+
+181 
+def
+ 
+	$ÿÎback
+(
+£lf
+, 
+roÙ
+, 
+¿w
+):
+
+182 
+g
+, 
+©Œs
+ = 
+roÙ
+
+
+183 
+£lf
+.
+_deviû_hªdËr
+.
+	$³rfÜm_qu®ify_check
+():
+
+184 
+g
+ !ğ
+	`qu®ify
+("rpc-reply"):
+
+186 
+key
+ 
+š
+ 
+©Œs
+: #š 
+the
+ <
+½c
+-
+»¶y
+> 
+©Œibu‹s
+
+
+187 
+key
+ =ğ"mes§ge-id": #ià
+we
+ 
+found
+ 
+msgid
+ 
+©Œ
+
+
+188 
+id
+ = 
+©Œs
+[
+key
+] #g‘ 
+the
+ 
+msgid
+
+
+189 
+w™h
+ 
+£lf
+.
+_lock
+:
+
+190 
+Œy
+:
+
+191 
+½c
+ = 
+£lf
+.
+_id2½c
+[
+id
+] #th
+cÜ»¥Údšg
+„pc
+
+192 
+logg”
+.
+	`debug
+("D–iv”šgØ%r" % 
+½c
+)
+
+193 
+½c
+.
+	$d–iv”_»¶y
+(
+¿w
+)
+
+194 
+exû±
+ 
+KeyE¼Ü
+:
+
+195 
+¿i£
+ 
+	`O³¿tiÚE¼Ü
+("UnknowÀ'mes§ge-id': %s", 
+id
+)
+
+196 #nØ
+ÿtchšg
+ 
+Ùh”
+ 
+exû±iÚs
+, 
+ç
+ 
+loudly
+ 
+mu¡
+
+
+198 #ià
+no
+ 
+”rÜ
+ 
+d–iv”šg
+, 
+ÿn
+ 
+d–
+ 
+the
+ 
+»ã»nû
+ 
+to
+h
+RPC
+
+
+199 
+d–
+ 
+£lf
+.
+_id2½c
+[
+id
+]
+
+202 
+¿i£
+ 
+	`O³¿tiÚE¼Ü
+("Could‚ot find 'message-id'‡ttribute in <rpc-reply>")
+
+204 
+def
+ 
+	$”rback
+(
+£lf
+, 
+”r
+):
+
+205 
+Œy
+:
+
+206 
+½c
+ 
+š
+ 
+£lf
+.
+_id2½c
+.
+	$v®ues
+():
+
+207 
+½c
+.
+	$d–iv”_”rÜ
+(
+”r
+)
+
+208 
+fš®ly
+:
+
+209 
+£lf
+.
+_id2½c
+.
+	$ş—r
+()
+
+212 
+şass
+ 
+	$Rai£Mode
+(
+objeù
+):
+
+214 
+Defše
+ 
+how
+ 
+”rÜs
+ 
+šdiÿ‹d
+ 
+by
+ 
+RPC
+ 
+should
+ 
+be
+ 
+hªdËd
+.
+
+216 
+NÙe
+ 
+th©
+ 
+ªy
+ 
+”rÜ_f‹rs
+ 
+defšed
+ 
+š
+ 
+the
+ 
+deviû
+ 
+hªdËr
+ 
+wl
+ 
+¡l
+ 
+be
+
+
+217 
+­¶›d
+, 
+ev’
+ 
+ERRORS
+ 
+Ü
+ 
+ALL
+ 
+is
+ 
+defšed
+: 
+If
+ 
+the
+ 
+f‹r
+ 
+m©ches
+, 
+ª
+ 
+exû±iÚ
+
+
+218 
+wl
+ 
+NOT
+ 
+be
+ 
+¿i£d
+.
+
+221 
+NONE
+ = 0
+
+224 
+ERRORS
+ = 1
+
+227 
+ALL
+ = 2
+
+231 
+şass
+ 
+	$RPC
+(
+objeù
+):
+
+235 
+DEPENDS
+ = []
+
+238 
+REPLY_CLS
+ = 
+RPCR•ly
+
+
+242 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+£ssiÚ
+, 
+deviû_hªdËr
+, 
+async
+=
+F®£
+, 
+timeout
+=30, 
+¿i£_mode
+=
+Rai£Mode
+.
+NONE
+):
+
+244 *
+£ssiÚ
+* 
+is
+ 
+the
+ :
+şass
+:`~
+ncş›Á
+.
+Œª¥Üt
+.
+SessiÚ
+` 
+š¡ªû
+
+
+246 *
+deviû_hªdËr
+" ishe :class:`~ncclient.devices.*.*DeviceHandler` instance
+
+248 *
+async
+* 
+¥ecif›s
+ 
+wh‘h”
+ 
+the
+ 
+»que¡
+ 
+is
+ 
+to
+ 
+be
+ 
+made
+ 
+asynchrÚou¦y
+, 
+£e
+ :
+©Œ
+:`
+is_async
+`
+
+250 *
+timeout
+* 
+is
+ 
+the
+imeouˆ
+a
+ 
+synchrÚous
+ 
+»que¡
+, 
+£e
+ :
+©Œ
+:`timeout`
+
+252 *
+¿i£_mode
+* 
+¥ecif›s
+ 
+the
+ 
+exû±iÚ
+ 
+¿isšg
+ 
+mode
+, 
+£e
+ :
+©Œ
+:`raise_mode`
+
+254 
+£lf
+.
+_£ssiÚ
+ = 
+£ssiÚ
+
+
+255 
+Œy
+:
+
+256 
+ÿp
+ 
+š
+ 
+£lf
+.
+DEPENDS
+:
+
+257 
+£lf
+.
+	$_as£¹
+(
+ÿp
+)
+
+258 
+exû±
+ 
+A‰ribu‹E¼Ü
+:
+
+259 
+·ss
+
+
+260 
+£lf
+.
+_async
+ = 
+async
+
+
+261 
+£lf
+.
+_timeout
+ = 
+timeout
+
+
+262 
+£lf
+.
+_¿i£_mode
+ = 
+¿i£_mode
+
+
+263 
+£lf
+.
+_id
+ = 
+	`uuid1
+().
+uº
+ #K“p 
+thšgs
+ 
+sim¶e
+ 
+š¡—d
+ 
+of
+ 
+havšg
+ 
+a
+ 
+şass
+ 
+©Œ
+ 
+w™h
+ 
+ruÂšg
+ 
+ID
+ 
+th©
+ 
+has
+ 
+to
+ 
+be
+ 
+locked
+
+
+264 
+£lf
+.
+_li¡’”
+ = 
+	$RPCR•lyLi¡’”
+(
+£ssiÚ
+, 
+deviû_hªdËr
+)
+
+265 
+£lf
+.
+_li¡’”
+.(£lf.
+_id
+, self)
+
+266 
+£lf
+.
+_»¶y
+ = 
+NÚe
+
+
+267 
+£lf
+.
+_”rÜ
+ = 
+NÚe
+
+
+268 
+£lf
+.
+_ev’t
+ = 
+	$Ev’t
+()
+
+269 
+£lf
+.
+_deviû_hªdËr
+ = 
+deviû_hªdËr
+
+
+272 
+def
+ 
+	$_w¿p
+(
+£lf
+, 
+sub–e
+):
+
+273 #š‹º® 
+u£
+
+
+274 
+–e
+ = 
+	`Ãw_–e
+("½c", {"mes§ge-id": 
+£lf
+.
+_id
+},
+
+275 **
+	g£lf
+.
+	g_deviû_hªdËr
+.
+	$g‘_xml_exŒa_´efix_kw¬gs
+())
+
+276 
+–e
+.
+	$­³nd
+(
+sub–e
+)
+
+277 #´šˆ
+	`to_xml
+(
+–e
+)
+
+278  
+	$to_xml
+(
+–e
+)
+
+280 
+def
+ 
+	$_»que¡
+(
+£lf
+, 
+İ
+):
+
+283 
+In
+ 
+synchrÚous
+ 
+mode
+, 
+blocks
+ 
+uÁ
+ 
+the
+ 
+»¶y
+ 
+is
+ 
+»ûived
+ 
+ªd
+ 
+»tuºs
+ :
+şass
+:`
+RPCR•ly
+`. 
+D•’dšg
+ 
+Ú
+h:
+©Œ
+:`
+¿i£_mode
+` 
+a
+ `
+½c
+-
+”rÜ
+` 
+–em’t
+ 
+š
+h»¶y 
+may
+ 
+Ëad
+ 
+to
+ 
+ª
+ :
+exc
+:`
+RPCE¼Ü
+` 
+exû±iÚ
+.
+
+285 
+In
+ 
+asynchrÚous
+ 
+mode
+, 
+»tuºs
+ 
+immedŸ‹ly
+, 
+»tuºšg
+ `
+£lf
+`. 
+The
+ :
+©Œ
+:`
+ev’t
+` 
+©Œibu‹
+ 
+wl
+ 
+be
+ 
+£t
+ 
+wh’
+ 
+the
+ 
+»¶y
+ 
+has
+ 
+b“n
+ 
+	`»ûived
+ (
+£e
+ :©Œ:`»¶y`è
+Ü
+ 
+ª
+ 
+”rÜ
+ 
+	`occu»d
+ (see :attr:`error`).
+
+287 *
+İ
+* 
+is
+ 
+the
+ 
+İ”©iÚ
+ 
+to
+ 
+be
+ 
+»que¡ed
+ 
+as
+ 
+ª
+ :
+şass
+:`~
+xml
+.
+‘»e
+.
+EËm’tT»e
+.
+EËm’t
+`
+
+289 
+logg”
+.
+	`šfo
+('Reque¡šg %r' % 
+£lf
+.
+__şass__
+.
+__Çme__
+)
+
+290 
+»q
+ = 
+£lf
+.
+	$_w¿p
+(
+İ
+)
+
+291 
+£lf
+.
+_£ssiÚ
+.
+	$£nd
+(
+»q
+)
+
+292 
+£lf
+.
+_async
+:
+
+293 
+logg”
+.
+	`debug
+('Asynø»que¡,„‘uºšg %r', 
+£lf
+)
+
+294  
+£lf
+
+
+296 
+logg”
+.
+	`debug
+('Synø»que¡, wÈwa™ fÜimeout=%r' % 
+£lf
+.
+_timeout
+)
+
+297 
+£lf
+.
+_ev’t
+.
+	$wa™
+(
+£lf
+.
+_timeout
+)
+
+298 
+£lf
+.
+_ev’t
+.
+	$isS‘
+():
+
+299 
+£lf
+.
+_”rÜ
+:
+
+300 #E¼Ü 
+th©
+ 
+´ev’‹d
+ 
+»¶y
+ 
+d–iv”y
+
+
+301 
+¿i£
+ 
+£lf
+.
+_”rÜ
+
+
+302 
+£lf
+.
+_»¶y
+.
+	$·r£
+()
+
+303 
+£lf
+.
+_»¶y
+.
+”rÜ
+ 
+is
+ 
+nÙ
+ 
+NÚe
+ 
+ªd
+ \
+
+304 
+nÙ
+ 
+£lf
+.
+_deviû_hªdËr
+.
+	`is_½c_”rÜ_exem±
+( \
+
+305 
+£lf
+.
+_»¶y
+.
+”rÜ
+.
+mes§ge
+):
+
+306 #<
+½c
+-
+”rÜ
+>'s [ RPCError ]
+
+307 
+£lf
+.
+_¿i£_mode
+ =ğ
+Rai£Mode
+.
+ALL
+:
+
+308 
+¿i£
+ 
+£lf
+.
+_»¶y
+.
+”rÜ
+
+
+309 
+	`–if
+ (
+£lf
+.
+_¿i£_mode
+ =ğ
+Rai£Mode
+.
+ERRORS
+ 
+ªd
+ s–f.
+_»¶y
+.
+”rÜ
+.
+ty³
+ == "error"):
+
+310 
+¿i£
+ 
+£lf
+.
+_»¶y
+.
+”rÜ
+
+
+311 
+£lf
+.
+_deviû_hªdËr
+.
+	$ŒªsfÜm_»¶y
+():
+
+312  
+	`NCEËm’t
+(
+£lf
+.
+_»¶y
+, s–f.
+_deviû_hªdËr
+.
+	$ŒªsfÜm_»¶y
+())
+
+314  
+£lf
+.
+_»¶y
+
+
+316 
+¿i£
+ 
+TimeoutExpœedE¼Ü
+
+
+318 
+def
+ 
+	$»que¡
+(
+£lf
+):
+
+320 :
+şass
+:`~
+xml
+.
+‘»e
+.
+EËm’tT»e
+.
+EËm’t
+` 
+ªd
+ 
+ev”ythšg
+ 
+ÿn
+ 
+be
+ 
+hªded
+ 
+off
+ 
+to
+
+
+321 :
+m‘h
+:`
+_»que¡
+`."""
+
+322 
+·ss
+
+
+324 
+def
+ 
+	$_as£¹
+(
+£lf
+, 
+ÿ·b™y
+):
+
+326 
+£rv”
+, 
+befÜe
+ 
+makšg
+ 
+a
+ 
+»que¡
+ 
+th©
+ 
+»quœes
+ 
+™
+. 
+A
+ :
+exc
+:`
+MissšgC­ab™yE¼Ü
+` 
+wl
+ 
+be
+
+
+327 
+¿i£d
+ 
+the
+ 
+ÿ·b™y
+ 
+is
+ 
+nÙ
+ 
+avaabË
+."""
+
+328 
+ÿ·b™y
+ 
+nÙ
+ 
+š
+ 
+£lf
+.
+_£ssiÚ
+.
+£rv”_ÿ·b™›s
+:
+
+329 
+¿i£
+ 
+	`MissšgC­ab™yE¼Ü
+('S”v” dÛ nÙ suµÜˆ[%s]' % 
+ÿ·b™y
+)
+
+331 
+def
+ 
+	$d–iv”_»¶y
+(
+£lf
+, 
+¿w
+):
+
+332 #š‹º® 
+u£
+
+
+333 
+£lf
+.
+_»¶y
+ = s–f.
+	$REPLY_CLS
+(
+¿w
+)
+
+334 
+£lf
+.
+_ev’t
+.
+	$£t
+()
+
+336 
+def
+ 
+	$d–iv”_”rÜ
+(
+£lf
+, 
+”r
+):
+
+337 #š‹º® 
+u£
+
+
+338 
+£lf
+.
+_”rÜ
+ = 
+”r
+
+
+339 
+£lf
+.
+_ev’t
+.
+	`£t
+()
+
+341 @
+´İ”ty
+
+
+342 
+def
+ 
+	$»¶y
+(
+£lf
+):
+
+344  
+£lf
+.
+_»¶y
+
+
+346 @
+´İ”ty
+
+
+347 
+def
+ 
+	$”rÜ
+(
+£lf
+):
+
+350 .. 
+nÙe
+::
+
+351 
+This
+ 
+»´e£Ás
+ 
+ª
+ 
+”rÜ
+ 
+which
+ 
+´ev’‹d
+ 
+a
+ 
+»¶y
+ 
+äom
+ 
+bešg
+ 
+»ûived
+. 
+An
+ *
+½c
+-error*
+
+352 
+dÛs
+ 
+nÙ
+ 
+çÎ
+ 
+š
+ 
+th©
+ 
+ÿ‹gÜy
+ -- 
+£e
+ `
+RPCR•ly
+` that.
+
+354  
+£lf
+.
+_”rÜ
+
+
+356 @
+´İ”ty
+
+
+357 
+def
+ 
+	$id
+(
+£lf
+):
+
+359  
+£lf
+.
+_id
+
+
+361 @
+´İ”ty
+
+
+362 
+def
+ 
+	$£ssiÚ
+(
+£lf
+):
+
+364  
+£lf
+.
+_£ssiÚ
+
+
+366 @
+´İ”ty
+
+
+367 
+def
+ 
+	$ev’t
+(
+£lf
+):
+
+369 
+d–iv”y
+ 
+of
+ 
+the
+ 
+»¶y
+ 
+occurs
+.
+
+371  
+£lf
+.
+_ev’t
+
+
+373 
+def
+ 
+	$__£t_async
+(
+£lf
+, 
+async
+=
+True
+):
+
+374 
+£lf
+.
+_async
+ = 
+async
+
+
+375 
+async
+ 
+ªd
+ 
+nÙ
+ 
+£ssiÚ
+.
+ÿn_p–še
+:
+
+376 
+¿i£
+ 
+	`U£rW¬nšg
+('Asynchronous mode‚ot supported forhis device/session')
+
+378 
+def
+ 
+	$__£t_¿i£_mode
+(
+£lf
+, 
+mode
+):
+
+379 
+	`as£¹
+(
+choiû
+ 
+	`š
+ ("all", "errors", "none"))
+
+380 
+£lf
+.
+_¿i£_mode
+ = 
+mode
+
+
+382 
+def
+ 
+	$__£t_timeout
+(
+£lf
+, 
+timeout
+):
+
+383 
+£lf
+.
+_timeout
+ = 
+timeout
+
+
+385 
+¿i£_mode
+ = 
+	`´İ”ty
+(
+fg‘
+=
+Ïmbda
+ 
+£lf
+: s–f.
+_¿i£_mode
+, 
+f£t
+=
+__£t_¿i£_mode
+)
+
+388 
+is_async
+ = 
+	`´İ”ty
+(
+fg‘
+=
+Ïmbda
+ 
+£lf
+: s–f.
+_async
+, 
+f£t
+=
+__£t_async
+)
+
+391 
+timeout
+ = 
+	`´İ”ty
+(
+fg‘
+=
+Ïmbda
+ 
+£lf
+: s–f.
+_timeout
+, 
+f£t
+=
+__£t_timeout
+)
+
+394 
+I¼–evªt
+ 
+asynchrÚous
+ 
+u§ge
+.
+
+	@operations/session.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+17 
+äom
+ 
+	gncş›Á
+.
+xml_
+ 
+impÜt
+ *
+
+19 
+äom
+ 
+½c
+ 
+impÜt
+ 
+RPC
+
+
+21 
+şass
+ 
+	$Clo£SessiÚ
+(
+RPC
+):
+
+25 
+def
+ 
+	$»que¡
+(
+£lf
+):
+
+27 
+Œy
+:
+
+28  
+£lf
+.
+	`_»que¡
+(
+	`Ãw_–e
+("close-session"))
+
+29 
+fš®ly
+:
+
+30 
+£lf
+.
+£ssiÚ
+.
+	$şo£
+()
+
+33 
+şass
+ 
+	$KlSessiÚ
+(
+RPC
+):
+
+37 
+def
+ 
+	$»que¡
+(
+£lf
+, 
+£ssiÚ_id
+):
+
+40 *
+£ssiÚ_id
+* 
+is
+ 
+the
+ 
+£ssiÚ
+ 
+id’tif›r
+ 
+of
+h
+NETCONF
+ sessiÚ 
+to
+ 
+be
+ 
+‹rmš©ed
+ 
+as
+ 
+a
+ 
+¡ršg
+
+
+42 
+node
+ = 
+	`Ãw_–e
+("kill-session")
+
+43 
+	`sub_–e
+(
+node
+, "£ssiÚ-id").
+‹xt
+ = 
+£ssiÚ_id
+
+
+44  
+£lf
+.
+	`_»que¡
+(
+node
+)
+
+	@operations/subscribe.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+17 
+şass
+ 
+	$NÙifiÿtiÚ
+(
+objeù
+):
+
+18 
+·ss
+
+
+21 
+şass
+ 
+	$C»©eSubsütiÚ
+(
+objeù
+):
+
+22 
+·ss
+
+
+25 
+şass
+ 
+	$NÙifiÿtiÚLi¡’”
+(
+objeù
+):
+
+26 
+·ss
+
+
+	@operations/third_party/__init__.py
+
+	@operations/third_party/juniper/__init__.py
+
+	@operations/third_party/juniper/rpc.py
+
+1 
+äom
+ 
+	gncş›Á
+.
+xml_
+ 
+impÜt
+ *
+
+3 
+äom
+ 
+	gncş›Á
+.
+	gİ”©iÚs
+.
+½c
+ 
+impÜt
+ 
+RPC
+
+
+4 
+äom
+ 
+	gncş›Á
+.
+	gİ”©iÚs
+.
+½c
+ 
+impÜt
+ 
+RPCR•ly
+
+
+5 
+äom
+ 
+	gncş›Á
+.
+	gİ”©iÚs
+.
+½c
+ 
+impÜt
+ 
+RPCE¼Ü
+
+
+6 
+äom
+ 
+ncş›Á
+ 
+impÜt
+ 
+NCCl›ÁE¼Ü
+
+
+8 
+şass
+ 
+	$G‘CÚfigu¿tiÚ
+(
+RPC
+):
+
+9 
+def
+ 
+	`»que¡
+(
+£lf
+, 
+fÜm©
+='xml', 
+f‹r
+=
+NÚe
+):
+
+10 
+node
+ = 
+	`Ãw_–e
+('g‘-cÚfigu¿tiÚ', {'fÜm©':
+fÜm©
+})
+
+11 
+f‹r
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+12 
+node
+.
+	$­³nd
+(
+f‹r
+)
+
+13  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+15 
+şass
+ 
+	$LßdCÚfigu¿tiÚ
+(
+RPC
+):
+
+16 
+def
+ 
+	`»que¡
+(
+£lf
+, 
+fÜm©
+='xml', 
+aùiÚ
+='merge',
+
+17 
+rg‘
+='ÿndid©e', 
+cÚfig
+=
+NÚe
+):
+
+18 
+cÚfig
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+19 
+	`ty³
+(
+cÚfig
+è=ğ
+li¡
+:
+
+20 
+cÚfig
+ = '\n'.
+	$još
+(
+cÚfig
+)
+
+21 
+aùiÚ
+ == 'set':
+
+22 
+fÜm©
+ = 'text'
+
+23 
+node
+ = 
+	`Ãw_–e
+('lßd-cÚfigu¿tiÚ', {'aùiÚ':
+aùiÚ
+, 'fÜm©':
+fÜm©
+})
+
+24 
+fÜm©
+ == 'xml':
+
+25 
+cÚfig_node
+ = 
+sub_–e
+(
+node
+, 'configuration')
+
+26 
+	gcÚfig_node
+.
+	$­³nd
+(
+cÚfig
+)
+
+27 
+fÜm©
+ =ğ'‹xt' 
+ªd
+ 
+nÙ
+ 
+aùiÚ
+ == 'set':
+
+28 
+cÚfig_node
+ = 
+	`sub_–e
+(
+node
+, 'cÚfigu¿tiÚ-‹xt').
+‹xt
+ = 
+cÚfig
+
+
+29 
+aùiÚ
+ =ğ'£t' 
+ªd
+ 
+fÜm©
+ == 'text':
+
+30 
+cÚfig_node
+ = 
+	`sub_–e
+(
+node
+, 'cÚfigu¿tiÚ-£t').
+‹xt
+ = 
+cÚfig
+
+
+31  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+33 
+şass
+ 
+	$Com·»CÚfigu¿tiÚ
+(
+RPC
+):
+
+34 
+def
+ 
+	$»que¡
+(
+£lf
+, 
+rŞlback
+=0):
+
+35 
+node
+ = 
+	`Ãw_–e
+('g‘-cÚfigu¿tiÚ', {'com·»':'rŞlback', 'rŞlback':
+	`¡r
+(
+rŞlback
+)
+	}
+})
+
+36  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+38 
+şass
+ 
+	$Execu‹Rpc
+(
+RPC
+):
+
+39 
+def
+ 
+	$»que¡
+(
+£lf
+, 
+½c
+):
+
+40 
+	$isš¡ªû
+(
+½c
+, 
+¡r
+):
+
+41 
+½c
+ = 
+	$to_–e
+(
+½c
+)
+
+42  
+£lf
+.
+	$_»que¡
+(
+½c
+)
+
+44 
+şass
+ 
+	$Commªd
+(
+RPC
+):
+
+45 
+def
+ 
+	`»que¡
+(
+£lf
+, 
+commªd
+=
+NÚe
+, 
+fÜm©
+='xml'):
+
+46 
+node
+ = 
+	`Ãw_–e
+('commªd', {'fÜm©':
+fÜm©
+})
+
+47 
+node
+.
+‹xt
+ = 
+commªd
+
+
+48  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+50 
+şass
+ 
+	$ReboÙ
+(
+RPC
+):
+
+51 
+def
+ 
+	$»que¡
+(
+£lf
+):
+
+52 
+node
+ = 
+	`Ãw_–e
+('request-reboot')
+
+53  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+55 
+şass
+ 
+	$H®t
+(
+RPC
+):
+
+56 
+def
+ 
+	$»que¡
+(
+£lf
+):
+
+57 
+node
+ = 
+	`Ãw_–e
+('request-halt')
+
+58  
+£lf
+.
+	$_»que¡
+(
+node
+)
+
+60 
+şass
+ 
+	$Comm™
+(
+RPC
+):
+
+63 
+DEPENDS
+ = [':candidate']
+
+65 
+def
+ 
+	$»que¡
+(
+£lf
+, 
+cÚfœmed
+=
+F®£
+, 
+timeout
+=
+NÚe
+, 
+comm’t
+=NÚe, 
+synchrÚize
+=F®£, 
+©_time
+=None):
+
+68 
+A
+ 
+cÚfœmed
+ 
+	`comm™
+ (
+i
+.
+e
+. *cÚfœmed* 
+is
+ `
+True
+`èi 
+»v”‹d
+ 
+th”e
+ i 
+no
+ 
+fŞlowup
+ 
+comm™
+ 
+w™hš
+ 
+the
+ *
+timeout
+* 
+š‹rv®
+. 
+If
+‚Øtimeouˆi 
+¥ecif›d
+h
+cÚfœm
+imeouˆ
+deçuÉs
+ 
+to
+ 600 
+	`£cÚds
+ (10 
+mšu‹s
+). A 
+cÚfœmšg
+ comm™ 
+may
+ 
+have
+h*cÚfœmed* 
+·¿m‘”
+ 
+but
+ 
+this
+ i 
+nÙ
+ 
+»quœed
+. 
+D•’ds
+ 
+Ú
+h`:cÚfœmed-comm™` 
+ÿ·b™y
+.
+
+70 *
+cÚfœmed
+* 
+wh‘h”
+ 
+this
+ 
+is
+ 
+a
+ cÚfœmed 
+comm™
+. 
+Mutu®ly
+ 
+exşusive
+ 
+w™h
+ 
+©_time
+.
+
+72 *
+timeout
+* 
+¥ecif›s
+ 
+the
+ 
+cÚfœm
+imeouˆ
+š
+ 
+£cÚds
+
+
+74 *
+comm’t
+* 
+a
+ 
+¡ršg
+ 
+to
+ comm’ˆ
+the
+ 
+comm™
+ 
+w™h
+. 
+Rev›w
+ 
+Ú
+h
+deviû
+ 
+usšg
+ 'show system commit'
+
+76 *
+synchrÚize
+* 
+Wh‘h”
+ 
+we
+ 
+should
+ 
+synch
+ 
+this
+ 
+comm™
+ 
+aüoss
+ 
+bÙh
+ 
+Routšg
+ 
+Engšes
+
+
+78 *
+©_time
+* 
+Mutu®ly
+ 
+exşusive
+ 
+w™h
+ 
+cÚfœmed
+. 
+The
+ 
+time
+ 
+©
+ 
+which
+ 
+the
+ 
+comm™
+ 
+should
+ 
+h­³n
+. 
+Junos
+ 
+ex³ùs
+ 
+e™h”
+ 
+of
+ 
+the£
+ 
+two
+ 
+fÜm©s
+:
+
+79 
+A
+ 
+time
+ 
+v®ue
+ 
+of
+ 
+the
+ 
+fÜm
+ 
+hh
+:
+mm
+[:
+ss
+] (
+hours
+, 
+mšu‹s
+, 
+ªd
+, 
+İtiÚ®ly
+, 
+£cÚds
+)
+
+80 
+A
+ 
+d©e
+ 
+ªd
+ 
+time
+ 
+v®ue
+ 
+of
+ 
+the
+ 
+fÜm
+ 
+yyyy
+-
+mm
+-
+dd
+ 
+hh
+:mm[:
+ss
+] (
+y—r
+, 
+mÚth
+, d©e, 
+hours
+, 
+mšu‹s
+,‡nd, 
+İtiÚ®ly
+, 
+£cÚds
+)"""
+
+81 
+node
+ = 
+	`Ãw_–e
+("commit")
+
+82 
+cÚfœmed
+ 
+ªd
+ 
+©_time
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+83 
+¿i£
+ 
+	`NCCl›ÁE¼Ü
+("'Commit confirmed'‡nd 'commit‡t'‡re mutuallyƒxclusive.")
+
+84 
+cÚfœmed
+:
+
+85 
+£lf
+.
+	`_as£¹
+(":confirmed-commit")
+
+86 
+	`sub_–e
+(
+node
+, "confirmed")
+
+87 
+timeout
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+88 
+	`sub_–e
+(
+node
+, "cÚfœm-timeout").
+‹xt
+ = 
+timeout
+
+
+89 
+–if
+ 
+©_time
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+90 
+	`sub_–e
+(
+node
+, "©-time").
+‹xt
+ = 
+©_time
+
+
+91 
+comm’t
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+92 
+	`sub_–e
+(
+node
+, "log").
+‹xt
+ = 
+comm’t
+
+
+93 
+synchrÚize
+:
+
+94 
+	`sub_–e
+(
+node
+, "synchronize")
+
+95  
+£lf
+.
+	`_»que¡
+(
+node
+)
+
+	@operations/third_party/nexus/__init__.py
+
+	@operations/third_party/nexus/rpc.py
+
+1 
+äom
+ 
+lxml
+ 
+impÜt
+ 
+‘»e
+
+
+3 
+äom
+ 
+	gncş›Á
+.
+xml_
+ 
+impÜt
+ *
+
+4 
+äom
+ 
+	gncş›Á
+.
+	gİ”©iÚs
+.
+½c
+ 
+impÜt
+ 
+RPC
+
+
+6 
+şass
+ 
+	$ExecCommªd
+(
+RPC
+):
+
+7 
+def
+ 
+	$»que¡
+(
+£lf
+, 
+cmds
+):
+
+8 
+node
+ = 
+‘»e
+.
+	`EËm’t
+(
+	`qu®ify
+('exec-commªd', 
+NXOS_1_0
+))
+
+10 
+cmd
+ 
+š
+ 
+cmds
+:
+
+11 
+‘»e
+.
+	`SubEËm’t
+(
+node
+, 
+	`qu®ify
+('cmd', 
+NXOS_1_0
+)).
+‹xt
+ = 
+cmd
+
+
+13  
+£lf
+.
+	`_»que¡
+(
+node
+)
+
+	@operations/util.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+17 
+äom
+ 
+	gncş›Á
+.
+xml_
+ 
+impÜt
+ *
+
+19 
+äom
+ 
+”rÜs
+ 
+impÜt
+ 
+	gO³¿tiÚE¼Ü
+, 
+MissšgC­ab™yE¼Ü
+
+
+21 
+def
+ 
+	$Úe_of
+(*
+¬gs
+):
+
+23 
+i
+, 
+¬g
+ 
+š
+ 
+	$’um”©e
+(
+¬gs
+):
+
+24 
+¬g
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+25 
+¬gh
+ 
+š
+ 
+¬gs
+[
+i
++1:]:
+
+26 
+¬gh
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+27 
+¿i£
+ 
+	`O³¿tiÚE¼Ü
+("Too many…arameters")
+
+30 
+¿i£
+ 
+	`O³¿tiÚE¼Ü
+("Insufficient…arameters")
+
+32 
+def
+ 
+	$d©a¡Üe_Ü_u¾
+(
+wha
+, 
+loc
+, 
+ÿpcheck
+=
+NÚe
+):
+
+33 
+node
+ = 
+	$Ãw_–e
+(
+wha
+)
+
+34 "://" 
+š
+ 
+loc
+: #e.
+g
+. 
+h‰p
+:
+
+35 
+ÿpcheck
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+36 
+	`ÿpcheck
+(":u¾"è#u¾ 
+schema
+ 
+check
+ 
+©
+ 
+some
+ 
+pošt
+!
+
+37 
+	`sub_–e
+(
+node
+, "u¾").
+‹xt
+ = 
+loc
+
+
+39 #ià
+loc
+ == 'candidate':
+
+41 #–ià
+loc
+ == 'startup':
+
+43 #–ià
+loc
+ =ğ'ruÂšg' 
+ªd
+ 
+wha
+ == 'target':
+
+45 
+	$sub_–e
+(
+node
+, 
+loc
+)
+
+46  
+node
+
+
+48 
+def
+ 
+	$bud_f‹r
+(
+¥ec
+, 
+ÿpcheck
+=
+NÚe
+):
+
+49 
+ty³
+ = 
+NÚe
+
+
+50 
+	$isš¡ªû
+(
+¥ec
+, 
+tu¶e
+):
+
+51 
+ty³
+, 
+ü™”Ÿ
+ = 
+¥ec
+
+
+52 
+»p
+ = 
+	`Ãw_–e
+("f‹r", 
+ty³
+=type)
+
+53 
+ty³
+ == "xpath":
+
+54 
+»p
+.
+©Œib
+["£Ëù"] = 
+ü™”Ÿ
+
+
+55 
+–if
+ 
+ty³
+ == "subtree":
+
+56 
+»p
+.
+	`­³nd
+(
+	$to_–e
+(
+ü™”Ÿ
+))
+
+58 
+¿i£
+ 
+	`O³¿tiÚE¼Ü
+("Invalid filterype")
+
+61 
+»p
+ = 
+	`v®id©ed_–em’t
+(
+¥ec
+, ("f‹r", 
+	`qu®ify
+("filter")))
+
+62 #»suÉ 
+š
+ 
+XMLE¼Ü
+: 
+lše
+ 105 
+ncş›Á
+/
+xml_
+.
+py
+ - 
+comm’‹d
+ 
+by
+ 
+—r›s
+ - 5/10/13
+
+63 #»°ğ
+	`v®id©ed_–em’t
+(
+¥ec
+, ("f‹r", 
+	`qu®ify
+("filter")),
+
+65 #TODO 
+£t
+ 
+ty³
+ 
+v¬
+ 
+h”e
+, 
+check
+ 
+£Ëù
+ 
+©Œ
+ 
+´e£Á
+ 
+š
+ 
+of
+ 
+x·th
+..
+
+66 
+ty³
+ =ğ"x·th" 
+ªd
+ 
+ÿpcheck
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+67 
+	`ÿpcheck
+(":xpath")
+
+68  
+»p
+
+
+	@transport/__init__.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+17 
+äom
+ 
+£ssiÚ
+ 
+impÜt
+ 
+	gSessiÚ
+, 
+SessiÚLi¡’”
+
+
+18 
+äom
+ 
+ssh
+ 
+impÜt
+ 
+SSHSessiÚ
+
+
+19 
+äom
+ 
+”rÜs
+ 
+impÜt
+ *
+
+21 
+	g__®l__
+ = [
+
+	@transport/errors.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #Cİyrighˆ2014 
+LeÚidas
+ 
+Poulİoulos
+
+
+3 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+5 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+6 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+9 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+11 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+12 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+13 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+14 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+16 
+äom
+ 
+ncş›Á
+ 
+impÜt
+ 
+NCCl›ÁE¼Ü
+
+
+18 
+şass
+ 
+	$T¿n¥ÜtE¼Ü
+(
+NCCl›ÁE¼Ü
+):
+
+19 
+·ss
+
+
+21 
+şass
+ 
+	$SessiÚE¼Ü
+(
+NCCl›ÁE¼Ü
+):
+
+22 
+·ss
+
+
+24 
+şass
+ 
+	$Auth’tiÿtiÚE¼Ü
+(
+T¿n¥ÜtE¼Ü
+):
+
+25 
+·ss
+
+
+27 
+şass
+ 
+	$SessiÚClo£E¼Ü
+(
+T¿n¥ÜtE¼Ü
+):
+
+29 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+š_buf
+, 
+out_buf
+=
+NÚe
+):
+
+30 
+msg
+ = 'Unexpected session close'
+
+31 
+š_buf
+:
+
+32 
+msg
+ +ğ'\nIN_BUFFER: `%s`' % 
+š_buf
+
+
+33 
+out_buf
+:
+
+34 
+msg
+ +ğ' OUT_BUFFER: `%s`' % 
+out_buf
+
+
+35 
+SSHE¼Ü
+.
+	$__š™__
+(
+£lf
+, 
+msg
+)
+
+37 
+şass
+ 
+	$SSHE¼Ü
+(
+T¿n¥ÜtE¼Ü
+):
+
+38 
+·ss
+
+
+40 
+şass
+ 
+	$SSHUnknownHo¡E¼Ü
+(
+SSHE¼Ü
+):
+
+42 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+ho¡
+, 
+fšg”´št
+):
+
+43 
+SSHE¼Ü
+.
+	`__š™__
+(
+£lf
+, 'UnknowÀho¡ key [%s] fÜ [%s]' % (
+fšg”´št
+, 
+ho¡
+))
+
+44 
+£lf
+.
+ho¡
+ = host
+
+45 
+£lf
+.
+fšg”´št
+ = fingerprint
+
+	@transport/session.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #Cİyrighˆ2014 
+LeÚidas
+ 
+Poulİoulos
+
+
+3 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+5 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+6 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+9 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+11 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+12 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+13 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+14 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+17 
+impÜt
+ 
+»
+
+
+19 
+äom
+ 
+Queue
+ 
+impÜt
+ Queue
+
+20 
+äom
+ 
+th»adšg
+ 
+impÜt
+ 
+	gTh»ad
+, 
+	gLock
+, 
+Ev’t
+
+
+22 
+äom
+ 
+	gncş›Á
+.
+xml_
+ 
+impÜt
+ *
+
+23 
+äom
+ 
+	gncş›Á
+.
+ÿ·b™›s
+ 
+impÜt
+ 
+C­ab™›s
+
+
+25 
+äom
+ 
+”rÜs
+ 
+impÜt
+ 
+	gT¿n¥ÜtE¼Ü
+, 
+SessiÚE¼Ü
+
+
+27 
+impÜt
+ 
+loggšg
+
+
+28 
+	glogg”
+ = 
+loggšg
+.
+g‘Logg”
+('ncclient.transport.session')
+
+29 
+logg”
+.
+	$£tLev–
+(
+loggšg
+.
+WARNING
+)
+
+32 
+şass
+ 
+	$SessiÚ
+(
+Th»ad
+):
+
+36 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+ÿ·b™›s
+):
+
+37 
+Th»ad
+.
+	$__š™__
+(
+£lf
+)
+
+38 
+£lf
+.
+	$£tD«mÚ
+(
+True
+)
+
+39 
+£lf
+.
+_li¡’”s
+ = 
+	$£t
+()
+
+40 
+£lf
+.
+_lock
+ = 
+	$Lock
+()
+
+41 
+£lf
+.
+	`£tName
+('session')
+
+42 
+£lf
+.
+_q
+ = 
+	$Queue
+()
+
+43 
+£lf
+.
+_ş›Á_ÿ·b™›s
+ = 
+ÿ·b™›s
+
+
+44 
+£lf
+.
+_£rv”_ÿ·b™›s
+ = 
+NÚe
+ #yet
+
+45 
+£lf
+.
+_id
+ = 
+NÚe
+ #£ssiÚ-
+id
+
+
+46 
+£lf
+.
+_cÚÃùed
+ = 
+F®£
+ #tØ
+be
+ 
+£t
+/
+ş—»d
+ 
+by
+ 
+subşass
+ 
+im¶em’tiÚ
+
+
+47 
+logg”
+.
+	`debug
+('%r created: client_capabilities=%r' %
+
+48 (
+£lf
+, s–f.
+_ş›Á_ÿ·b™›s
+))
+
+49 
+£lf
+.
+_deviû_hªdËr
+ = 
+NÚe
+ #Should 
+be
+ 
+£t
+ 
+by
+ 
+chd
+ 
+şass
+
+
+51 
+def
+ 
+	$_di¥©ch_mes§ge
+(
+£lf
+, 
+¿w
+):
+
+52 #´šˆ
+¿w
+
+
+53 
+Œy
+:
+
+54 
+roÙ
+ = 
+	$·r£_roÙ
+(
+¿w
+)
+
+55 
+exû±
+ 
+Exû±iÚ
+ 
+as
+ 
+e
+:
+
+56 
+£lf
+.
+_deviû_hªdËr
+.
+	$hªdË_¿w_di¥©ch
+(
+¿w
+):
+
+57 
+¿w
+ = 
+£lf
+.
+_deviû_hªdËr
+.
+	$hªdË_¿w_di¥©ch
+(
+¿w
+)
+
+58 
+roÙ
+ = 
+	$·r£_roÙ
+(
+¿w
+)
+
+60 
+logg”
+.
+	`”rÜ
+('”rÜ…¬sšg di¥©ch mes§ge: %s' % 
+e
+)
+
+62 
+w™h
+ 
+£lf
+.
+_lock
+:
+
+63 
+li¡’”s
+ = 
+	$li¡
+(
+£lf
+.
+_li¡’”s
+)
+
+64 
+´št
+ 
+li¡’”s
+
+
+65 
+l
+ 
+š
+ 
+li¡’”s
+:
+
+66 
+logg”
+.
+	`debug
+('di¥©chšg mes§gtØ%r: %s' % (
+l
+, 
+¿w
+))
+
+67 
+l
+.
+	$ÿÎback
+(
+roÙ
+, 
+¿w
+è#nØ
+Œy
+-
+exû±
+; 
+ç
+ 
+loudly
+ 
+you
+ 
+mu¡
+!
+
+69 
+def
+ 
+	$_di¥©ch_”rÜ
+(
+£lf
+, 
+”r
+):
+
+70 
+w™h
+ 
+£lf
+.
+_lock
+:
+
+71 
+li¡’”s
+ = 
+	$li¡
+(
+£lf
+.
+_li¡’”s
+)
+
+72 
+l
+ 
+š
+ 
+li¡’”s
+:
+
+73 
+logg”
+.
+	`debug
+('di¥©chšgƒ¼ÜØ%r' % 
+l
+)
+
+74 
+Œy
+: #h”
+we
+ 
+ÿn
+ 
+be
+ 
+mÜe
+ 
+cÚsid”©e
+ 
+w™h
+ 
+ÿtchšg
+ 
+exû±iÚs
+
+
+75 
+l
+.
+	$”rback
+(
+”r
+)
+
+76 
+exû±
+ 
+Exû±iÚ
+ 
+as
+ 
+e
+:
+
+77 
+logg”
+.
+	`w¬nšg
+('”rÜ di¥©chšgØ%r: %r' % (
+l
+, 
+e
+))
+
+79 
+def
+ 
+	$_po¡_cÚÃù
+(
+£lf
+):
+
+81 
+š™_ev’t
+ = 
+	$Ev’t
+()
+
+82 
+”rÜ
+ = [
+NÚe
+] #sØ
+th©
+ 
+”r_cb
+ 
+ÿn
+ 
+bšd
+ƒ¼Ü[0]. 
+ju¡
+ 
+how
+ 
+™
+ 
+is
+.
+
+84 
+def
+ 
+	$ok_cb
+(
+id
+, 
+ÿ·b™›s
+):
+
+85 
+£lf
+.
+_id
+ = 
+id
+
+
+86 
+£lf
+.
+_£rv”_ÿ·b™›s
+ = 
+ÿ·b™›s
+
+
+87 
+š™_ev’t
+.
+	$£t
+()
+
+88 
+def
+ 
+	$”r_cb
+(
+”r
+):
+
+89 
+”rÜ
+[0] = 
+”r
+
+
+90 
+š™_ev’t
+.
+	$£t
+()
+
+91 
+li¡’”
+ = 
+	$H–loHªdËr
+(
+ok_cb
+, 
+”r_cb
+)
+
+92 
+£lf
+.
+	$add_li¡’”
+(
+li¡’”
+)
+
+93 
+£lf
+.
+	`£nd
+(
+H–loHªdËr
+.
+	$bud
+(
+£lf
+.
+_ş›Á_ÿ·b™›s
+, s–f.
+_deviû_hªdËr
+))
+
+94 
+logg”
+.
+	`debug
+('starting main†oop')
+
+95 
+£lf
+.
+	$¡¬t
+()
+
+96 #w
+ex³ù
+ 
+£rv”
+'s hello message
+
+97 
+š™_ev’t
+.
+	$wa™
+(20)
+
+98 
+´št
+"waitend"
+
+99 #»ûived 
+h–lo
+ 
+mes§ge
+ 
+Ü
+ 
+ª
+ 
+”rÜ
+ 
+h­³Ãd
+
+
+100 
+£lf
+.
+	$»move_li¡’”
+(
+li¡’”
+)
+
+101 
+”rÜ
+[0]:
+
+102 
+´št
+"die"
+
+103 
+¿i£
+ 
+”rÜ
+[0]
+
+104 #ià':ba£:1.0' 
+nÙ
+ 
+š
+ 
+£lf
+.
+£rv”_ÿ·b™›s
+:
+
+105 #¿i£ 
+	`MissšgC­ab™yE¼Ü
+(':base:1.0')
+
+106 
+´št
+"snd"
+
+107 
+logg”
+.
+	`šfo
+('initialized: session-id=%s | server_capabilities=%s' %
+
+108 (
+£lf
+.
+_id
+, s–f.
+_£rv”_ÿ·b™›s
+))
+
+109 
+´št
+"fin"
+
+111 
+def
+ 
+	$add_li¡’”
+(
+£lf
+, 
+li¡’”
+):
+
+113 
+”rÜs
+.
+
+115 :
+ty³
+ 
+li¡’”
+: :
+şass
+:`
+SessiÚLi¡’”
+`
+
+117 
+logg”
+.
+	`debug
+('š¡®lšg†i¡’” %r' % 
+li¡’”
+)
+
+118 
+nÙ
+ 
+	$isš¡ªû
+(
+li¡’”
+, 
+SessiÚLi¡’”
+):
+
+119 
+¿i£
+ 
+	`SessiÚE¼Ü
+("Listener must be‡ SessionListenerype")
+
+120 
+w™h
+ 
+£lf
+.
+_lock
+:
+
+121 
+£lf
+.
+_li¡’”s
+.
+	$add
+(
+li¡’”
+)
+
+123 
+def
+ 
+	$»move_li¡’”
+(
+£lf
+, 
+li¡’”
+):
+
+125 
+»gi¡”ed
+.
+
+127 :
+ty³
+ 
+li¡’”
+: :
+şass
+:`
+SessiÚLi¡’”
+`
+
+129 
+logg”
+.
+	`debug
+('disÿrdšg†i¡’” %r' % 
+li¡’”
+)
+
+130 
+w™h
+ 
+£lf
+.
+_lock
+:
+
+131 
+£lf
+.
+_li¡’”s
+.
+	$disÿrd
+(
+li¡’”
+)
+
+133 
+def
+ 
+	$g‘_li¡’”_š¡ªû
+(
+£lf
+, 
+şs
+):
+
+135 
+š¡ªû
+.
+
+137 :
+ty³
+ 
+şs
+: :
+şass
+:`
+SessiÚLi¡’”
+`
+
+139 
+w™h
+ 
+£lf
+.
+_lock
+:
+
+140 
+li¡’”
+ 
+š
+ 
+£lf
+.
+_li¡’”s
+:
+
+141 
+	$isš¡ªû
+(
+li¡’”
+, 
+şs
+):
+
+142  
+li¡’”
+
+
+144 
+def
+ 
+	$cÚÃù
+(
+£lf
+, *
+¬gs
+, **
+kwds
+): #subşas 
+im¶em’ts
+
+
+145 
+¿i£
+ 
+NÙIm¶em’‹dE¼Ü
+
+
+147 
+def
+ 
+	$run
+(
+£lf
+): #subşas 
+im¶em’ts
+
+
+148 
+¿i£
+ 
+NÙIm¶em’‹dE¼Ü
+
+
+150 
+def
+ 
+	$£nd
+(
+£lf
+, 
+mes§ge
+):
+
+152 
+nÙ
+ 
+£lf
+.
+cÚÃùed
+:
+
+153 
+¿i£
+ 
+	`T¿n¥ÜtE¼Ü
+('Not connectedo NETCONF server')
+
+154 
+logg”
+.
+	`debug
+('queuešg %s' % 
+mes§ge
+)
+
+155 
+£lf
+.
+_q
+.
+	$put
+(
+mes§ge
+)
+
+157 
+def
+ 
+	$sı
+(
+£lf
+):
+
+158 
+¿i£
+ 
+NÙIm¶em’‹dE¼Ü
+
+
+161 @
+´İ”ty
+
+
+162 
+def
+ 
+	$cÚÃùed
+(
+£lf
+):
+
+164  
+£lf
+.
+_cÚÃùed
+
+
+166 @
+´İ”ty
+
+
+167 
+def
+ 
+	$ş›Á_ÿ·b™›s
+(
+£lf
+):
+
+169  
+£lf
+.
+_ş›Á_ÿ·b™›s
+
+
+171 @
+´İ”ty
+
+
+172 
+def
+ 
+	$£rv”_ÿ·b™›s
+(
+£lf
+):
+
+174  
+£lf
+.
+_£rv”_ÿ·b™›s
+
+
+176 @
+´İ”ty
+
+
+177 
+def
+ 
+	$id
+(
+£lf
+):
+
+179  
+£lf
+.
+_id
+
+
+182 
+şass
+ 
+	$SessiÚLi¡’”
+(
+objeù
+):
+
+185 
+NETCONF
+ 
+mes§ge
+ 
+is
+ 
+»ûived
+ 
+Ü
+ 
+ª
+ 
+”rÜ
+ 
+occurs
+.
+
+187 .. 
+nÙe
+::
+
+188 
+Avoid
+ 
+time
+-
+š‹nsive
+ 
+sks
+ 
+š
+ 
+a
+ 
+ÿÎback
+'s context.
+
+191 
+def
+ 
+	$ÿÎback
+(
+£lf
+, 
+roÙ
+, 
+¿w
+):
+
+194 
+H”e
+, *
+roÙ
+* 
+is
+ 
+a
+ 
+tu¶e
+ 
+of
+ *(
+g
+, 
+©Œibu‹s
+)* 
+wh”e
+ *g* i 
+the
+ 
+qu®if›d
+ 
+Çme
+ oàthroÙ 
+–em’t
+ 
+ªd
+ *©Œibu‹s* i ¨
+diùiÚ¬y
+ oà
+™s
+ 
+	`©Œibu‹s
+ (
+®so
+ qu®if›d 
+Çmes
+).
+
+196 *
+¿w
+* 
+wl
+ 
+cÚš
+ 
+the
+ 
+XML
+ 
+docum’t
+ 
+as
+ 
+a
+ 
+¡ršg
+.
+
+198 
+¿i£
+ 
+NÙIm¶em’‹dE¼Ü
+
+
+200 
+def
+ 
+	$”rback
+(
+£lf
+, 
+ex
+):
+
+203 :
+ty³
+ 
+ex
+: :
+exc
+:`
+Exû±iÚ
+`
+
+205 
+¿i£
+ 
+NÙIm¶em’‹dE¼Ü
+
+
+208 
+şass
+ 
+	$H–loHªdËr
+(
+SessiÚLi¡’”
+):
+
+210 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+š™_cb
+, 
+”rÜ_cb
+):
+
+211 
+£lf
+.
+_š™_cb
+ = 
+š™_cb
+
+
+212 
+£lf
+.
+_”rÜ_cb
+ = 
+”rÜ_cb
+
+
+214 
+def
+ 
+	$ÿÎback
+(
+£lf
+, 
+roÙ
+, 
+¿w
+):
+
+215 
+g
+, 
+©Œs
+ = 
+roÙ
+
+
+216 ià(
+g
+ =ğ
+	`qu®ify
+("h–lo")è
+	`Ü
+ (tag == "hello"):
+
+217 
+Œy
+:
+
+218 
+id
+, 
+ÿ·b™›s
+ = 
+H–loHªdËr
+.
+	$·r£
+(
+¿w
+)
+
+219 
+´št
+ 
+id
+
+
+220 
+exû±
+ 
+Exû±iÚ
+ 
+as
+ 
+e
+:
+
+221 
+´št
+ "Noooooo"
+
+222 
+£lf
+.
+	$_”rÜ_cb
+(
+e
+)
+
+224 
+´št
+ "yaar"
+
+225 
+£lf
+.
+	$_š™_cb
+(
+id
+, 
+ÿ·b™›s
+)
+
+228 
+def
+ 
+	$”rback
+(
+£lf
+, 
+”r
+):
+
+229 
+£lf
+.
+	`_”rÜ_cb
+(
+”r
+)
+
+231 @
+¡©icm‘hod
+
+
+232 
+def
+ 
+	$bud
+(
+ÿ·b™›s
+, 
+deviû_hªdËr
+):
+
+234 
+deviû_hªdËr
+:
+
+235 #Thi 
+is
+ 
+u£d
+ 
+as
+ 
+kw¬gs
+ 
+diùiÚ¬y
+ 
+lxml
+'s Element() function.
+
+236 #Th”efÜ
+the
+ 
+¬g
+-
+	`Çme
+ ("nsm­"è
+is
+ 
+u£d
+ 
+as
+ 
+key
+ 
+h”e
+.
+
+237 
+xml_Çme¥aû_kw¬gs
+ = { "nsm­" : 
+deviû_hªdËr
+.
+	`g‘_xml_ba£_Çme¥aû_diù
+(è
+	}
+}
+
+239 
+xml_Çme¥aû_kw¬gs
+ = {}
+
+240 
+h–lo
+ = 
+Ãw_–e
+("h–lo", **
+xml_Çme¥aû_kw¬gs
+)
+
+241 
+	gÿps
+ = 
+sub_–e
+(
+h–lo
+, "capabilities")
+
+242 
+def
+ 
+	$fun
+(
+uri
+): 
+	`sub_–e
+(
+ÿps
+, "ÿ·b™y").
+‹xt
+ = uri
+
+243 
+	$m­
+(
+fun
+, 
+ÿ·b™›s
+)
+
+244  
+	`to_xml
+(
+h–lo
+)
+
+246 @
+¡©icm‘hod
+
+
+247 
+def
+ 
+	$·r£
+(
+¿w
+):
+
+249 
+sid
+, 
+ÿ·b™›s
+ = 0, []
+
+250 
+roÙ
+ = 
+	$to_–e
+(
+¿w
+)
+
+251 
+chd
+ 
+š
+ 
+roÙ
+.
+	$g‘chd»n
+():
+
+252 
+chd
+.
+g
+ =ğ
+	`qu®ify
+("£ssiÚ-id"è
+Ü
+ child.tag == "session-id":
+
+253 
+sid
+ = 
+chd
+.
+‹xt
+
+
+254 
+–if
+ 
+chd
+.
+g
+ =ğ
+	`qu®ify
+("ÿ·b™›s"è
+Ü
+ child.tag == "capabilities" :
+
+255 
+ÿp
+ 
+š
+ 
+chd
+.
+	$g‘chd»n
+():
+
+256 
+ÿp
+.
+g
+ =ğ
+	`qu®ify
+("ÿ·b™y"è
+Ü
+ cap.tag == "capability":
+
+257 
+ÿ·b™›s
+.
+	$­³nd
+(
+ÿp
+.
+‹xt
+)
+
+258  
+sid
+, 
+	`C­ab™›s
+(
+ÿ·b™›s
+)
+
+	@transport/ssh.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+4 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+5 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+8 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+10 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+11 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+12 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+13 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+15 
+impÜt
+ 
+os
+
+
+16 
+impÜt
+ 
+sock‘
+
+
+17 
+impÜt
+ 
+g‘·ss
+
+
+18 
+äom
+ 
+bšascii
+ 
+impÜt
+ 
+hexlify
+
+
+19 
+äom
+ 
+cSŒšgIO
+ 
+impÜt
+ 
+SŒšgIO
+
+
+20 
+äom
+ 
+£Ëù
+ 
+impÜt
+ select
+
+22 
+äom
+ 
+	gncş›Á
+.
+ÿ·b™›s
+ 
+impÜt
+ 
+C­ab™›s
+
+
+24 
+impÜt
+ 
+·¿miko
+
+
+26 
+äom
+ 
+”rÜs
+ 
+impÜt
+ 
+	gAuth’tiÿtiÚE¼Ü
+, 
+	gSessiÚClo£E¼Ü
+, 
+	gSSHE¼Ü
+, 
+SSHUnknownHo¡E¼Ü
+
+
+27 
+äom
+ 
+£ssiÚ
+ 
+impÜt
+ 
+SessiÚ
+
+
+29 
+impÜt
+ 
+loggšg
+
+
+30 
+	glogg”
+ = 
+loggšg
+.
+g‘Logg”
+("ncclient.transport.ssh")
+
+31 
+logg”
+.
+	$£tLev–
+(
+loggšg
+.
+WARNING
+)
+
+32 
+loggšg
+.
+	`g‘Logg”
+("·¿miko").
+	$£tLev–
+(
+loggšg
+.
+DEBUG
+)
+
+34 
+BUF_SIZE
+ = 4096
+
+35 
+MSG_DELIM
+ = "]]>]]>"
+
+36 
+TICK
+ = 0.1
+
+38 
+def
+ 
+	$deçuÉ_unknown_ho¡_cb
+(
+ho¡
+, 
+fšg”´št
+):
+
+41 
+This
+  
+ÿÎback
+ 
+®ways
+ 
+»tuºs
+ `
+F®£
+`, 
+which
+ 
+would
+ 
+Ëad
+ 
+to
+ :
+m‘h
+:`
+cÚÃù
+` 
+¿isšg
+ 
+a
+ :
+exc
+:`
+SSHUnknownHo¡
+` 
+exû±iÚ
+.
+
+43 
+Suµly
+ 
+ªÙh”
+ 
+v®id
+ 
+ÿÎback
+ 
+you
+ 
+Ãed
+ 
+to
+ 
+v”ify
+ 
+the
+ 
+ho¡
+ 
+key
+ 
+´og¿m©iÿÎy
+.
+
+45 *
+ho¡
+* 
+is
+ 
+the
+ 
+ho¡Çme
+ 
+th©
+ 
+Ãeds
+ 
+to
+ 
+be
+ 
+v”if›d
+
+
+47 *
+fšg”´št
+* 
+is
+ 
+a
+ 
+hex
+ 
+¡ršg
+ 
+»´e£Ášg
+ 
+the
+ 
+ho¡
+ 
+key
+ fšg”´št, 
+cŞÚ
+-
+d–im™ed
+ 
+e
+.
+g
+. `"4b:69:6c:72:6f:79:20:77:61:73:20:68:65:72:65:21"`
+
+49  
+F®£
+
+
+51 
+def
+ 
+	$_cŞÚify
+(
+å
+):
+
+52 
+fšga
+ = 
+å
+[:2]
+
+53 
+idx
+ 
+š
+ 
+	`¿nge
+(2, 
+	`Ën
+(
+å
+), 2):
+
+54 
+fšga
+ +ğ":" + 
+å
+[
+idx
+:idx+2]
+
+55  
+fšga
+
+
+57 
+şass
+ 
+	$SSHSessiÚ
+(
+SessiÚ
+):
+
+61 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_hªdËr
+):
+
+62 
+ÿ·b™›s
+ = 
+	`C­ab™›s
+(
+deviû_hªdËr
+.
+	$g‘_ÿ·b™›s
+())
+
+63 
+SessiÚ
+.
+	$__š™__
+(
+£lf
+, 
+ÿ·b™›s
+)
+
+64 
+£lf
+.
+_ho¡_keys
+ = 
+·¿miko
+.
+	$Ho¡Keys
+()
+
+65 
+£lf
+.
+_Œª¥Üt
+ = 
+NÚe
+
+
+66 
+£lf
+.
+_cÚÃùed
+ = 
+F®£
+
+
+67 
+£lf
+.
+_chªÃl
+ = 
+NÚe
+
+
+68 
+£lf
+.
+_chªÃl_id
+ = 
+NÚe
+
+
+69 
+£lf
+.
+_chªÃl_Çme
+ = 
+NÚe
+
+
+70 
+£lf
+.
+_bufãr
+ = 
+	$SŒšgIO
+(è#fÜ 
+šcomšg
+ 
+d©a
+
+
+71 #·rsšg-
+»Ï‹d
+, 
+£e
+ 
+	`_·r£
+()
+
+72 
+£lf
+.
+_·rsšg_¡©e
+ = 0
+
+73 
+£lf
+.
+_·rsšg_pos
+ = 0
+
+74 
+£lf
+.
+_deviû_hªdËr
+ = 
+deviû_hªdËr
+
+
+76 
+def
+ 
+	$_·r£
+(
+£lf
+):
+
+78 
+d–im
+ = 
+MSG_DELIM
+
+
+79 
+n
+ = 
+	`Ën
+(
+d–im
+) - 1
+
+80 
+ex³ù
+ = 
+£lf
+.
+_·rsšg_¡©e
+
+
+81 
+buf
+ = 
+£lf
+.
+_bufãr
+
+
+82 
+buf
+.
+	$£ek
+(
+£lf
+.
+_·rsšg_pos
+)
+
+83 
+True
+:
+
+84 
+x
+ = 
+buf
+.
+	$»ad
+(1)
+
+85 
+nÙ
+ 
+x
+: #dÚ
+»adšg
+
+
+87 
+–if
+ 
+x
+ =ğ
+d–im
+[
+ex³ù
+]: #wh© 
+we
+ 
+ex³ùed
+
+
+88 
+ex³ù
+ +ğ1 #ex³ù 
+the
+ 
+Ãxt
+ 
+d–im
+ 
+
+90 
+ex³ù
+ = 0
+
+92 #loİ 
+tl
+ 
+Ï¡
+ 
+d–im
+ 
+ex³ùed
+,  
+Ùh”
+ 
+’couÁ”ed
+
+
+93 
+i
+ 
+š
+ 
+	$¿nge
+(
+ex³ù
+, 
+n
+):
+
+94 
+x
+ = 
+buf
+.
+	$»ad
+(1)
+
+95 
+nÙ
+ 
+x
+: #dÚ
+»adšg
+
+
+97 
+x
+ =ğ
+d–im
+[
+ex³ù
+]: #wh© 
+we
+ 
+ex³ùed
+
+
+98 
+ex³ù
+ +ğ1 #ex³ù 
+the
+ 
+Ãxt
+ 
+d–im
+ 
+
+100 
+ex³ù
+ = 0 #reset
+
+102 : #ià
+we
+ 
+didn
+'t break out ofhe†oop, full delim was…arsed
+
+103 
+msg_tl
+ = 
+buf
+.
+	`‹Î
+(è- 
+n
+
+
+104 
+buf
+.
+	$£ek
+(0)
+
+105 
+logg”
+.
+	`debug
+('parsed‚ew message')
+
+106 
+£lf
+.
+	`_di¥©ch_mes§ge
+(
+buf
+.
+	`»ad
+(
+msg_tl
+).
+	$¡r
+())
+
+107 
+buf
+.
+	`£ek
+(
+n
++1, 
+os
+.
+SEEK_CUR
+)
+
+108 
+»¡
+ = 
+buf
+.
+	$»ad
+()
+
+109 
+buf
+ = 
+	$SŒšgIO
+()
+
+110 
+buf
+.
+	$wr™e
+(
+»¡
+)
+
+111 
+buf
+.
+	$£ek
+(0)
+
+112 
+ex³ù
+ = 0
+
+113 
+£lf
+.
+_bufãr
+ = 
+buf
+
+
+114 
+£lf
+.
+_·rsšg_¡©e
+ = 
+ex³ù
+
+
+115 
+£lf
+.
+_·rsšg_pos
+ = s–f.
+_bufãr
+.
+	$‹Î
+()
+
+117 
+def
+ 
+	$lßd_known_ho¡s
+(
+£lf
+, 
+f’ame
+=
+NÚe
+):
+
+120 
+If
+ *
+f’ame
+* 
+is
+ 
+nÙ
+ 
+¥ecif›d
+, 
+looks
+ 
+š
+ 
+the
+  
+loÿtiÚs
+ 
+i
+.
+e
+. :
+fe
+:`~/.
+ssh
+/
+known_ho¡s
+` 
+ªd
+ :fe:`~/ssh/known_ho¡s` 
+Wšdows
+.
+
+122 
+f’ame
+ 
+is
+ 
+NÚe
+:
+
+123 
+f’ame
+ = 
+os
+.
+·th
+.
+	`ex·ndu£r
+('~/.ssh/known_hosts')
+
+124 
+Œy
+:
+
+125 
+£lf
+.
+_ho¡_keys
+.
+	$lßd
+(
+f’ame
+)
+
+126 
+exû±
+ 
+IOE¼Ü
+:
+
+127 #fÜ 
+wšdows
+
+
+128 
+f’ame
+ = 
+os
+.
+·th
+.
+	`ex·ndu£r
+('~/ssh/known_hosts')
+
+129 
+Œy
+:
+
+130 
+£lf
+.
+_ho¡_keys
+.
+	$lßd
+(
+f’ame
+)
+
+131 
+exû±
+ 
+IOE¼Ü
+:
+
+132 
+·ss
+
+
+134 
+£lf
+.
+_ho¡_keys
+.
+	$lßd
+(
+f’ame
+)
+
+136 
+def
+ 
+	$şo£
+(
+£lf
+):
+
+137 
+£lf
+.
+_Œª¥Üt
+.
+	$is_aùive
+():
+
+138 
+£lf
+.
+_Œª¥Üt
+.
+	$şo£
+()
+
+139 
+£lf
+.
+_cÚÃùed
+ = 
+F®£
+
+
+141 #REMEMBER 
+to
+ 
+upd©e
+ 
+Œª¥Üt
+.
+r¡
+ 
+sig
+. 
+chªges
+, 
+sšû
+ 
+™
+ 
+is
+ 
+h¬dcoded
+ 
+th”e
+
+
+142 
+def
+ 
+	`cÚÃù
+(
+£lf
+, 
+ho¡
+, 
+pÜt
+=830, 
+timeout
+=
+NÚe
+, 
+unknown_ho¡_cb
+=
+deçuÉ_unknown_ho¡_cb
+,
+
+143 
+u£ºame
+=
+NÚe
+, 
+·sswÜd
+="12345", 
+key_f’ame
+=NÚe, 
+®low_ag’t
+=
+F®£
+,
+
+144 
+ho¡key_v”ify
+=
+F®£
+, 
+look_fÜ_keys
+=
+True
+, 
+ssh_cÚfig
+=
+NÚe
+):
+
+148 
+To
+ 
+di§bË
+ 
+©‹m±šg
+ 
+publickey
+ 
+auth’tiÿtiÚ
+ 
+®tog‘h”
+, 
+ÿÎ
+ 
+w™h
+ *
+®low_ag’t
+* 
+ªd
+ *
+look_fÜ_keys
+* 
+as
+ `
+F®£
+`.
+
+150 *
+ho¡
+* 
+is
+ 
+the
+ 
+ho¡Çme
+ 
+Ü
+ 
+IP
+ 
+add»ss
+ 
+to
+ 
+cÚÃù
+o
+
+152 *
+pÜt
+* 
+is
+ 
+by
+  830, 
+but
+ 
+some
+ 
+deviûs
+ 
+u£
+ 
+the
+  
+SSH
+…Üˆ
+of
+ 22 
+so
+ 
+this
+ 
+may
+ 
+Ãed
+ 
+to
+ 
+be
+ 
+¥ecif›d
+
+
+154 *
+timeout
+* 
+is
+ 
+ª
+ 
+İtiÚ®
+imeouˆ
+sock‘
+ 
+cÚÃù
+
+
+156 *
+unknown_ho¡_cb
+* 
+is
+ 
+ÿÎed
+ 
+wh’
+ 
+the
+ 
+£rv”
+ 
+ho¡
+ 
+key
+ i 
+nÙ
+ 
+»cognized
+. 
+It
+ 
+kes
+ 
+two
+ 
+¬gum’ts
+,h
+ho¡Çme
+ 
+ªd
+h
+	`fšg”´št
+ (
+£e
+h
+sigÇtu»
+ 
+of
+ :
+func
+:`
+deçuÉ_unknown_ho¡_cb
+`)
+
+157 *
+u£ºame
+* 
+is
+ 
+the
+ u£ºam
+to
+ 
+u£
+ 
+SSH
+ 
+auth’tiÿtiÚ
+
+
+159 *
+·sswÜd
+* 
+is
+ 
+the
+…asswÜd 
+u£d
+ 
+usšg
+…asswÜd 
+auth’tiÿtiÚ
+, 
+Ü
+h
+·s¥h¿£
+ 
+to
+ 
+u£
+ 
+uÆockšg
+ 
+keys
+ 
+th©
+ 
+»quœe
+ 
+™
+
+
+161 *
+key_f’ame
+* 
+is
+ 
+a
+ 
+f’ame
+ 
+wh”e
+‡ 
+the
+ 
+´iv©e
+ 
+key
+ 
+to
+ 
+be
+ 
+u£d
+ 
+ÿn
+ b
+found
+
+
+163 *
+®low_ag’t
+* 
+’abËs
+ 
+qu”yšg
+ 
+SSH
+ 
+	$ag’t
+ (
+found
+è
+keys
+
+
+165 *
+ho¡key_v”ify
+* 
+’abËs
+ 
+ho¡key
+ 
+v”ifiÿtiÚ
+ 
+äom
+ ~/.
+ssh
+/
+known_ho¡s
+
+
+167 *
+look_fÜ_keys
+* 
+’abËs
+ 
+lookšg
+ 
+š
+ 
+the
+ 
+usu®
+ 
+loÿtiÚs
+ 
+ssh
+ 
+	`keys
+ (
+e
+.
+g
+. :
+fe
+:`~/.ssh/
+id_
+*`)
+
+169 *
+ssh_cÚfig
+* 
+’abËs
+ 
+·rsšg
+ 
+of
+ 
+ª
+ 
+O³nSSH
+ 
+cÚfigu¿tiÚ
+ 
+fe
+, 
+£t
+ 
+to
+ 
+™s
+ 
+·th
+, 
+e
+.
+g
+. ~/.
+ssh
+/
+cÚfig
+
+
+171 #O±iÚ®y, 
+·r£
+ .
+ssh
+/
+cÚfig
+
+
+172 
+cÚfig
+ = {
+	}
+}
+
+173 
+ssh_cÚfig
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+174 
+cÚfig
+ = 
+·¿miko
+.
+	$SSHCÚfig
+()
+
+175 
+cÚfig
+.
+	`·r£
+(
+	`İ’
+(
+os
+.
+·th
+.
+	$ex·ndu£r
+(
+ssh_cÚfig
+)))
+
+176 
+cÚfig
+ = cÚfig.
+	$lookup
+(
+ho¡
+)
+
+177 
+ho¡
+ = 
+cÚfig
+.
+	`g‘
+("hostname", host)
+
+178 
+u£ºame
+ 
+is
+ 
+NÚe
+:
+
+179 
+u£ºame
+ = 
+cÚfig
+.
+	`g‘
+("user")
+
+180 
+key_f’ame
+ 
+is
+ 
+NÚe
+:
+
+181 
+key_f’ame
+ = 
+cÚfig
+.
+	`g‘
+("identityfile")
+
+183 
+u£ºame
+ 
+is
+ 
+NÚe
+:
+
+184 
+u£ºame
+ = 
+g‘·ss
+.
+	$g‘u£r
+()
+
+186 
+sock
+ = 
+NÚe
+
+
+187 
+cÚfig
+.
+	`g‘
+("proxycommand"):
+
+188 
+sock
+ = 
+·¿miko
+.
+´oxy
+.
+	`ProxyCommªd
+(
+cÚfig
+.
+	`g‘
+("proxycommand"))
+
+190 
+»s
+ 
+š
+ 
+sock‘
+.
+	$g‘addršfo
+(
+ho¡
+, 
+pÜt
+, 
+sock‘
+.
+AF_UNSPEC
+, sock‘.
+SOCK_STREAM
+):
+
+191 
+af
+, 
+sockty³
+, 
+´Ùo
+, 
+ÿnÚÇme
+, 
+§
+ = 
+»s
+
+
+192 
+Œy
+:
+
+193 
+sock
+ = 
+sock‘
+.
+	$sock‘
+(
+af
+, 
+sockty³
+, 
+´Ùo
+)
+
+194 
+sock
+.
+	$£‰imeout
+(
+timeout
+)
+
+195 
+exû±
+ 
+sock‘
+.
+”rÜ
+:
+
+197 
+Œy
+:
+
+198 
+sock
+.
+	$cÚÃù
+(
+§
+)
+
+199 
+exû±
+ 
+Exû±iÚ
+,
+sock‘
+.
+”rÜ
+:
+
+200 
+sock
+.
+	$şo£
+()
+
+204 
+¿i£
+ 
+	`SSHE¼Ü
+("Could‚Ù o³Àsock‘Ø%s:%s" % (
+ho¡
+, 
+pÜt
+))
+
+206 
+t
+ = 
+£lf
+.
+_Œª¥Üt
+ = 
+·¿miko
+.
+	$T¿n¥Üt
+(
+sock
+)
+
+207 
+t
+.
+	$£t_log_chªÃl
+(
+logg”
+.
+Çme
+)
+
+209 
+Œy
+:
+
+210 
+t
+.
+	$¡¬t_ş›Á
+()
+
+211 
+exû±
+ 
+·¿miko
+.
+SSHExû±iÚ
+:
+
+212 
+¿i£
+ 
+	`SSHE¼Ü
+('Negotiation failed')
+
+214 #ho¡ 
+key
+ 
+v”ifiÿtiÚ
+
+
+215 
+£rv”_key
+ = 
+t
+.
+	$g‘_»mÙe_£rv”_key
+()
+
+216 #£lf.
+_ho¡_keys
+.
+	`add
+(
+ho¡
+, "ssh-r§", 
+£rv”_key
+)
+
+217 
+known_ho¡
+ = 
+£lf
+.
+_ho¡_keys
+.
+	$check
+(
+ho¡
+, 
+£rv”_key
+)
+
+219 
+fšg”´št
+ = 
+	`_cŞÚify
+(
+	`hexlify
+(
+£rv”_key
+.
+	$g‘_fšg”´št
+()))
+
+221 
+ho¡key_v”ify
+:
+
+222 
+nÙ
+ 
+known_ho¡
+ 
+ªd
+‚Ù 
+	$unknown_ho¡_cb
+(
+ho¡
+, 
+fšg”´št
+):
+
+223 
+¿i£
+ 
+	$SSHUnknownHo¡E¼Ü
+(
+ho¡
+, 
+fšg”´št
+)
+
+225 
+key_f’ame
+ 
+is
+ 
+NÚe
+:
+
+226 
+key_f’ames
+ = []
+
+227 
+–if
+ 
+	$isš¡ªû
+(
+key_f’ame
+, 
+ba£¡ršg
+):
+
+228 
+key_f’ames
+ = [ 
+key_f’ame
+ ]
+
+230 
+key_f’ames
+ = 
+key_f’ame
+
+
+231 
+£lf
+.
+	$_auth
+(
+u£ºame
+, 
+·sswÜd
+, 
+key_f’ames
+, 
+®low_ag’t
+, 
+look_fÜ_keys
+)
+
+232 
+£lf
+.
+_cÚÃùed
+ = 
+True
+ #th”
+was
+ 
+no
+ 
+”rÜ
+ 
+auth’tiÿtšB
+
+
+233 #TODO: 
+Ëİoul
+: 
+Rev›w
+, 
+‹¡
+, 
+ªd
+ 
+Ãeded
+ 
+»wr™e
+ 
+this
+ 
+·¹
+
+
+234 
+subsy¡em_Çmes
+ = 
+£lf
+.
+_deviû_hªdËr
+.
+	$g‘_ssh_subsy¡em_Çmes
+()
+
+235 
+subÇme
+ 
+š
+ 
+subsy¡em_Çmes
+:
+
+236 
+c
+ = 
+£lf
+.
+_chªÃl
+ = s–f.
+_Œª¥Üt
+.
+	$İ’_£ssiÚ
+()
+
+237 
+£lf
+.
+_chªÃl_id
+ = 
+c
+.
+	$g‘_id
+()
+
+238 
+chªÃl_Çme
+ = "%s-subsy¡em-%s" % (
+subÇme
+, 
+	$¡r
+(
+£lf
+.
+_chªÃl_id
+))
+
+239 
+c
+.
+	$£t_Çme
+(
+chªÃl_Çme
+)
+
+240 
+Œy
+:
+
+241 
+c
+.
+	$švoke_subsy¡em
+(
+subÇme
+)
+
+242 
+´št
+"ok"
+
+243 
+exû±
+ 
+·¿miko
+.
+SSHExû±iÚ
+ 
+as
+ 
+e
+:
+
+244 
+logg”
+.
+	`šfo
+("% (subsy¡em„eque¡„ejeùed)", 
+e
+)
+
+245 
+hªdË_exû±iÚ
+ = 
+£lf
+.
+_deviû_hªdËr
+.
+	$hªdË_cÚÃùiÚ_exû±iÚs
+(
+£lf
+)
+
+246 #IgnÜ
+the
+ 
+exû±iÚ
+, 
+sšû
+ 
+we
+  
+to
+ 
+Œy
+h
+difã»Á
+
+
+247 #subsy¡em 
+Çmes
+ 
+uÁ
+ 
+we
+ 
+fšd
+ 
+Úe
+ 
+th©
+ 
+ÿn
+ 
+cÚÃù
+.
+
+248 #hav
+to
+ 
+hªdË
+ 
+exû±iÚ
+ 
+—ch
+ 
+v’dÜ
+ 
+h”e
+
+
+249 
+nÙ
+ 
+hªdË_exû±iÚ
+:
+
+251 
+£lf
+.
+_chªÃl_Çme
+ = 
+c
+.
+	$g‘_Çme
+()
+
+252 
+´št
+"okb"
+
+253 
+£lf
+.
+	$_po¡_cÚÃù
+()
+
+254 
+´št
+"sok"
+
+256 
+¿i£
+ 
+	`SSHE¼Ü
+("Could‚ot open connection,…ossibly dueo unacceptable"
+
+259 
+def
+ 
+	$_auth
+(
+£lf
+, 
+u£ºame
+, 
+·sswÜd
+, 
+key_f’ames
+, 
+®low_ag’t
+,
+
+260 
+look_fÜ_keys
+):
+
+261 
+§ved_exû±iÚ
+ = 
+NÚe
+
+
+262 
+key_f’ame
+ 
+š
+ 
+key_f’ames
+:
+
+263 
+şs
+ 
+	$š
+ (
+·¿miko
+.
+RSAKey
+,…¬amiko.
+DSSKey
+):
+
+264 
+Œy
+:
+
+265 
+key
+ = 
+şs
+.
+	$äom_´iv©e_key_fe
+(
+key_f’ame
+, 
+·sswÜd
+)
+
+266 
+logg”
+.
+	`debug
+("Trying key %s from %s" %
+
+267 (
+	`hexlify
+(
+key
+.
+	`g‘_fšg”´št
+()), 
+key_f’ame
+))
+
+268 
+£lf
+.
+_Œª¥Üt
+.
+	$auth_publickey
+(
+u£ºame
+, 
+key
+)
+
+270 
+exû±
+ 
+Exû±iÚ
+ 
+as
+ 
+e
+:
+
+271 
+§ved_exû±iÚ
+ = 
+e
+
+
+272 
+logg”
+.
+	$debug
+(
+e
+)
+
+274 
+®low_ag’t
+:
+
+275 
+key
+ 
+š
+ 
+·¿miko
+.
+	`Ag’t
+().
+	$g‘_keys
+():
+
+276 
+Œy
+:
+
+277 
+logg”
+.
+	`debug
+("Trying SSH‡gent key %s" %
+
+278 
+	`hexlify
+(
+key
+.
+	$g‘_fšg”´št
+()))
+
+279 
+£lf
+.
+_Œª¥Üt
+.
+	$auth_publickey
+(
+u£ºame
+, 
+key
+)
+
+281 
+exû±
+ 
+Exû±iÚ
+ 
+as
+ 
+e
+:
+
+282 
+§ved_exû±iÚ
+ = 
+e
+
+
+283 
+logg”
+.
+	$debug
+(
+e
+)
+
+285 
+keyfes
+ = []
+
+286 
+look_fÜ_keys
+:
+
+287 
+r§_key
+ = 
+os
+.
+·th
+.
+	`ex·ndu£r
+("~/.ssh/id_rsa")
+
+288 
+d§_key
+ = 
+os
+.
+·th
+.
+	`ex·ndu£r
+("~/.ssh/id_dsa")
+
+289 
+os
+.
+·th
+.
+	$isfe
+(
+r§_key
+):
+
+290 
+keyfes
+.
+	`­³nd
+((
+·¿miko
+.
+RSAKey
+, 
+r§_key
+))
+
+291 
+os
+.
+·th
+.
+	$isfe
+(
+d§_key
+):
+
+292 
+keyfes
+.
+	`­³nd
+((
+·¿miko
+.
+DSSKey
+, 
+d§_key
+))
+
+293 #look 
+š
+ ~/
+ssh
+/ 
+wšdows
+ 
+u£rs
+:
+
+294 
+r§_key
+ = 
+os
+.
+·th
+.
+	`ex·ndu£r
+("~/ssh/id_rsa")
+
+295 
+d§_key
+ = 
+os
+.
+·th
+.
+	`ex·ndu£r
+("~/ssh/id_dsa")
+
+296 
+os
+.
+·th
+.
+	$isfe
+(
+r§_key
+):
+
+297 
+keyfes
+.
+	`­³nd
+((
+·¿miko
+.
+RSAKey
+, 
+r§_key
+))
+
+298 
+os
+.
+·th
+.
+	$isfe
+(
+d§_key
+):
+
+299 
+keyfes
+.
+	`­³nd
+((
+·¿miko
+.
+DSSKey
+, 
+d§_key
+))
+
+301 
+şs
+, 
+f’ame
+ 
+š
+ 
+keyfes
+:
+
+302 #´šˆ
+f’ame
+
+
+303 #´šˆ
+şs
+
+
+304 
+Œy
+:
+
+305 
+key
+ = 
+şs
+.
+	$äom_´iv©e_key_fe
+(
+f’ame
+, 
+·sswÜd
+)
+
+306 
+logg”
+.
+	`debug
+("Trying discovered key %s in %s" %
+
+307 (
+	`hexlify
+(
+key
+.
+	`g‘_fšg”´št
+()), 
+f’ame
+))
+
+308 
+£lf
+.
+_Œª¥Üt
+.
+	$auth_publickey
+(
+u£ºame
+, 
+key
+)
+
+310 
+exû±
+ 
+Exû±iÚ
+ 
+as
+ 
+e
+:
+
+311 
+§ved_exû±iÚ
+ = 
+e
+
+
+312 
+logg”
+.
+	$debug
+(
+e
+)
+
+314 
+·sswÜd
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+315 
+Œy
+:
+
+316 
+£lf
+.
+_Œª¥Üt
+.
+	$auth_·sswÜd
+(
+u£ºame
+, 
+·sswÜd
+)
+
+318 
+exû±
+ 
+Exû±iÚ
+ 
+as
+ 
+e
+:
+
+319 
+§ved_exû±iÚ
+ = 
+e
+
+
+320 
+logg”
+.
+	$debug
+(
+e
+)
+
+321 
+§ved_exû±iÚ
+ 
+is
+ 
+nÙ
+ 
+NÚe
+:
+
+322 #Ãed 
+³p
+-3134 
+to
+ dØ
+this
+ 
+right
+
+
+323 
+¿i£
+ 
+	`Auth’tiÿtiÚE¼Ü
+(
+	$»´
+(
+§ved_exû±iÚ
+))
+
+325 
+¿i£
+ 
+	`Auth’tiÿtiÚE¼Ü
+("No‡uthentication methods‡vailable")
+
+327 
+def
+ 
+	$run
+(
+£lf
+):
+
+328 
+chª
+ = 
+£lf
+.
+_chªÃl
+
+
+329 
+q
+ = 
+£lf
+.
+_q
+
+
+330 
+Œy
+:
+
+331 
+True
+:
+
+332 #£Ëù 
+Ú
+ 
+a
+ 
+·¿miko
+ 
+ssh
+ 
+chªÃl
+ 
+objeù
+ 
+dÛs
+ 
+nÙ
+ 
+ev”
+  
+™
+ 
+š
+ 
+the
+ 
+wr™abË
+ 
+li¡
+, 
+so
+ 
+chªÃls
+ 
+dÚ
+'tƒxactlyƒmulatehe socket‡pi
+
+333 
+r
+, 
+w
+, 
+e
+ = 
+	$£Ëù
+([
+chª
+], [], [], 
+TICK
+)
+
+334 #wÈ
+wakeup
+ 
+evey
+ 
+TICK
+ 
+£cÚds
+ 
+to
+ 
+check
+ 
+som‘hšg
+Ø
+£nd
+, 
+mÜe
+ som‘hšgØ
+	`»ad
+ (
+due
+Ø
+£Ëù
+ 
+»tuºšg
+ 
+chª
+ 
+š
+ 
+»adabË
+ 
+li¡
+)
+
+335 
+r
+:
+
+336 
+d©a
+ = 
+chª
+.
+	$»cv
+(
+BUF_SIZE
+)
+
+337 
+d©a
+:
+
+338 
+£lf
+.
+_bufãr
+.
+	$wr™e
+(
+d©a
+)
+
+339 
+£lf
+.
+	$_·r£
+()
+
+340 
+´št
+"parseok"
+
+342 
+¿i£
+ 
+	`SessiÚClo£E¼Ü
+(
+£lf
+.
+_bufãr
+.
+	$g‘v®ue
+())
+
+343 
+nÙ
+ 
+q
+.
+	$em±y
+(è
+ªd
+ 
+chª
+.
+	$£nd_»ady
+():
+
+344 
+logg”
+.
+	`debug
+("Sending message")
+
+345 
+d©a
+ = 
+q
+.
+	`g‘
+(è+ 
+MSG_DELIM
+
+
+346 
+d©a
+:
+
+347 
+n
+ = 
+chª
+.
+	$£nd
+(
+d©a
+)
+
+348 
+n
+ <= 0:
+
+349 
+¿i£
+ 
+	`SessiÚClo£E¼Ü
+(
+£lf
+.
+_bufãr
+.
+	`g‘v®ue
+(), 
+d©a
+)
+
+350 
+d©a
+ = d©a[
+n
+:]
+
+351 
+exû±
+ 
+Exû±iÚ
+ 
+as
+ 
+e
+:
+
+352 
+logg”
+.
+	`debug
+("Brokouˆoàmaš†oİ,ƒ¼Ü=%r", 
+e
+)
+
+353 
+£lf
+.
+	$_di¥©ch_”rÜ
+(
+e
+)
+
+354 
+£lf
+.
+	`şo£
+()
+
+357 @
+´İ”ty
+
+
+358 
+def
+ 
+	$Œª¥Üt
+(
+£lf
+):
+
+360  
+£lf
+.
+_Œª¥Üt
+
+
+	@transport/third_party/__init__.py
+
+1 
+	g__authÜ__
+ = 'katharh'
+
+	@transport/third_party/junos/__init__.py
+
+1 
+	g__authÜ__
+ = 'katharh'
+
+	@transport/third_party/junos/ioproc.py
+
+1 
+impÜt
+ 
+os
+
+
+2 
+äom
+ 
+cSŒšgIO
+ 
+impÜt
+ 
+SŒšgIO
+
+
+3 
+äom
+ 
+£Ëù
+ 
+impÜt
+ select
+
+4 
+äom
+ 
+sub´oûss
+ 
+impÜt
+ 
+	gPİ’
+, 
+	gPIPE
+, 
+STDOUT
+
+
+6 
+äom
+ 
+	gncş›Á
+.
+	gŒª¥Üt
+.
+”rÜs
+ 
+impÜt
+ 
+	gSessiÚClo£E¼Ü
+, 
+T¿n¥ÜtE¼Ü
+
+
+7 
+äom
+ 
+	gncş›Á
+.
+	gŒª¥Üt
+.
+ssh
+ 
+impÜt
+ 
+SSHSessiÚ
+
+
+9 
+	gMSG_DELIM
+ = "]]>]]>"
+
+10 
+TICK
+ = 0.1
+
+11 
+NETCONF_SHELL
+ = 'xml-mode‚etconf‚eed-trailer'
+
+14 
+şass
+ 
+	$IOProc
+(
+SSHSessiÚ
+):
+
+16 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_hªdËr
+):
+
+17 
+SSHSessiÚ
+.
+	$__š™__
+(
+£lf
+, 
+deviû_hªdËr
+)
+
+18 
+£lf
+.
+_ho¡_keys
+ = 
+NÚe
+
+
+19 
+£lf
+.
+_Œª¥Üt
+ = 
+NÚe
+
+
+20 
+£lf
+.
+_cÚÃùed
+ = 
+F®£
+
+
+21 
+£lf
+.
+_chªÃl
+ = 
+NÚe
+
+
+22 
+£lf
+.
+_chªÃl_id
+ = 
+NÚe
+
+
+23 
+£lf
+.
+_chªÃl_Çme
+ = 
+NÚe
+
+
+24 
+£lf
+.
+_bufãr
+ = 
+	$SŒšgIO
+(è#fÜ 
+šcomšg
+ 
+d©a
+
+
+25 #·rsšg-
+»Ï‹d
+, 
+£e
+ 
+	`_·r£
+()
+
+26 
+£lf
+.
+_·rsšg_¡©e
+ = 0
+
+27 
+£lf
+.
+_·rsšg_pos
+ = 0
+
+28 
+£lf
+.
+_deviû_hªdËr
+ = 
+deviû_hªdËr
+
+
+30 
+def
+ 
+	$şo£
+(
+£lf
+):
+
+31 
+£lf
+.
+_chªÃl
+.
+	$kl
+()
+
+32 
+£lf
+.
+_cÚÃùed
+ = 
+F®£
+
+
+34 
+def
+ 
+	$cÚÃù
+(
+£lf
+):
+
+36 
+£lf
+.
+_chªÃl
+ = 
+	$Pİ’
+(
+NETCONF_SHELL
+, 
+sh–l
+=
+True
+,
+
+37 
+¡dš
+=
+PIPE
+, 
+¡dout
+=PIPE, 
+¡d”r
+=
+STDOUT
+)
+
+38 
+£lf
+.
+_cÚÃùed
+ = 
+True
+
+
+39 
+£lf
+.
+_chªÃl_id
+ = s–f.
+_chªÃl
+.
+pid
+
+
+40 
+£lf
+.
+_chªÃl_Çme
+ = "netconf-shell"
+
+41 
+£lf
+.
+	$_po¡_cÚÃù
+()
+
+44 
+def
+ 
+	$run
+(
+£lf
+):
+
+45 
+chª
+ = 
+£lf
+.
+_chªÃl
+
+
+46 
+q
+ = 
+£lf
+.
+_q
+
+
+47 
+Œy
+:
+
+48 
+True
+:
+
+49 
+r
+, 
+w
+, 
+e
+ = 
+	$£Ëù
+([
+chª
+.
+¡dout
+], [], [], 
+TICK
+)
+
+50 
+d©a
+ = ''
+
+51 
+r
+:
+
+52 
+True
+:
+
+53 
+d©a
+ +ğ
+chª
+.
+¡dout
+.
+	$»adlše
+()
+
+54 
+MSG_DELIM
+ 
+š
+ 
+d©a
+:
+
+56 
+d©a
+:
+
+57 
+£lf
+.
+_bufãr
+.
+	$wr™e
+(
+d©a
+)
+
+58 
+£lf
+.
+	$_·r£
+()
+
+60 
+¿i£
+ 
+	`SessiÚClo£E¼Ü
+(
+£lf
+.
+_bufãr
+.
+	$g‘v®ue
+())
+
+61 
+nÙ
+ 
+q
+.
+	$em±y
+():
+
+62 
+d©a
+ = 
+q
+.
+	`g‘
+(è+ 
+MSG_DELIM
+
+
+63 
+d©a
+:
+
+64 
+chª
+.
+¡dš
+.
+	$wr™e
+(
+d©a
+)
+
+65 
+chª
+.
+¡dš
+.
+	$æush
+()
+
+66 
+d©a
+ = 
+F®£
+
+
+67 
+exû±
+ 
+Exû±iÚ
+ 
+as
+ 
+e
+:
+
+68 
+£lf
+.
+	$şo£
+()
+
+69 
+£lf
+.
+	`_di¥©ch_”rÜ
+(
+e
+)
+
+71 @
+´İ”ty
+
+
+72 
+def
+ 
+	$Œª¥Üt
+(
+£lf
+):
+
+74  
+£lf
+.
+_Œª¥Üt
+
+
+	@xml_.py
+
+1 #Cİyrighˆ2009 
+Shikh¬
+ 
+Bhushª
+
+
+2 #Cİyrighˆ2011 
+LeÚidas
+ 
+Poulİoulos
+
+
+3 #
+#Liûn£d 
+und”
+ 
+the
+ 
+A·che
+ 
+Liûn£
+, 
+V”siÚ
+ 2.0 (the "License");
+
+5 #you 
+may
+ 
+nÙ
+ 
+u£
+ 
+this
+ 
+fe
+ 
+exû±
+ 
+š
+ 
+com¶Ÿnû
+ 
+w™h
+ 
+the
+ 
+Liûn£
+.
+
+6 #You 
+may
+ 
+obš
+ 
+a
+ 
+cİy
+ 
+of
+ 
+the
+ 
+Liûn£
+ 
+©
+
+
+9 #
+#UÆes 
+»quœed
+ 
+by
+ 
+­¶iÿbË
+ 
+Ïw
+ 
+Ü
+ 
+ag»ed
+ 
+to
+ 
+š
+ 
+wr™šg
+, 
+soáw¬e
+
+
+11 #di¡ribu‹d 
+und”
+ 
+the
+ 
+Liûn£
+ 
+is
+ 
+di¡ribu‹d
+ 
+Ú
+ 
+ª
+ "AS IS" 
+BASIS
+,
+
+12 #WITHOUT 
+WARRANTIES
+ 
+OR
+ 
+CONDITIONS
+ 
+OF
+ 
+ANY
+ 
+KIND
+, 
+e™h”
+ 
+ex´ess
+ 
+Ü
+ 
+im¶›d
+.
+
+13 #S“ 
+the
+ 
+Liûn£
+ th
+¥ecific
+ 
+Ïnguage
+ 
+gov”nšg
+ 
+³rmissiÚs
+ 
+ªd
+
+
+14 #lim™©iÚ 
+und”
+ 
+the
+ 
+Liûn£
+.
+
+19 
+impÜt
+ 
+io
+
+
+21 
+äom
+ 
+SŒšgIO
+ 
+impÜt
+ StringIO
+
+22 
+äom
+ 
+lxml
+ 
+impÜt
+ 
+	g‘»e
+
+
+24 #IÀ
+issues
+ 
+come
+ 
+up
+ 
+w™h
+ 
+XML
+ 
+g’”©iÚ
+/
+·rsšg
+
+
+25 #mak
+su»
+ 
+you
+ 
+have
+ 
+the
+ 
+EËm’tT»e
+ 
+v1
+.2.7+ 
+lib
+ 
+as
+
+
+26 #w–È
+as
+ 
+lxml
+ 
+v3
+.0+
+
+28 
+äom
+ 
+ncş›Á
+ 
+impÜt
+ 
+NCCl›ÁE¼Ü
+
+
+30 
+	g·r£r
+ = 
+‘»e
+.
+	$XMLP¬£r
+(
+»cov”
+=
+True
+)
+
+32 
+şass
+ 
+	$XMLE¼Ü
+(
+NCCl›ÁE¼Ü
+):
+
+33 
+·ss
+
+
+35 ###Name¥aû-
+»Ï‹d
+
+
+37 #: 
+Ba£
+ 
+NETCONF
+ 
+Çme¥aû
+
+
+38 
+BASE_NS_1_0
+ = "urn:ietf:params:xml:ns:netconf:base:1.0"
+
+40 
+NXOS_1_0
+ = "http://www.cisco.com/nxos:1.0"
+
+42 
+NXOS_IF
+ = "http://www.cisco.com/nxos:1.0:if_manager"
+
+43 #: 
+Name¥aû
+ 
+Ta
+-
+f
+ 
+cÜe
+ 
+d©a
+ 
+mod–
+
+
+44 
+TAILF_AAA_1_1
+ = "http://tail-f.com/ns/aaa/1.1"
+
+45 #: 
+Name¥aû
+ 
+Ta
+-
+f
+ 
+execd
+ 
+d©a
+ 
+mod–
+
+
+46 
+TAILF_EXECD_1_1
+ = "http://tail-f.com/ns/execd/1.1"
+
+47 #: 
+Name¥aû
+ 
+Cisco
+ 
+d©a
+ 
+mod–
+
+
+48 
+CISCO_CPI_1_0
+ = "http://www.cisco.com/cpi_10/schema"
+
+49 #: 
+Name¥aû
+ 
+FlowmÚ
+ 
+d©a
+ 
+mod–
+
+
+50 
+FLOWMON_1_0
+ = "http://www.liberouter.org/ns/netopeer/flowmon/1.0"
+
+51 #: 
+Name¥aû
+ 
+Jun”
+ 9.6
+R4
+. 
+Te¡ed
+ 
+w™h
+ 
+Junos
+ 9.6R4+
+
+52 
+JUNIPER_1_1
+ = "http://xml.juniper.net/xnm/1.1/xnm"
+
+53 #: 
+Name¥aû
+ 
+Huawei
+ 
+d©a
+ 
+mod–
+
+
+54 
+HUAWEI_1_1
+ = "http://www.huawei.com/netconf/vrp"
+
+55 #: 
+Name¥aû
+ 
+H3C
+ 
+d©a
+ 
+mod–
+
+
+56 
+H3C_1_0
+ = "http://www.h3c.com/netconf/config:1.0"
+
+57 #
+:
+
+59 
+»gi¡”_Çme¥aû
+ = 
+‘»e
+.register_namespace
+
+60 
+exû±
+ 
+A‰ribu‹E¼Ü
+:
+
+61 
+def
+ 
+	$»gi¡”_Çme¥aû
+(
+´efix
+, 
+uri
+):
+
+62 
+äom
+ 
+xml
+.
+‘»e
+ 
+impÜt
+ 
+EËm’tT»e
+
+
+63 #cEËm’tT»
+u£s
+ 
+EËm’tT»e
+' _Çme¥aû_m­, sØth©'
+s
+ 
+ok
+
+
+64 
+EËm’tT»e
+.
+_Çme¥aû_m­
+[
+uri
+] = 
+´efix
+
+
+66 
+ns
+, 
+´e
+è
+š
+ {
+
+67 
+BASE_NS_1_0
+: 'nc',
+
+68 
+NXOS_1_0
+: 'nxos',
+
+69 
+NXOS_IF
+: 'if',
+
+70 
+TAILF_AAA_1_1
+: 'aaa',
+
+71 
+TAILF_EXECD_1_1
+: 'execd',
+
+72 
+CISCO_CPI_1_0
+: 'cpi',
+
+73 
+FLOWMON_1_0
+: 'fm',
+
+74 
+JUNIPER_1_1
+: 'junos',
+
+75 
+	}
+}.
+	$™ems
+():
+
+76 
+	$»gi¡”_Çme¥aû
+(
+´e
+, 
+ns
+)
+
+78 
+qu®ify
+ = 
+Ïmbda
+ 
+g
+, 
+ns
+=
+NÚe
+:ag n 
+is
+ None "{%s}%s" % (ns,ag)
+
+82 
+def
+ 
+	`to_xml
+(
+–e
+, 
+’codšg
+="UTF-8", 
+´‘ty_´št
+=
+F®£
+):
+
+84 
+xml
+ = 
+‘»e
+.
+	$to¡ršg
+(
+–e
+, 
+’codšg
+óncodšg, 
+´‘ty_´št
+=pretty_print)
+
+85  
+xml
+ xml.
+	`¡¬tsw™h
+('<?xml'è'<?xmÈv”siÚ="1.0"ƒncodšg="%s"?>%s' % (
+’codšg
+, xml)
+
+87 
+def
+ 
+	$to_–e
+(
+x
+):
+
+89  
+x
+ 
+‘»e
+.
+	$i£Ëm’t
+(
+x
+è
+‘»e
+.
+	$äom¡ršg
+(
+x
+, 
+·r£r
+=parser)
+
+91 
+def
+ 
+	$·r£_roÙ
+(
+¿w
+):
+
+93 
+å
+ = 
+	$SŒšgIO
+(
+¿w
+)
+
+94 
+ev’t
+, 
+–em’t
+ 
+š
+ 
+‘»e
+.
+	`™”·r£
+(
+å
+, 
+ev’ts
+=('start',)):
+
+95  (
+–em’t
+.
+g
+,ƒËm’t.
+©Œib
+)
+
+97 
+def
+ 
+	$v®id©ed_–em’t
+(
+x
+, 
+gs
+=
+NÚe
+, 
+©Œs
+=None):
+
+100 *
+gs
+* 
+¥ecif›d
+ 
+is
+ 
+e™h”
+ 
+a
+ 
+sšgË
+ 
+®lowabË
+ 
+g
+ 
+Çme
+ 
+Ü
+ 
+£qu’û
+ 
+of
+‡ÎowabË 
+®‹º©ives
+
+
+102 *
+©Œs
+* 
+¥ecif›d
+ 
+is
+ 
+a
+ 
+£qu’û
+ 
+of
+ 
+»quœed
+ 
+©Œibu‹s
+, 
+—ch
+ oà
+which
+ 
+may
+ 
+be
+‡ sequ’û oà
+£v”®
+ 
+®lowabË
+ 
+®‹º©ives
+
+
+104 
+Rai£s
+ :
+exc
+:`
+XMLE¼Ü
+` 
+the
+ 
+»quœem’ts
+ 
+¬e
+ 
+nÙ
+ 
+m‘
+.
+
+106 
+–e
+ = 
+	$to_–e
+(
+x
+)
+
+107 
+gs
+:
+
+108 
+	$isš¡ªû
+(
+gs
+, 
+ba£¡ršg
+):
+
+109 
+gs
+ = [tags]
+
+110 
+–e
+.
+g
+ 
+nÙ
+ 
+š
+ 
+gs
+:
+
+111 
+¿i£
+ 
+	`XMLE¼Ü
+("EËm’ˆ[%s] dÛ nÙ m“ˆ»quœem’t" % 
+–e
+.
+g
+)
+
+112 
+©Œs
+:
+
+113 
+»q
+ 
+š
+ 
+©Œs
+:
+
+114 
+	$isš¡ªû
+(
+»q
+, 
+ba£¡ršg
+):„eq = [req]
+
+115 
+®t
+ 
+š
+ 
+»q
+:
+
+116 
+®t
+ 
+š
+ 
+–e
+.
+©Œib
+:
+
+119 
+¿i£
+ 
+	`XMLE¼Ü
+("EËm’ˆ[%s] dÛ nÙ hav»quœed‡‰ribu‹s" % 
+–e
+.
+g
+)
+
+120  
+–e
+
+
+122 
+XPATH_NAMESPACES
+ = {
+
+124 
+	}
+}
+
+126 
+şass
+ 
+	$NCEËm’t
+(
+objeù
+):
+
+127 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+»suÉ
+, 
+ŒªsfÜm_»¶y
+):
+
+128 
+£lf
+.
+__»suÉ
+ = 
+»suÉ
+
+
+129 
+£lf
+.
+__ŒªsfÜm_»¶y
+ = 
+ŒªsfÜm_»¶y
+
+
+130 
+£lf
+.
+__doc
+ = s–f.
+	$»move_Çme¥aûs
+(
+£lf
+.
+__»suÉ
+)
+
+133 
+def
+ 
+	$x·th
+(
+£lf
+, 
+ex´essiÚ
+):
+
+135  
+»suÉ
+ 
+a
+ 
+ÿÎ
+ 
+to
+ 
+lxml
+ 
+	$x·th
+()
+
+136 
+ouut
+ 
+wl
+ 
+be
+ 
+a
+ 
+li¡
+
+
+138 
+£lf
+.
+__ex´essiÚ
+ = 
+ex´essiÚ
+
+
+139 
+£lf
+.
+__Çme¥aûs
+ = 
+XPATH_NAMESPACES
+
+
+140  
+£lf
+.
+__doc
+.
+	$x·th
+(
+£lf
+.
+__ex´essiÚ
+, 
+Çme¥aûs
+=£lf.
+__Çme¥aûs
+)
+
+142 
+def
+ 
+	$fšd
+(
+£lf
+, 
+ex´essiÚ
+):
+
+144 
+£lf
+.
+__ex´essiÚ
+ = 
+ex´essiÚ
+
+
+145  
+£lf
+.
+__doc
+.
+	$fšd
+(
+£lf
+.
+__ex´essiÚ
+)
+
+147 
+def
+ 
+	$fšd‹xt
+(
+£lf
+, 
+ex´essiÚ
+):
+
+149 
+£lf
+.
+__ex´essiÚ
+ = 
+ex´essiÚ
+
+
+150  
+£lf
+.
+__doc
+.
+	$fšd‹xt
+(
+£lf
+.
+__ex´essiÚ
+)
+
+153 
+def
+ 
+	$__¡r__
+(
+£lf
+):
+
+155  
+£lf
+.
+to¡ršg
+
+
+157 @
+´İ”ty
+
+
+158 
+def
+ 
+	$to¡ršg
+(
+£lf
+):
+
+160 
+·r£r
+ = 
+‘»e
+.
+	$XMLP¬£r
+(
+»move_bÏnk_‹xt
+=
+True
+)
+
+161 
+ouu‰»e
+ = 
+‘»e
+.
+	`XML
+ÓŒ“.
+	`to¡ršg
+(
+£lf
+.
+__doc
+), 
+·r£r
+)
+
+162  
+‘»e
+.
+	`to¡ršg
+(
+ouu‰»e
+, 
+´‘ty_´št
+=
+True
+)
+
+164 @
+´İ”ty
+
+
+165 
+def
+ 
+	$d©a_xml
+(
+£lf
+):
+
+167  
+	$to_xml
+(
+£lf
+.
+__doc
+)
+
+169 
+def
+ 
+	$»move_Çme¥aûs
+(
+£lf
+, 
+½c_»¶y
+):
+
+171 
+£lf
+.
+__x¦t
+=£lf.
+__ŒªsfÜm_»¶y
+
+
+172 
+£lf
+.
+__·r£r
+ = 
+‘»e
+.
+	$XMLP¬£r
+(
+»move_bÏnk_‹xt
+=
+True
+)
+
+173 
+£lf
+.
+__x¦t_doc
+ = 
+‘»e
+.
+	`·r£
+(
+io
+.
+	`By‹sIO
+(£lf.
+__x¦t
+), s–f.
+__·r£r
+)
+
+174 
+£lf
+.
+__ŒªsfÜm
+ = 
+‘»e
+.
+	$XSLT
+(
+£lf
+.
+__x¦t_doc
+)
+
+175 
+£lf
+.
+__roÙ
+ = 
+‘»e
+.
+	`äom¡ršg
+(
+	`¡r
+(£lf.
+	`__ŒªsfÜm
+ÓŒ“.
+	`·r£
+(
+	$SŒšgIO
+(
+½c_»¶y
+)))))
+
+176  
+£lf
+.
+__roÙ
+
+
+179 
+Ãw_–e
+ = 
+Ïmbda
+ 
+g
+, 
+©Œs
+={
+	}
+}, **
+	gexŒa
+: 
+‘»e
+.
+EËm’t
+(
+qu®ify
+Ñag),‡‰rs, **
+exŒa
+)
+
+181 
+	gsub_–e
+ = 
+Ïmbda
+ 
+·»Á
+, 
+	gg
+, 
+	g©Œs
+={}, **
+	gexŒa
+: 
+‘»e
+.
+SubEËm’t
+Õ¬’t, 
+qu®ify
+(
+g
+), 
+©Œs
+, **
+exŒa
+)
+
+	@
+1
+.
+0
+33
+757
+__init__.py
+capabilities.py
+debug.py
+devices/__init__.py
+devices/csr.py
+devices/default.py
+devices/huawei.py
+devices/junos.py
+devices/nexus.py
+manager.py
+operations/__init__.py
+operations/edit.py
+operations/errors.py
+operations/flowmon.py
+operations/lock.py
+operations/retrieve.py
+operations/rpc.py
+operations/session.py
+operations/subscribe.py
+operations/third_party/__init__.py
+operations/third_party/juniper/__init__.py
+operations/third_party/juniper/rpc.py
+operations/third_party/nexus/__init__.py
+operations/third_party/nexus/rpc.py
+operations/util.py
+transport/__init__.py
+transport/errors.py
+transport/session.py
+transport/ssh.py
+transport/third_party/__init__.py
+transport/third_party/junos/__init__.py
+transport/third_party/junos/ioproc.py
+xml_.py
